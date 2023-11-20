@@ -1,0 +1,51 @@
+.stocks-form-section
+  background: linear-gradient(0deg, #656777, #656777), #656777
+  padding-top: 20px
+  padding-bottom: 7px
+
+.stocks-form-body
+  display: flex
+  align-items: center
+  &__text
+    white-space: nowrap
+    color: #FFFFFF
+    font: 400 18px/25px 'Open Sans', sans-serif
+    margin-bottom: 13px
+    padding-right: 15px
+    strong
+      font-weight: 700
+
+.stocks-form
+  &__button
+    text-transform: uppercase
+    color: #F6F6F8
+    font: 400 13px/18px 'Open Sans', sans-serif
+    padding: 7px 20px
+    border-radius: 5px
+    margin-bottom: 13px
+    white-space: nowrap
+//   max-width: 690px
+//   width: 100%
+//   margin-left: 30px
+//   &__form
+//     width: 100%
+//     display: flex
+//     //align-items: center
+//   &__input
+//     width: 100%
+//     border-radius: 5px 0 0 5px
+//     height: inherit
+
+@media all and ($middle)
+  .stocks-form-body
+    &__text
+      white-space: normal
+      font-size: 15px
+      line-height: 20px
+@media all and ($table)
+@media all and ($mobile)
+  .stocks-form-body
+    flex-direction: column
+    // align-items: flex-start
+  .stocks-form
+    margin-left: 0

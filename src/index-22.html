@@ -1,0 +1,509 @@
+{% set title = "Результаты поиска. Не найдено." %}
+{% set bodyClass = "is-not-found" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+    <!-- <a href="/" class="new-store">
+        <img
+          width="61"
+          height="297"
+          src="../../assets/img/img-53.png"
+          alt="Новый магазин">
+      </a> -->
+    <div class="container-fluid">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/found-banner-mobile.jpg"
+        />
+        <source
+          type="image/webp"
+          media="(max-width: 1023.9px)"
+          srcset="../../assets/img/found-banner-table.jpg"
+        />
+        <source
+          type="image/webp"
+          media="(max-width: 1139.9px)"
+          srcset="../../assets/img/found-banner-middle.jpg"
+        />
+        <img
+          class="main-banner-section__bg"
+          src="../../assets/img/found-banner.jpg"
+          alt="Сервис"
+        />
+      </picture>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="main-banner-navigation">
+            <a href="/" class="main-banner-navigation__logo">
+              <img
+                src="../../assets/img/img-46.svg"
+                width="257"
+                height="30"
+                alt="Протектор57"
+              />
+            </a>
+  
+            <div class="main-banner-navigation__search">
+              <div class="search-area">
+                <form class="search">
+                  <input
+                    type="text"
+                    class="search__input"
+                    value=""
+                    placeholder="Поиск"
+                  />
+                  <button class="button search__button" type="submit">
+                    <img src="../../assets/img/img-40.svg" alt="Найти" />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="main-banner-navigation__cart main-banner-cart">
+              <img
+                class="main-banner-cart__image"
+                src="../../assets/img/img-47.svg"
+                alt="Корзина"
+                width="42"
+                height="42"
+              />
+              <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+              <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+            </div>
+            <div class="main-banner-cart-mobile">
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-50.svg" alt="Поиск" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-51.svg" alt="Звонок" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-52.svg" alt="Корзина" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-banner-info main-banner-info--small">
+          <h1 class="main-banner-info__title-small">Результаты поиска</h1>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-fluid">
+      <div class="container">
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/found-banner-mobile-tyres.png"
+          />
+          <img
+            class="banner-tyres banner-tyres__found"
+            src="../../assets/img/found-banner-tyres.png"
+            alt="Сервис"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+
+<section class="not-found">
+
+    <div class="container-fluid">
+        <div class="container">
+            {% include "html/includes/breadcrumbs.html" %}
+
+            <div class="not-found__area">
+                <div class="not-found__text-wrapper">
+                    <p class="not-found__text">
+                        <strong>По вашему запросу ничего не найдено</strong> попробуйте изменить параметры поиска или
+                        перейти к популярным товарам
+                    </p>
+
+                </div>
+
+                <div class="not-found__btn-wrapper">
+                    <button class="not-found__btn button button__gray-red">
+                        Изменить запрос
+                    </button>
+                </div>
+            </div>
+
+            <div class="not-found__popular">
+                <div class="title-block">
+                    <h3 class="title-block__subtitle">
+                        Популярные товары
+                    </h3>
+                </div>
+                <div class="not-found__popular-area swiper swiper-discounts">
+                    <ul class="swiper-wrapper not-found__popular-list ">
+                        <li class="swiper-slide card-product">
+                            <div class="card-product__body">
+                                <div class="card-product__image-block">
+                                    <!--                                    <div class="card-product__stocks">-->
+                                    <!--                                        акция-->
+                                    <!--                                    </div>-->
+                                    <div class="card-product__image">
+                                        <img
+                                                src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                                                alt=""
+                                                width="180"
+                                                height="185"
+                                        >
+                                    </div>
+                                    <div class="card-product__type-block">
+
+                                        <img src="../../assets/img/img-20.svg" alt="Зима" class="img">
+                                        <button class="button zoom">
+                                            <img src="../../assets/img/img-21.svg" alt="Zoom">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product__info">
+                                    <a href="/" class="card-product__link">
+                                        Шина SP WINTER ICE 02
+                                        R13 - R20
+                                    </a>
+                                    <div class="card-product__count-area count-area">
+                                        <div class="count">
+                                            <button class="button count__button count__button--dec">
+                                                <span>-</span>
+                                            </button>
+                                            <input type="text" class="count__input" value="0">
+                                            <button class="button count__button count__button--inc">
+                                                <span>+</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-product__article">
+                                        <span class="card-product__article-text">Артикул:</span>
+                                        <span class="card-product__article-number">21447</span>
+                                    </div>
+                                    <div class="card-product__price-block">
+                                        <div class="card-product__price card-product-price">
+                                            <span class="card-product-price__price">10 200</span>
+                                            <span class="card-product-price__rub">₽</span>
+                                            <span class="card-product-price__count">( шт )</span>
+                                        </div>
+                                        <!--                                        <del class="card-product__price-old">-->
+                                        <!--                                            15 600-->
+                                        <!--                                        </del>-->
+                                    </div>
+                                    <div class="card-product__row">
+                                        <p class="card-product__all-price">
+                                            Сумма: <strong>14 000</strong> ₽
+                                        </p>
+                                        <p class="card-product__presence">
+                                            В наличии
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="card-product__footer">
+                                    <button class="button button__gray-red card-product__button">В корзину</button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide card-product">
+                            <div class="card-product__body">
+                                <div class="card-product__image-block">
+                                    <!--                                    <div class="card-product__stocks">-->
+                                    <!--                                        акция-->
+                                    <!--                                    </div>-->
+                                    <div class="card-product__image">
+                                        <img
+                                                src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                                                alt=""
+                                                width="180"
+                                                height="185"
+                                        >
+                                    </div>
+                                    <div class="card-product__type-block">
+
+                                        <img src="../../assets/img/img-20.svg" alt="Зима" class="img">
+                                        <button class="button zoom">
+                                            <img src="../../assets/img/img-21.svg" alt="Zoom">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product__info">
+                                    <a href="/" class="card-product__link">
+                                        Шина SP WINTER ICE 02
+                                        R13 - R20
+                                    </a>
+                                    <div class="card-product__count-area count-area">
+                                        <div class="count">
+                                            <button class="button count__button count__button--dec">
+                                                <span>-</span>
+                                            </button>
+                                            <input type="text" class="count__input" value="0">
+                                            <button class="button count__button count__button--inc">
+                                                <span>+</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-product__article">
+                                        <span class="card-product__article-text">Артикул:</span>
+                                        <span class="card-product__article-number">21447</span>
+                                    </div>
+                                    <div class="card-product__price-block">
+                                        <div class="card-product__price card-product-price">
+                                            <span class="card-product-price__price">10 200</span>
+                                            <span class="card-product-price__rub">₽</span>
+                                            <span class="card-product-price__count">( шт )</span>
+                                        </div>
+                                        <!--                                        <del class="card-product__price-old">-->
+                                        <!--                                            15 600-->
+                                        <!--                                        </del>-->
+                                    </div>
+                                    <div class="card-product__row">
+                                        <p class="card-product__all-price">
+                                            Сумма: <strong>14 000</strong> ₽
+                                        </p>
+                                        <p class="card-product__presence">
+                                            В наличии
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="card-product__footer">
+                                    <button class="button button__gray-red card-product__button">В корзину</button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide card-product">
+                            <div class="card-product__body">
+                                <div class="card-product__image-block">
+                                    <!--                                    <div class="card-product__stocks">-->
+                                    <!--                                        акция-->
+                                    <!--                                    </div>-->
+                                    <div class="card-product__image">
+                                        <img
+                                                src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                                                alt=""
+                                                width="180"
+                                                height="185"
+                                        >
+                                    </div>
+                                    <div class="card-product__type-block">
+
+                                        <img src="../../assets/img/img-20.svg" alt="Зима" class="img">
+                                        <button class="button zoom">
+                                            <img src="../../assets/img/img-21.svg" alt="Zoom">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product__info">
+                                    <a href="/" class="card-product__link">
+                                        Шина SP WINTER ICE 02
+                                        R13 - R20
+                                    </a>
+                                    <div class="card-product__count-area count-area">
+                                        <div class="count">
+                                            <button class="button count__button count__button--dec">
+                                                <span>-</span>
+                                            </button>
+                                            <input type="text" class="count__input" value="0">
+                                            <button class="button count__button count__button--inc">
+                                                <span>+</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-product__article">
+                                        <span class="card-product__article-text">Артикул:</span>
+                                        <span class="card-product__article-number">21447</span>
+                                    </div>
+                                    <div class="card-product__price-block">
+                                        <div class="card-product__price card-product-price">
+                                            <span class="card-product-price__price">10 200</span>
+                                            <span class="card-product-price__rub">₽</span>
+                                            <span class="card-product-price__count">( шт )</span>
+                                        </div>
+                                        <!--                                        <del class="card-product__price-old">-->
+                                        <!--                                            15 600-->
+                                        <!--                                        </del>-->
+                                    </div>
+                                    <div class="card-product__row">
+                                        <p class="card-product__all-price">
+                                            Сумма: <strong>14 000</strong> ₽
+                                        </p>
+                                        <p class="card-product__presence">
+                                            В наличии
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="card-product__footer">
+                                    <button class="button button__gray-red card-product__button">В корзину</button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide card-product">
+                            <div class="card-product__body">
+                                <div class="card-product__image-block">
+                                    <!--                                    <div class="card-product__stocks">-->
+                                    <!--                                        акция-->
+                                    <!--                                    </div>-->
+                                    <div class="card-product__image">
+                                        <img
+                                                src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                                                alt=""
+                                                width="180"
+                                                height="185"
+                                        >
+                                    </div>
+                                    <div class="card-product__type-block">
+
+                                        <img src="../../assets/img/img-20.svg" alt="Зима" class="img">
+                                        <button class="button zoom">
+                                            <img src="../../assets/img/img-21.svg" alt="Zoom">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product__info">
+                                    <a href="/" class="card-product__link">
+                                        Шина SP WINTER ICE 02
+                                        R13 - R20
+                                    </a>
+                                    <div class="card-product__count-area count-area">
+                                        <div class="count">
+                                            <button class="button count__button count__button--dec">
+                                                <span>-</span>
+                                            </button>
+                                            <input type="text" class="count__input" value="0">
+                                            <button class="button count__button count__button--inc">
+                                                <span>+</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-product__article">
+                                        <span class="card-product__article-text">Артикул:</span>
+                                        <span class="card-product__article-number">21447</span>
+                                    </div>
+                                    <div class="card-product__price-block">
+                                        <div class="card-product__price card-product-price">
+                                            <span class="card-product-price__price">10 200</span>
+                                            <span class="card-product-price__rub">₽</span>
+                                            <span class="card-product-price__count">( шт )</span>
+                                        </div>
+                                        <!--                                        <del class="card-product__price-old">-->
+                                        <!--                                            15 600-->
+                                        <!--                                        </del>-->
+                                    </div>
+                                    <div class="card-product__row">
+                                        <p class="card-product__all-price">
+                                            Сумма: <strong>14 000</strong> ₽
+                                        </p>
+                                        <p class="card-product__presence">
+                                            В наличии
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="card-product__footer">
+                                    <button class="button button__gray-red card-product__button">В корзину</button>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="swiper-slide card-product">
+                            <div class="card-product__body">
+                                <div class="card-product__image-block">
+                                    <!--                                    <div class="card-product__stocks">-->
+                                    <!--                                        акция-->
+                                    <!--                                    </div>-->
+                                    <div class="card-product__image">
+                                        <img
+                                                src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                                                alt=""
+                                                width="180"
+                                                height="185"
+                                        >
+                                    </div>
+                                    <div class="card-product__type-block">
+
+                                        <img src="../../assets/img/img-20.svg" alt="Зима" class="img">
+                                        <button class="button zoom">
+                                            <img src="../../assets/img/img-21.svg" alt="Zoom">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-product__info">
+                                    <a href="/" class="card-product__link">
+                                        Шина SP WINTER ICE 02
+                                        R13 - R20
+                                    </a>
+                                    <div class="card-product__count-area count-area">
+                                        <div class="count">
+                                            <button class="button count__button count__button--dec">
+                                                <span>-</span>
+                                            </button>
+                                            <input type="text" class="count__input" value="0">
+                                            <button class="button count__button count__button--inc">
+                                                <span>+</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-product__article">
+                                        <span class="card-product__article-text">Артикул:</span>
+                                        <span class="card-product__article-number">21447</span>
+                                    </div>
+                                    <div class="card-product__price-block">
+                                        <div class="card-product__price card-product-price">
+                                            <span class="card-product-price__price">10 200</span>
+                                            <span class="card-product-price__rub">₽</span>
+                                            <span class="card-product-price__count">( шт )</span>
+                                        </div>
+                                        <!--                                        <del class="card-product__price-old">-->
+                                        <!--                                            15 600-->
+                                        <!--                                        </del>-->
+                                    </div>
+                                    <div class="card-product__row">
+                                        <p class="card-product__all-price">
+                                            Сумма: <strong>14 000</strong> ₽
+                                        </p>
+                                        <p class="card-product__presence">
+                                            В наличии
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="card-product__footer">
+                                    <button class="button button__gray-red card-product__button">В корзину</button>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <div class="not-found__popular-pagination swiper-pagination swiper-discounts__swiper-pagination">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+

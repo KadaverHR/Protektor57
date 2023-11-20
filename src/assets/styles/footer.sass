@@ -1,0 +1,239 @@
+.footer
+  background: #364352
+  padding: 23px 0 26px 0
+  &__body
+    display: flex
+    margin-bottom: 10px
+    justify-content: space-between
+  &__info
+    max-width: 390px
+    width: 100%
+  &__contact
+    padding-top: 8px
+    padding-left: 8px
+    max-width: 200px
+    width: 100%
+    position: relative
+  &__info-company
+    padding: 17px 0
+    color: #B4B4B4
+    font: 400 11px/15px 'Open Sans', sans-serif
+  &__line
+    background-color: #B4B4B4
+
+.footer-info
+  display: flex
+  flex-direction: column
+  position: relative
+  &__logo
+    order: 1
+    margin-bottom: 25px
+    max-width: 240px
+    width: 100%
+  &__text, &__link
+    order: 2
+    white-space: nowrap
+    color: #D8D8D8
+    font: 400 12px/17px 'Open Sans', sans-serif
+    margin-bottom: 13px
+    &:hover, &:active, &:focus
+      color: #D8D8D8
+  &__link
+    text-decoration-line: underline
+  &__phone
+    order: 3
+    color: #B0B6C6
+    font: 400 24px/33px 'Open Sans', sans-serif
+    margin-bottom: 15px
+    &:hover, &:active, &:focus
+      color: #B0B6C6
+    strong
+      color: #ffffff
+  &__button
+    order: 4
+    border-radius: 50px
+    color: #ffffff
+    max-width: 170px
+    width: 100%
+    padding: 9px 20px
+    text-transform: uppercase
+    font: 700 13px/18px 'Open Sans', sans-serif
+    background-color: #3D7795
+    margin-bottom: 13px
+
+.footer-contact
+  &__street
+    margin-bottom: 12px
+    display: flex
+    align-items: flex-start
+    min-height: 46px
+  &__text
+    font: 400 15px/22px 'Open Sans', sans-serif
+    color: #ffffff
+    strong
+      font-weight: 700
+  &__icon
+    margin-right: 13px
+    padding-left: 2px
+  &__contact
+    position: relative
+    margin-bottom: 40px
+    display: flex
+    align-items: center
+    &--mb
+      margin-bottom: 27px
+  &__contact-text
+    font: 400 13px/18px 'Open Sans', sans-serif
+    color: #F6F6F8
+    &:hover, &:active, &:focus
+      color: #F6F6F8
+  &__contact-icon
+    margin-right: 9px
+
+.navigation
+  padding: 0 0 15px 0
+  width: 100%
+  margin-bottom: 41px
+  &__list
+    -webkit-overflow-scrolling: touch
+    display: flex
+    scroll-behavior: smooth
+    white-space: nowrap
+    overflow-x: hidden
+    align-items: center
+    justify-content: space-between
+    @media all and (max-width: 991.9px)
+      overflow-x: scroll
+  &__item
+    padding: 12px 0
+    margin-right: 34px
+    &:last-of-type
+      margin-right: 0
+  &__link
+    position: relative
+    text-decoration-line: none
+    color: #ffffff
+    text-transform: uppercase
+    font: 400 13px/17px 'Open Sans', sans-serif
+    &:hover, &:active, &:focus
+      color: #fff
+    &::before
+      content: ''
+      position: absolute
+      width: 0
+      height: 2px
+      background-color: #fff
+      opacity: 0
+      bottom: -7px
+      transition: 0.1s linear opacity, 0.2s linear width
+    &--active::before, &:hover::before
+      opacity: 1
+      width: 100%
+
+@media all and ($middle)
+  .navigation
+    margin-bottom: 0
+    &__item
+      margin-right: 20px
+  .footer
+    padding-bottom: 5px
+    &__info
+      max-width: 200px
+      padding-left: 3px
+      position: relative
+    &__contact
+      padding-top: 4px
+    .container
+      padding-left: 20px
+      padding-right: 20px
+    &__body
+      margin-bottom: 5px
+    &__info-company
+      padding: 20px 0
+  .footer-info
+    &__text
+      display: none
+    &__logo
+      max-width: 185px
+      margin-bottom: 35px
+    &__phone
+      font-size: 21px
+      line-height: 29px
+      order: 2
+      margin-bottom: 21px
+    &__link
+      margin-bottom: 30px
+      font-size: 13px
+      line-height: 18px
+      order: 3
+    &__button
+      max-width: 160px
+      padding-left: 15px
+      padding-right: 15px
+  .footer-contact
+    &__contact
+      margin-bottom: 29px
+
+@media all and ($table)
+  .footer
+    &__body
+      flex-wrap: wrap
+    &__info
+      padding-left: 0
+      max-width: 100%
+    &__contact
+      padding-left: 0
+    &__info-company
+      padding: 15px 0
+  .footer-info
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    &__button
+      margin-left: 15px
+      max-width: 190px
+      order: 3
+      margin-bottom: 17px
+    &__link
+      text-align: center
+      order: 4
+      width: 100%
+    &__phone
+      flex: 1 1 auto
+      //padding-left: 12%
+      text-align: center
+      margin-bottom: 17px
+    &__logo
+      margin-bottom: 17px
+      max-width: 192px
+  .navigation
+    margin-bottom: 7px
+
+@media all and ($mobile)
+  .footer
+    padding-top: 4px
+    .container
+      padding-left: 13px
+      padding-right: 13px
+    &__contact
+      display: none
+  .footer-info
+    flex-direction: column
+    &__button
+      margin-left: 0
+    &__logo
+      max-width: 174px
+      margin-bottom: 26px
+    &__phone
+      margin-bottom: 21px
+    &__button
+      max-width: 170px
+      margin-bottom: 23px
+    &__link
+      margin-bottom: 20px
+  .navigation
+    margin-bottom: 2px
+    &__item
+      margin-right: 28px
+

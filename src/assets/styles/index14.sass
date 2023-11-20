@@ -1,0 +1,128 @@
+.car-wash
+  &__info-area
+    margin-bottom: 30px
+  &__info-block
+    padding-bottom: 20px
+    border-bottom: 1px solid #D6DFE6
+  &__info-list
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    margin-bottom: 40px
+    @media all and ($table)
+      flex-wrap: wrap
+      justify-content: center
+
+    @media all and ($mobile)
+      display: inline-block
+      margin-bottom: 20px
+  &__text-wrapper
+    display: flex
+    align-items: center
+    height: 30%
+    width: 100%
+    justify-content: center
+    margin-top: 10px
+    @media all and ($mobile)
+      display: inline
+      margin-top: 0
+  &__info-item
+    width: calc((100% - 20px * 4) / 5)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    padding: 25px
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 15%)
+    border-radius: 10px
+    margin-right: 20px
+    position: relative
+    &:last-child
+      margin-right: 0
+    @media all and ($table)
+      width: calc((100% - 20px * 2) / 3)
+      margin-bottom: 20px
+      &:nth-child(3n)
+        margin-right: 0
+    &::before
+      display: none
+      content: ""
+      position: absolute
+      width: 6.25px
+      height: 6.25px
+      border-radius: 50px
+      background-color: #E30613
+      top: 6px
+      left: 0px
+      @media all and ($mobile)
+        display: inline
+    @media all and ($mobile)
+      width: 100%
+      //margin-top: 15px
+      display: inline
+      align-items: center
+      padding: 0 0 0 15px
+      box-shadow: none
+      border-radius: 0
+  &__img-wrapper
+    display: flex
+    width: 100%
+    text-align: center
+    height: 60%
+    margin-bottom: 10px
+    justify-content: center
+    align-items: center
+    @media all and ($mobile)
+      display: none
+  &__img
+    height: 100%
+    object-position: bottom
+    object-fit: contain
+  &__info-text
+    text-align: center
+    font: 600 13px/120% 'Open Sans', sans-sarif
+    //text-transform: uppercase
+    color: #222
+    @media all and ($table)
+     line-height: 150%
+     text-align: left
+    @media all and ($mobile)
+      display: inline
+  &__download-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 25px 0
+    background: #FFFFFF
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 15%)
+    border-radius: 10px
+    margin-top: 50px
+    @media all and ($mobile)
+      flex-direction: column-reverse
+      margin-top: 15px
+  &__reception-btn
+    border-radius: 50px
+    padding: 9px 77px
+    margin: 0 30px
+    @media all and ($mobile)
+      width: 80%
+      padding: 9px 0
+  &__btn-link
+    font: 700 13px/18px "Open Sans", sans-sarif
+    color: #FFF
+    text-transform: uppercase
+  &__price
+    padding-top: 30px
+    margin-bottom: 30px
+  &__download-btn
+    background: #656777
+    border-radius: 50px
+    padding: 9px 77px
+    border: 1px solid #656777
+    margin: 0 30px
+    white-space: nowrap
+    @media all and ($mobile)
+      width: 80%
+      margin-bottom: 20px
+      padding: 9px 0

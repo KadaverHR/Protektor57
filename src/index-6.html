@@ -1,0 +1,428 @@
+{% set title = "Доставка и оплата" %} {% set bodyClass = "is-delivery" %} {%
+extends "html/layouts/default.html" %} {% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+      <img
+        width="61"
+        height="297"
+        src="../../assets/img/img-53.png"
+        alt="Новый магазин">
+    </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/delivery-banner-mobile.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/delivery-banner-table.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/delivery-banner-middle.jpg"
+      />
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/delivery-banner.jpg"
+        alt="Сервис"
+      />
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img
+              src="../../assets/img/img-46.svg"
+              width="257"
+              height="30"
+              alt="Протектор57"
+            />
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input
+                  type="text"
+                  class="search__input"
+                  value=""
+                  placeholder="Поиск"
+                />
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            />
+            <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+            <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">Доставка и оплата</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="delivery">
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+
+      <div class="delivery__box delivery__box--first">
+        <h2 class="delivery__title">Способы покупки товара</h2>
+        <p class="delivery__text">
+          Для покупки товара вы можете использовать следующие способы
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid delivery__background">
+    <div class="container">
+      <ul class="delivery-method__card dm-card">
+        <li class="dm-card__item">
+          <div class="dm-card__img-wrapper">
+            <img
+              lass="dm-card__img"
+              src="./assets/img/delivery-card1.png"
+              alt=""
+            />
+          </div>
+          <p class="dm-card__title">Связаться по телефону или email</p>
+          <div class="dm-card__text-wrapper">
+            <p class="dm-card__text">
+              Вы можете связаться с нашим менеджером, получить подробную консультацию по ассортимунту и заказать товар.
+            </p>
+          </div>
+        </li>
+        <li class="dm-card__item">
+          <div class="dm-card__img-wrapper">
+            <img lass="dm-card__img" src="./assets/img/delivery-card2.png" alt="" />
+          </div>
+          <p class="dm-card__title">Заказать на нашем сайте</p>
+          <div class="dm-card__text-wrapper">
+            <p class="dm-card__text">
+              Закажите на сайте и дождитесь звонка нашего менеджера для
+              согласования технических моментов, условий и сроков доставки.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container delivery__padding">
+      <div class="delivery__box">
+        <h2 class="delivery__title">Варианты оплаты товара</h2>
+
+        <p class="delivery__text">
+          Для вашего удобства в нашем интернет-магазине предусмотрено несколько
+          вариантов оплаты
+        </p>
+      </div>
+      <div class="delivery__pay del-pay">
+        <ul class="del-pay__list">
+          <li class="del-pay__item">
+            <div class="del-pay__img-wrapper">
+              <img
+                src="./assets/img/del-pay1.png"
+                alt=""
+                class="del-pay__img"
+              />
+            </div>
+            <div class="del-pay__content">
+              <p class="del-pay__title">оплата наличными</p>
+
+              <p class="del-pay__text">
+                <strong>В магазинах</strong> «Протектор 57» по адресам: ул.
+                Михалицына, 10, Ломоносова, 6Б ТЦ "Утёс", ул.Комсомольская,270
+              </p>
+              <a href="#" class="del-pay__text del-pay__text--link">
+                на карте
+              </a>
+            </div>
+          </li>
+          <li class="del-pay__item">
+            <div class="del-pay__img-wrapper">
+              <img
+                src="./assets/img/del-pay2.png"
+                alt=""
+                class="del-pay__img"
+              />
+            </div>
+            <div class="del-pay__content">
+              <p class="del-pay__title">онлайн оплата</p>
+
+              <p class="del-pay__text">
+                <strong>После создания заказа</strong> возможно вносить как
+                предоплату, так и производить полную оплату товара.
+              </p>
+            </div>
+          </li>
+          <li class="del-pay__item">
+            <div class="del-pay__img-wrapper">
+              <img
+                src="./assets/img/del-pay3.png"
+                alt=""
+                class="del-pay__img"
+              />
+            </div>
+            <div class="del-pay__content">
+              <p class="del-pay__title">оплата картой</p>
+
+              <p class="del-pay__text">
+                <strong>В магазинах</strong> «Протектор 57» по адресам: ул.
+                Михалицына, 10, Ломоносова, 6Б ТЦ "Утёс", ул.Комсомольская,270
+              </p>
+              <a href="#" class="del-pay__text del-pay__text--link">
+                на карте
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="del-pay__list-second">
+          <li class="del-pay__item-second">
+            <div class="del-pay__img-wrapper">
+              <picture>
+                <source
+                  srcset="./assets/img/del-pay4-max.jpg"
+                  media="(max-width: 1023.9px)"
+                />
+                <img
+                  class="del-pay__img"
+                  src="./assets/img/del-pay4.jpg"
+                  alt=""
+                />
+              </picture>
+
+              <!--
+                            <img src="./assets/img/del-pay4.png" alt="" class="del-pay__img"> -->
+            </div>
+
+            <div class="del-pay__content">
+              <p class="del-pay__title">безналичный расчет</p>
+
+              <p class="del-pay__text">
+                <strong>После выставления счета</strong> на оплату (для
+                юридических лиц). Работаем как без НДС, так и с НДС.
+              </p>
+            </div>
+          </li>
+
+          <li class="del-pay__item-second">
+            <div class="del-pay__img-wrapper">
+              <picture>
+                <source
+                  srcset="./assets/img/del-pay5-max.jpg"
+                  media="(max-width: 1023.9px)"
+                />
+                <img
+                  class="del-pay__img"
+                  src="./assets/img/del-pay5.png"
+                  alt=""
+                />
+              </picture>
+
+              <!-- <img src="./assets/img/del-pay5.png" alt="" class="del-pay__img"> -->
+            </div>
+            <div class="del-pay__content">
+              <p class="del-pay__title">Мобильный перевод</p>
+
+              <p class="del-pay__text">
+                На номер карты:
+
+                <strong>4279 1343 5680 3026</strong>
+                Роман Владимирович В.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="delivery__title-wrapper">
+        <h2 class="delivery__title">Как получить товар после покупки</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid delivery__background">
+    <div class="container">
+      <ul class="delivery-method__card dm-card">
+        <li class="dm-card__item">
+          <div class="dm-card__img-wrapper">
+            <img
+              lass="dm-card__img"
+              src="./assets/img/delivery-card3.png"
+              alt=""
+            />
+          </div>
+          <p class="dm-card__title">забрать в наших магазинах</p>
+          <div class="dm-card__text-wrapper">
+            <p class="dm-card__text">
+              В магазинах «Протектор 57» по адресам: ул. Михалицына, 10,
+              Ломоносова, 6Б ТЦ "Утёс", ул.Комсомольская,270
+            </p>
+          </div>
+        </li>
+        <li class="dm-card__item">
+          <div class="dm-card__img-wrapper">
+            <img
+              lass="dm-card__img"
+              src="./assets/img/delivery-card4.png"
+              alt=""
+            />
+          </div>
+          <p class="dm-card__title">получить через тК</p>
+          <div class="dm-card__text-wrapper">
+            <p class="dm-card__text">
+              Заказать доставку товаров в другие регионы (через транспортные
+              компании).
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container delivery__padding">
+      <div class="delivery__box">
+        <h2 class="delivery__title">Стоимость доставки</h2>
+        <div class="delivery__text-wrapper">
+          <p class="delivery__text delivery__text--min">
+            Доставка в другие регионы осуществляется следующими транспортными
+            компаниями: GTD(КИТ), Желдорэкспедиция, Деловые Линии, ПЭК,
+            Байкал-Сервис
+          </p>
+          <p class="delivery__text delivery__text--min">
+            Отправка товара осуществляется в течение 3 рабочих дней, более
+            точный срок уточняйте у менеджера по тел. 8 (4862) 448-660.
+          </p>
+        </div>
+      </div>
+      <div class="delivery__cost del-cost">
+        <ul class="del-cost__card">
+          <li class="del-cost__item">
+            <div class="del-cost__img">
+              <img src="./assets/img/del-pay7.jpg" alt="" />
+            </div>
+            <div class="del-pay__content">
+              <p class="del-pay__title">По расценкам ТК</p>
+
+              <p class="del-pay__text">
+                <strong>Согласно расценкам транспортной компании</strong>,
+                действующим на момент получения товара.
+              </p>
+            </div>
+          </li>
+          <li class="del-cost__item">
+            <div class="del-cost__img">
+              <img src="./assets/img/del-pay6.jpg" alt="" class="" />
+            </div>
+            <div class="del-pay__content">
+              <p class="del-pay__title">До ТК - бесплатно</p>
+
+              <p class="del-pay__text">
+                Доставка до терминала транспортной компании -
+                <strong>бесплатно. </strong>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid delivery__background">
+    <div class="container delivery__padding">
+      <div class="delivery__box delivery__box--first">
+        <h2 class="delivery__title">Обмен и возврат товара</h2>
+        <p class="delivery__text delivery__text--strong">
+          Покупатель вправе отказаться от покупки до момента передачи товара в
+          любое время без объяснения причин; после передачи товара - в течение 7
+          дней.
+        </p>
+      </div>
+
+      <ul class="delivery__return del-return">
+        <li class="del-return__item">
+          <p class="del-return__text">
+            Обмен и возврат товара надлежащего качества происходит в точке
+            приобретения по адресам: г. Орел, ул. Михалицына, 10 или ул.
+            Ломоносова, 6Б ТЦ "Утёс", ежедневно с 10:00 до 16:00, кроме субботы
+            и воскресенья.
+          </p>
+        </li>
+        <li class="del-return__item">
+          <p class="del-return__text">
+            При возврате или обмене товара покупатель при себе должен иметь
+            товарную накладную, кассовый чек или любой иной документ,
+            подтверждающий факт приобретения товара.
+          </p>
+        </li>
+        <li class="del-return__item">
+          <p class="del-return__text">
+            Товар должен сохранять свой товарный вид, оригинальную упаковку и
+            потребительские свойства.
+          </p>
+        </li>
+        <li class="del-return__item">
+          <p class="del-return__text">
+            Покупатель, при намерении вернуть или обменять приобретенный товар,
+            обязан по телефону или электронной почте уведомить об этом продавца.
+            К возврату не принимаются шины использованные или бортированные.
+          </p>
+        </li>
+        <li class="del-return__item">
+          <p class="del-return__text">
+            Не принимаются к возврату диски без оригинальной упаковки, без
+            крепежа (болты или гайки, центровочные кольца), если он был в
+            комплекте, без декоративной заглушки или колпака, в зависимости от
+            комплектации, бортированные или с испорченным лакокрасочным
+            покрытием.
+          </p>
+        </li>
+        <li class="del-return__item">
+          <p class="del-return__text">
+            Возврат денежных средств осуществляется в течение 30 дней (в
+            зависимости от способа оплаты) с момента предъявления покупателем
+            соответствующего требования в офисе продавца по адресу: ул.
+            Михалицына, 10 или ул. Ломоносова, 6Б ТЦ "Утёс", ежедневно с 10:00
+            до 16:00, кроме субботы и воскресенья.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

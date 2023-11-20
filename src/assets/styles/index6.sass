@@ -1,0 +1,352 @@
+picture
+  font-size: 0
+.delivery
+  &__padding
+    padding-top: 56px
+    padding-bottom: 30px
+
+  &__background
+    background-color: #ECEEF2
+    width: 100%
+  &__box
+    display: flex
+    // gap: 12px
+    flex-direction: column
+    align-items: center
+    &--first
+      padding-bottom: 40px
+  &__title-wrapper
+    display: flex
+    justify-content: center
+    padding-top: 20px
+    flex-direction: column
+    align-items: center
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 38px
+    line-height: 52px
+    color: #222222
+    padding-bottom: 20px
+  &__text
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 18px
+    color: #515660
+    &--min
+      font-size: 15px
+      line-height: 150%
+      color: #222222
+    &--strong
+      font-weight: 600
+      line-height: 150%
+      color: #222222
+.dm-card
+  display: flex
+  width: 100%
+  align-items: center
+  justify-content: center
+  align-items: stretch
+  padding: 40px 0
+  &__item
+    --gap: 30px
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: calc(100% - var(--gap)/2)
+    max-width: 394px
+    padding: 21px 52px
+    background-color: #fff
+    border-radius: 10px
+    &:first-child
+      margin-right: calc(var(--gap) / 2)
+    &:last-child
+      margin-left: calc(var(--gap) / 2)
+  &__title
+    position: relative
+    padding-top: 30px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+    text-transform: uppercase
+    color: #222222
+    &::after
+      content: ""
+      position: absolute
+      left: 50%
+      bottom: -8px
+      transform: translate(-50%, 0)
+      width: 15px
+      height: 3px
+      background-color: #E30613
+      border-radius: 10px
+  &__text-wrapper
+    display: flex
+    padding-top: 16px
+    justify-content: flex-start
+    padding-bottom: 20px
+  &__text
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+    color: #222222
+
+.del-pay
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    --gap: 30px
+    margin: 40px 0
+
+  &__img-wrapper
+    padding-top: 14px
+    padding-bottom: 14px
+  &__img
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 15%)
+    border-radius: 10px
+  &__item
+    display: flex
+    flex-direction: column
+    width: calc((100% - var(--gap) * 2) / 3)
+
+  &__title
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 14px
+    line-height: 18px
+    text-transform: uppercase
+    color: #2C5367
+    padding: 12px 0
+  &__text
+    display: inline
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 15px
+    line-height: 18px
+    color: #222222
+    & strong
+      font-weight: 700
+    &--link
+      text-decoration-line: underline
+      color: #2C5367
+      &:hover, &:focus, &:active
+        color: #E40B12
+  &__list-second
+    --gap: 30px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: 40px 0
+  &__list-third
+    display: flex
+  &__item-second
+    display: flex
+    width: calc((100% - var(--gap)) / 2)
+    flex-direction: row
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 15%)
+    border-radius: 10px
+    &:first-child
+      margin-right: calc(var(--gap) / 2)
+    &:last-child
+      margin-left: calc(var(--gap) / 2)
+    & .del-pay__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      box-shadow: none
+      border-radius: 10px 0 0 10px
+    & .del-pay__content
+      max-width: 50%
+      padding: 10px 21px 10px 30px
+    & .del-pay__img-wrapper
+      display: flex
+
+      padding: 0
+      max-width: 290px
+.del-cost
+  &__card
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    align-items: stretch
+    padding: 40px 0
+    --gap: 30px
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: calc(100% - var(--gap) / 2)
+    max-width: 394px
+    border-radius: 10px
+    &:first-child
+      margin-right: calc(var(--gap) / 2)
+    &:last-child
+      margin-left: calc(var(--gap) / 2)
+  &__img
+    min-width: max-content
+.del-return
+  display: flex
+  flex-direction: column
+  --return-gap: 20px
+  padding-bottom: 50px
+  &__item
+    position: relative
+    margin: calc(var(--return-gap) / 2) 0
+    &::before
+      content: ""
+      position: absolute
+      width: 8px
+      height: 8px
+      top: 0.5em
+      left: 0
+      background-color: #E30613
+  &__text
+    padding-left: 25px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    color: #222222
+
+@media all and ($table)
+  .dm-card
+    flex-direction: column
+    align-items: center
+    &__item
+      &:first-child
+        margin-right: 0
+        margin-bottom: calc(var(--gap))
+      &:last-child
+        margin-left: 0
+        margin-top: calc(var(--gap))
+  .del-pay
+    &__list
+      flex-direction: column
+      align-items: center
+    &__item
+      width: 40vw
+      margin: calc(var(--gap) / 2) 0
+      &:first-child
+        margin-right: 0
+        margin-top: 0
+      &:last-child
+        margin-left: 0
+        margin-bottom: 0
+    &__img-wrapper
+      padding: 0
+    &__list-second
+      flex-direction: column
+      align-items: center
+    &__item-second
+      flex-direction: column
+      margin: calc(var(--gap) / 2) 0
+      width: 40vw
+      box-shadow: none
+      &:first-child
+        margin-right: 0
+      &:last-child
+        margin-left: 0
+        margin-bottom: calc(var(--gap) / 2)
+      & .del-pay__content
+        padding: 0
+      & .del-pay__img-wrapper
+        max-width: none
+      & .del-pay__img
+        border-radius: 10px
+  .del-cost
+    &__card
+      --gap: 30px
+      flex-direction: column
+      align-items: center
+    &__item
+      max-width: 360px
+      width: 40vw
+      // width: 40vw
+      &:first-child
+        margin-right: 0
+        margin-bottom: calc(var(--gap) / 2)
+      &:last-child
+        margin-left: 0
+        margin-top: calc(var(--gap) / 2)
+    & .del-pay__content
+      display: flex
+      flex-direction: column
+      width: 100%
+    & .del-pay__img-wrapper
+      max-width: none
+    & .del-cost__img
+      min-width: fit-content
+
+@media all and ($mobile)
+  .delivery
+    &__title
+      font-size: 21px
+      line-height: 24px
+    &__padding
+      padding-top: 25px
+      padding-bottom: 0px
+    &__text
+      font-size: 15px
+      line-height: 20px
+      &--min
+        font-size: 13px
+        line-height: 18px
+      &--strong
+        font-size: 13px
+        line-height: 18px
+
+    &__box
+      align-items: flex-start
+      &--first
+        padding-bottom: 20px
+  .dm-card
+    padding: 20px 0
+    &__item
+      padding: 20px 30px
+      max-width: 360px
+      &:first-child
+        margin-right: 0
+        margin-bottom: calc(var(--gap) /2 )
+      &:last-child
+        margin-left: 0
+        margin-top: calc(var(--gap) /2 )
+  .del-pay
+    &__item , &__item-second
+      width: 90vw
+      max-width: 360px
+    &__img-wrapper
+      margin: 0 auto
+    &__title
+      text-align: center
+      font-size: 13px
+    &__text
+      font-size: 13px
+    &__item-second .del-pay__content
+      max-width: none
+  .dm-card
+    &__title
+      font-size: 13px
+    &__text
+      font-size: 13px
+      text-align: center
+  .del-cost
+    &__item
+      width: 90vw
+      max-width: 360px
+  .del-return
+    &__text
+      font-size: 13px
+      line-height: 17px

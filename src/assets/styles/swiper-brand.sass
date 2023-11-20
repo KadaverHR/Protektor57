@@ -1,0 +1,89 @@
+.swiper-brand-section
+  user-select: none
+  background-color: #fff
+  .title-block
+    margin-bottom: 25px
+
+.swiper-brand-body
+  padding: 50px 0 60px
+
+.swiper-brand
+  cursor: pointer
+  user-select: none
+  &.swiper-pointer-events
+    padding-bottom: 20px
+  //margin: 0 -40px
+  //padding-left: 40px
+  //padding-right: 40px
+  .swiper-slide
+    //width: 200px
+
+
+.swiper-brand-area
+  position: relative
+  .swiper-button-prev
+    left: -40px
+  .swiper-button-next
+    right: -40px
+  .swiper-button-next,
+  .swiper-button-prev
+    width: 28px
+    height: 75px
+    top: 10px
+    margin-top: 0
+    transition: 0.2s ease opacity
+    &:after
+      display: none
+    &:hover
+      opacity: 0.6
+  .swiper-scrollbar-brand
+    bottom: -20px
+    background-color: rgba(101, 103, 119, 0.2)
+    max-width: 160px
+    width: 100%
+    height: 3px
+    left: 50% !important
+    position: relative
+    border-radius: 0
+    transform: translateX(-50%)
+    .swiper-scrollbar-drag
+      background-color: #9C9DA9
+      //width: 40px!important
+      &::after,
+      &::before
+        content: ''
+        width: 100%
+        height: 3px
+        background-color: #9C9DA9
+        position: absolute
+        left: 0
+        right: 0
+      &::before
+        border-radius: 0 0 10px 10px
+        bottom: -2px
+      &::after
+        top: -2px
+        border-radius: 10px 10px 0 0
+
+@media all and (max-width: 1240px)
+  .swiper-brand-area
+    .swiper-button-next,
+    .swiper-button-prev
+      display: none
+
+@media all and ($middle)
+  .swiper-brand-body
+    padding: 25px 0 45px 0
+  .swiper-brand.swiper-pointer-events
+    padding-left: 15px
+    padding-right: 15px
+    margin: 0 -15px
+
+@media all and ($mobile)
+  .swiper-brand-body
+    padding: 15px 0 35px 0
+  .swiper-brand-section
+    .title-block
+      margin-bottom: 5px
+  .swiper-brand-area .swiper-scrollbar
+    bottom: -10px

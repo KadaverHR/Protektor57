@@ -1,0 +1,57 @@
+.mob-menu
+  display: none
+  @media all and ($mobile)
+    display: flex
+    position: fixed
+    background: #fff
+    padding-top: 10px
+    padding-bottom: 10px
+    bottom: 0
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.25)
+  &__list
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    justify-content: space-between
+    gap: 10px
+    align-items: stretch
+    justify-items: center
+  &__item
+    max-width: min-content
+    display: grid
+    justify-items: center
+    gap: 5px
+    align-content: space-between
+    position: relative
+    &:active .mob-menu__item-text, &:hover .mob-menu__item-text, &:focus .mob-menu__item-text
+      color: #E40B12
+    &:active .mob-menu__item-img path, &:hover .mob-menu__item-img path, &:focus .mob-menu__item-img path
+      fill: #E40B12
+    &--call
+      .mob-menu__item-img--call path:first-child
+        transition: fill 0.3s ease-in-out
+      &:active .mob-menu__item-img--call path:first-child, &:hover .mob-menu__item-img--call path:first-child, &:focus .mob-menu__item-img--call path:first-child
+        fill: #E40B12
+  &__item-text
+    color: #222
+    font-family: "Open Sans", sans-serif
+    font-size: 12px
+    font-weight: 600
+    transition: color 0.3s ease-in-out
+  .mob-menu__item-img path
+    transition: fill 0.3s ease-in-out
+  &__item-count
+    display: flex
+    position: absolute
+    border-radius: 10px
+    border: 1px solid #FFF
+    background: #E30613
+    padding: 1px 6px
+    color: #FFF
+    font-family: "Open Sans", sans-serif
+    font-size: 9px
+    font-weight: 800
+    right: 0px
+    top: -3px

@@ -1,0 +1,170 @@
+html, body
+ min-height: 100vh
+
+a
+ text-decoration-line: none
+ &:hover,
+ &:active
+  color: inherit
+
+body, main
+ min-width: 320px
+ color: #1F232E
+ overflow-x: hidden
+
+main
+ min-height: 100vh
+
+img
+ max-width: 100%
+
+hr
+ margin: 0
+
+.container-fluid
+ padding: 0 !important
+
+.container
+ max-width: 1170px
+ padding-left: 15px
+ padding-right: 15px
+ &--px-20
+  padding-left: 20px
+  padding-right: 20px
+.row
+  margin-right: -15px
+  margin-left: -15px
+.row > *
+  padding-right: 15px
+  padding-left: 15px
+input
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  padding: 8px 10px
+  border: none
+  outline: none
+  color: #222222
+  font: 400 16px/20px 'Open Sans', sans-serif
+  &::placeholder
+    color: #60656E
+    font: 400 15px/20px 'Open Sans', sans-serif
+
+.title-block
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-bottom: 10px
+  @media all and ($middle)
+    margin-bottom: 10px
+  @media all and ($table)
+    margin-bottom: 5px
+  @media all and ($mobile)
+    margin-bottom: 0
+  &__title
+    color: #222222
+    font: 700 40px/50px 'Open Sans', sans-serif
+    padding-bottom: 10px
+    padding-right: 10px
+    @media all and ($middle)
+      font: 700 32px/35px 'Open Sans', sans-serif
+    @media all and ($table)
+      font: 700 32px/35px 'Open Sans', sans-serif
+    @media all and ($mobile)
+      font: 700 21px/24px 'Open Sans', sans-serif
+  &__link
+    padding-bottom: 10px
+    span
+      color: #222222
+      text-decoration-line: underline
+      font: 600 15px/20px 'Open Sans', sans-serif
+      @media all and ($middle)
+        font: 700 14px/18px 'Open Sans', sans-serif
+      @media all and ($table)
+        font: 700 14px/18px 'Open Sans', sans-serif
+      @media all and ($mobile)
+        font: 700 13px/17px 'Open Sans', sans-serif
+    .svg
+      margin-left: 5px
+  &__subtitle
+    font: 700 27px/30px 'Open Sans', sans-serif
+    text-transform: uppercase
+    color: #222
+    padding-bottom: 10px
+    padding-right: 10px
+    @media all and ($mobile)
+      font: 700 18px/26px 'Open Sans', sans-serif
+    &--red
+      color: #E40B12
+.swiper-pagination
+  position: absolute
+  bottom: -24px!important
+  .swiper-pagination-bullet
+    width: 28px
+    height: 5px
+    background: #838493
+    border-radius: 3px
+    margin: 0 2.5px
+
+.count-area
+  display: flex
+  justify-content: center
+.count
+  display: flex
+  width: 110px
+  height: 27px
+  &__button--dec,
+  &__button--inc,
+  &__input
+    font: 600 20px/20px 'Open Sans', sans-serif
+    border-radius: 0
+    width: 36px
+    height: 100%
+    padding: 0
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+    position: relative
+    text-align: center
+  &__button--dec
+    background-image: url("../../assets/img/img-17.svg")
+    span
+      position: absolute
+      left: 58%
+      top: 43%
+      transform: translate(-50%,-50%)
+  &__button--inc
+    background-image: url("../../assets/img/img-16.svg")
+    span
+      left: 46%
+      top: 47%
+      transform: translate(-50%,-50%)
+      position: absolute
+  &__input
+    text-transform: uppercase
+    font: 600 18px/18px 'Open Sans', sans-serif
+    color: #222
+    padding: 5px
+    background-image: url("../../assets/img/img-18.svg")
+
+
+//.swiper-catalog .swiper-slide,
+.swiper-service .swiper-slide,
+.swiper-discounts .swiper-slide,
+.swiper-stocks .swiper-slide
+  margin-right: 30px
+
+.container1320
+  max-width: 1320px
+  width: 100%
+  padding: 0 90px
+  margin: 0 auto
+  & > .container
+    padding: 0
+  @media all and (max-width: 1320px)
+    padding-left: 0
+    padding-right: 0
+    & > .container
+      padding-left: 15px
+      padding-right: 15px

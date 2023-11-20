@@ -1,0 +1,194 @@
+{% set title = "Акции" %}
+{% set bodyClass = "is-stocks-page" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="main-banner-section">
+    <a href="/" class="new-store">
+      <img
+        width="61"
+        height="297"
+        src="../../assets/img/img-53.png"
+        alt="Новый магазин">
+    </a>
+    <div class="container-fluid">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/main-banner-mobile.webp"
+        >
+        <!-- <source
+          type="image/webp"
+          media="(max-width: 1023.9px)"
+          srcset="../../assets/img/main-banner-table.webp"
+        >
+        <source
+          type="image/webp"
+          media="(max-width: 1139.9px)"
+          srcset="../../assets/img/main-banner-middle.webp"
+        > -->
+        <img
+          class="main-banner-section__bg"
+          src="../../assets/img/stock-tire-service.jpg"
+          alt="Сервис">
+      </picture>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="main-banner-navigation">
+            <a href="/" class="main-banner-navigation__logo">
+              <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+            </a>
+  
+            <div class="main-banner-navigation__search">
+              <div class="search-area">
+                <form class="search">
+                  <input type="text" class="search__input" value="" placeholder="Поиск">
+                  <button class="button search__button" type="submit">
+                    <img src="../../assets/img/img-40.svg" alt="Найти">
+                  </button>
+  
+                </form>
+              </div>
+            </div>
+            <div class="main-banner-navigation__cart main-banner-cart">
+              <img
+                class="main-banner-cart__image"
+                src="../../assets/img/img-47.svg"
+                alt="Корзина"
+                width="42"
+                height="42"
+              >
+              <div class="main-banner-cart__count">
+                <strong>2 </strong>товара
+              </div>
+              <div class="main-banner-cart__price">
+                <strong>12 345 </strong>₽
+              </div>
+            </div>
+            <div class="main-banner-cart-mobile">
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-50.svg" alt="Поиск">
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-51.svg" alt="Звонок">
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-52.svg" alt="Корзина">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="container">
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/model-disk-banner-disk-mobile.png"
+            />
+            <img
+              class="banner-tyres banner-tyres__info"
+              src="../../assets/img/stock-tire-service-info.png"
+              alt="Сервис"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="stocks-page">
+
+    <div class="container-fluid">
+        <!-- {% include "html/includes/main-banner.html" %} -->
+        <div class="container">
+           
+            <!-- <div class="stocks-page__search">
+            <div class="main-banner-navigation">
+                <a href="/" class="main-banner-navigation__logo">
+                    <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+                </a>
+
+                <div class="main-banner-navigation__search">
+                    <div class="search-area">
+                        <form class="search">
+                            <input type="text" class="search__input" value="" placeholder="Поиск">
+                            <button class="button search__button" type="submit">
+                                <img src="../../assets/img/img-40.svg" alt="Найти">
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="main-banner-navigation__cart main-banner-cart">
+                    <img
+                            class="main-banner-cart__image"
+                            src="../../assets/img/img-47.svg"
+                            alt="Корзина"
+                            width="42"
+                            height="42"
+                    >
+                    <div class="main-banner-cart__count">
+                        <strong>2 </strong>товара
+                    </div>
+                    <div class="main-banner-cart__price">
+                        <strong>12 345 </strong>₽
+                    </div>
+                </div>
+                <div class="main-banner-cart-mobile">
+                    <a href="/" class="main-banner-cart-mobile__link">
+                        <img src="../../assets/img/img-50.svg" alt="Поиск">
+                    </a>
+                    <a href="/" class="main-banner-cart-mobile__link">
+                        <img src="../../assets/img/img-51.svg" alt="Звонок">
+                    </a>
+                    <a href="/" class="main-banner-cart-mobile__link">
+                        <img src="../../assets/img/img-52.svg" alt="Корзина">
+                    </a>
+                </div>
+            </div>
+            </div> -->
+            {% include "html/includes/breadcrumbs.html" %}
+
+            <div class="stocks-page__area">
+                <div class="stocks-page__title-wrapper title-block">
+                    <h2 class="title-block__title">
+                        Скидка на шиномонтаж
+                    </h2>
+                    <p class="stocks-page__offer"> <span>*</span> Не является публичной офертой</p>
+                </div>
+
+                <!-- <div class="stocks-page__banner-wrapper">
+                    <img
+                            width="1140"
+                            height="274"
+                            class="stocks-page__banner"
+                            src="../../assets/img/stock-banner.png" alt="">
+                    <p class="stocks-page__offer"> <span>*</span> Не является публичной офертой</p>
+                </div> -->
+
+<div class="stocks-page__text-wrapper">
+    <p class="stocks-page__text-uppercase">
+        ПРИ ПОКУПКЕ ШИН ИЛИ ДИСКОВ В ИНТЕРНЕТ-МАГАЗИНЕ И ОПТОВО-РОЗНИЧНОМ МАГАЗИНЕ «ПРОТЕКТОР 57» – <span class="stocks-page__text-red"> СКИДКА НА ШИНОМОНТАЖ 20%</span>
+
+    </p>
+
+    <p class="stocks-page__text-normal">
+        Спешите воспользоваться всеми преимуществами интернет-магазина и услугами шинного центра «Протектор 57», который открыт в будни с <span class="stocks-page__text-bold">9.00 </span> до <span class="stocks-page__text-bold">19.00 </span>, в выходные дни с <span class="stocks-page__text-bold">10.00</span> до <span class="stocks-page__text-bold">18.00</span>.
+
+    </p>
+</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% include "html/includes/swiper-viewed.html" %}
+
+{% endblock %}

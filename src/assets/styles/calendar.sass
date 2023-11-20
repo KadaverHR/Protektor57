@@ -1,0 +1,158 @@
+.calendar-modal
+  width: 290px
+  //width: 100%
+  border-radius: 5px
+  background-color: #ffffff
+  padding: 0
+  @media all and (max-width: 420px)
+    width: 270px
+  &__body
+    padding: 15px 5px
+    @media all and (max-width: 420px)
+      padding: 10px 5px
+.calendar
+  user-select: none
+  &__month
+    color: #000
+    font: 600 15px/150% 'Open Sans', sans-serif
+    padding: 0 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 14px
+  &__month-next
+    img
+      transform: scale(-1, 1)
+  &__month-next,
+  &__month-prev
+    background-color: transparent
+    border-radius: 0
+    width: auto
+    cursor: pointer
+    padding: 5px 10px
+  &__days
+    margin-bottom: 14px
+    padding: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #E7ECF1
+    border-radius: 3px
+    @media all and (max-width: 420px)
+      padding: 5px
+    span
+      display: flex
+      align-items: center
+      justify-content: center
+      letter-spacing: 0.001em
+      font: 600 14px/150% 'Open Sans', sans-serif
+      color: #000000
+      flex: 0 0 25px
+      height: 25px
+  &__numbers
+    padding: 0 10px
+    display: flex
+    flex-direction: column
+    @media all and (max-width: 420px)
+      padding: 0 5px
+  &__numbers-row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+  &__number
+    border-radius: 3px
+    background-color: transparent
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    flex: 0 0 25px
+    height: 25px
+    font: 600 14px/150% 'Open Sans', sans-serif
+    color: #494E50
+    transition: 0.2s ease all
+    &:hover
+      background-color: #E30613
+      color: #fff
+
+.other-month
+  font-weight: 400
+  color: #A0A5B6
+  cursor: not-allowed
+  &:hover
+    background-color: transparent
+    color: #A0A5B6
+
+.time
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__title
+    text-align: center
+    color: #000
+    font: 600 15px/150% 'Open Sans', sans-serif
+    margin-bottom: 16px
+  &__text-area
+    margin-bottom: 28px
+  &__text
+    padding-left: 30px
+    position: relative
+    color: #494E50
+    font: 600 13px/150% 'Open Sans', sans-serif
+    &:before
+      content: ''
+      position: absolute
+      width: 20px
+      height: 10px
+      border-radius: 3px
+      left: 0px
+      top: 5px
+    &--free-time:before
+      background-color: #E7ECF1
+    &--busy-time:before
+      background-color: #E30613
+
+.time-buttons
+  display: flex
+  flex-direction: column
+  &__row
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+.time-button
+  cursor: pointer
+  margin-right: 5px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 55px
+  height: 25px
+  flex: 0 0 55px
+  border-radius: 3px
+  background-color: #E7ECF1
+  color: #494E50
+  font: 600 14px/100% 'Open Sans', sans-serif
+  transition: 0.2s ease all
+  @media all and (max-width: 420px)
+    width: 45px
+    flex: 0 0 45px
+  &:last-child
+    margin-right: 0
+  &--active,&:hover
+    background-color: #E30613
+    color: #fff
+    font-weight: 700
+
+.time-modal
+  max-width: 305px
+  width: 100%
+  @media all and (max-width: 420px)
+    width: 270px
+.dropdown-menu
+  border-color: #E5E6E8

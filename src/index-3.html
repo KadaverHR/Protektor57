@@ -1,0 +1,427 @@
+{% set title = "Контакты" %} {% set bodyClass = "is-contact" %} {% extends
+"html/layouts/default.html" %} {% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/contacts-banner-mobile.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/contacts-banner-table.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/contacts-banner-middle.jpg"
+      />
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/contacts-banner.jpg"
+        alt="Сервис"
+      />
+    </picture>
+    <div class="container-fluid">
+      <div class="banner-container container1320">
+        <div class="container">
+          <div class="main-banner-navigation">
+            <a href="/" class="main-banner-navigation__logo">
+              <img
+                src="../../assets/img/img-46.svg"
+                width="257"
+                height="30"
+                alt="Протектор57"
+              />
+            </a>
+
+            <div class="main-banner-navigation__search">
+              <div class="search-area">
+                <form class="search">
+                  <input
+                    type="text"
+                    class="search__input"
+                    value=""
+                    placeholder="Поиск"
+                  />
+                  <button class="button search__button" type="submit">
+                    <img src="../../assets/img/img-40.svg" alt="Найти" />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="main-banner-navigation__cart main-banner-cart">
+              <img
+                class="main-banner-cart__image"
+                src="../../assets/img/img-47.svg"
+                alt="Корзина"
+                width="42"
+                height="42"
+              />
+              <div class="main-banner-cart__count">
+                <strong>2 </strong>товара
+              </div>
+              <div class="main-banner-cart__price">
+                <strong>12 345 </strong>₽
+              </div>
+            </div>
+            <div class="main-banner-cart-mobile">
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-50.svg" alt="Поиск" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-51.svg" alt="Звонок" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-52.svg" alt="Корзина" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-container container1320">
+      <div class="container">
+        <div class="main-banner-info main-banner-info--small">
+          <h1 class="main-banner-info__title-small">Контакты</h1>
+          <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="communication">
+  <div class="communication__container container1320">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+      <!-- <div class="communication__block">
+      <div class="communication__phone">
+        <div class="communication__img"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                              xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22.6667 16.6667C21 16.6667 19.4 16.4 17.9067 15.9067C17.44 15.76 16.92 15.8667 16.56 16.2267L13.6267 19.16C9.85333 17.24 6.76 14.16 4.84 10.3733L7.77333 7.42667C8.13333 7.08 8.24 6.56 8.09333 6.09333C7.6 4.6 7.33333 3 7.33333 1.33333C7.33333 0.6 6.73333 0 6 0H1.33333C0.6 0 0 0.6 0 1.33333C0 13.8533 10.1467 24 22.6667 24C23.4 24 24 23.4 24 22.6667V18C24 17.2667 23.4 16.6667 22.6667 16.6667Z"
+            fill="#656777" />
+        </svg> </div>
+        <div class="communication__text">
+          <div class="communication__title">телефон для связи</div> <a href="tel:74862634747"
+                                                                       class="communication__number">8 (4862) <strong>63-47-47</strong></a>
+        </div>
+      </div>
+      <div class="communication__request"> <svg width="29" height="30" viewBox="0 0 29 30" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.6929 4.56741C6.11286 2.71362 8.5829 1.09568 11.0492 0.404232C15.0269 -0.710944 19.8158 0.533751 22.9204 3.49031C24.871 5.34825 26.4971 8.61474 26.5025 10.687C26.505 11.527 26.6961 12.331 26.928 12.4738C27.7388 12.9724 29 15.9666 29 17.3921C29 19.5008 28.3692 20.8208 26.3965 22.8397C25.4287 23.8308 24.0935 25.313 23.4299 26.1335C20.9287 29.2271 14.2478 31.3283 14.2478 29.0218C14.2478 28.2985 14.5362 28.1901 16.5333 28.1607C19.805 28.1123 19.6978 28.1512 21.7444 26.2726C23.555 24.6108 23.5866 24.54 22.7741 23.9735C21.9995 23.4331 21.9356 22.937 21.9356 17.4629C21.9356 13.0101 22.0743 11.4223 22.4932 11.076C22.7999 10.8227 23.1615 10.7255 23.2965 10.86C23.432 10.9945 23.7295 10.9895 23.9581 10.8488C24.6703 10.4106 23.2375 7.06756 21.631 5.42024C18.6419 2.35527 14.1243 1.4681 10.3 3.19445C7.87065 4.291 6.7046 5.40535 5.47996 7.80122C4.21667 10.2724 4.22955 10.524 5.62499 10.6841L6.76776 10.8149L6.88246 17.1339C6.9797 22.4926 6.90074 23.4902 6.36218 23.6959C4.2017 24.5214 0.572255 21.4171 0.109741 18.348C-0.136268 16.7123 -0.00829387 16.0382 0.902604 14.1848C1.50017 12.9687 1.98887 11.5754 1.98887 11.0884C1.98887 9.72867 3.46369 6.17252 4.6929 4.56741Z"
+          fill="#656777" />
+      </svg>
+        <form class="communication__submit"> <input class="communication__input" type="text"
+                                                    placeholder="Введите номер телефона">
+          <button class="communication__btn">заказать&nbsp;звонок</button>
+        </form>
+      </div>
+    </div> -->
+    </div>
+  </div>
+</section>
+<section class="shops">
+  <div class="communication__container container1320">
+    <div class="container">
+      <ul class="shops__list">
+        <li class="shops__card sh-card">
+          <div class="sh-card__shop">
+            <div class="sh-card__img-block">
+              <picture>
+                <source srcset="assets/img/shop-koms-max.jpg" media="(max-width: 767.9px)" />
+                <img
+                  src="assets/img/shop-koms.jpg"
+                  alt="Фото магазина на комсомольской"
+                  class="sh-card__img"
+                />
+              </picture>
+              <!-- <img class="sh-card__img" src="assets/img/shop-koms.jpg" alt="Фото магазина на комсомольской"> -->
+            </div>
+            <div>
+              <p class="sh-card__mode-title">Режим работы магазина</p>
+              <div class="sh-card__mode-wrapper">
+                <p class="sh-card__mode">
+                  пн-пт <strong>с 9.00 до 19.00</strong>
+                </p>
+                <p class="sh-card__mode">
+                  сб-вс <strong>с с 10.00 до 18.00</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sh-card__center">
+            <p class="sh-card__title">
+              Магазин на&nbsp;Комсомольской,&nbsp;270
+            </p>
+            <p class="sh-card__pretitle">контакты</p>
+            <div class="sh-card__contact-block">
+              <div class="sh-card__contact">
+                <p class="sh-card__mail">
+                  <a href="mailto:info@protektor57.ru"
+                    >info@<strong>protektor57.ru</strong></a
+                  >
+                </p>
+                <p class="sh-card__desc">Для заказа и общей информации</p>
+              </div>
+              <div class="sh-card__contact">
+                <p class="sh-card__mail">
+                  <a href="mailto:zap1@protektor57.ru"
+                    >zap1@<strong>protektor57.ru</strong></a
+                  >
+                </p>
+                <p class="sh-card__desc">Для заказа запчастей</p>
+              </div>
+              <div class="sh-card__contact">
+                <p class="sh-card__tel">
+                  <a href="tel:+74862634747.ru"
+                    >+7 (4862)<strong> 63-47-47</strong> доб.
+                    <strong>3</strong></a
+                  >
+                </p>
+                <!-- <p class="sh-card__desc">Для заказа запчастей </p> -->
+              </div>
+            </div>
+            <button class="sh-card__btn" data-name="KOM">
+              <p class="sh-card__btn-text">Посмотреть на карте</p>
+            </button>
+          </div>
+          <div class="sh-card__shop">
+            <div class="sh-card__img-block">
+              <picture>
+                <source
+                  srcset="assets/img/tire-service-koms-max.jpg"
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="sh-card__img"
+                  src="assets/img/tire-service-koms.jpg"
+                  alt="Фото шиномонтажа на комсомольской"
+                />
+              </picture>
+              <!-- <img class="sh-card__img" src="assets/img/tire-service-koms.jpg" alt="Фото магазина на комсомольской"> -->
+            </div>
+            <div>
+              <p class="sh-card__mode-title">Режим работы шиномонтажа</p>
+              <div class="sh-card__mode-wrapper">
+                <p class="sh-card__mode">
+                  пн-пт <strong>с 9.00 до 19.00</strong>
+                </p>
+                <p class="sh-card__mode">
+                  сб-вс <strong>с с 10.00 до 18.00</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="shops__card sh-card">
+          <div class="sh-card__shop">
+            <div class="sh-card__img-block">
+              <picture>
+                <source
+                  srcset="assets/img/shop-mih-max.jpg"
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="sh-card__img"
+                  src="assets/img/shop-mih.jpg"
+                  alt="Фото магазина на Михалицына"
+                />
+              </picture>
+              <!-- <img class="sh-card__img" src="assets/img/shop-mih.jpg" alt="Фото магазина на комсомольской"> -->
+            </div>
+            <div>
+              <p class="sh-card__mode-title">Режим работы магазина</p>
+              <div class="sh-card__mode-wrapper">
+                <p class="sh-card__mode">
+                  пн-пт <strong>с 9.00 до 19.00</strong>
+                </p>
+                <p class="sh-card__mode">
+                  сб-вс <strong>с с 10.00 до 18.00</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sh-card__center">
+            <p class="sh-card__title">Магазин на&nbsp;Михалицына,&nbsp;10</p>
+            <p class="sh-card__pretitle">контакты</p>
+            <div class="sh-card__contact-block">
+              <div class="sh-card__contact">
+                <p class="sh-card__mail">
+                  <a href="mailto:info@protektor57.ru"
+                    >info@<strong>protektor57.ru</strong></a
+                  >
+                </p>
+                <p class="sh-card__desc">Для заказа и общей информации</p>
+              </div>
+              <div class="sh-card__contact">
+                <p class="sh-card__mail">
+                  <a href="mailto:zap1@protektor57.ru"
+                    >zap1@<strong>protektor57.ru</strong></a
+                  >
+                </p>
+                <p class="sh-card__desc">Для заказа запчастей</p>
+              </div>
+              <div class="sh-card__contact">
+                <p class="sh-card__tel">
+                  <a href="tel:+74862634747.ru"
+                    >+7 (4862)<strong> 63-47-47</strong> доб.
+                    <strong>1</strong></a
+                  >
+                </p>
+                <!-- <p class="sh-card__desc">Для заказа запчастей </p> -->
+              </div>
+            </div>
+            <button class="sh-card__btn" data-name="MIX">
+              <p class="sh-card__btn-text">Посмотреть на карте</p>
+            </button>
+          </div>
+          <div class="sh-card__shop">
+            <div class="sh-card__img-block">
+              <picture>
+                <source
+                  srcset="assets/img/tire-service-mih-max.jpg"
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="sh-card__img"
+                  src="assets/img/tire-service-mih.jpg"
+                  alt="Фото шиномонтажа на Михалицына"
+                />
+              </picture>
+              <!-- <img class="sh-card__img" src="assets/img/tire-service-mih.jpg" alt="Фото магазина на комсомольской"> -->
+            </div>
+            <div>
+              <p class="sh-card__mode-title">Режим работы шиномонтажа</p>
+              <div class="sh-card__mode-wrapper">
+                <p class="sh-card__mode">
+                  пн-пт <strong>с 9.00 до 19.00</strong>
+                </p>
+                <p class="sh-card__mode">
+                  сб-вс <strong>с с 10.00 до 18.00</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="shops__card sh-card">
+          <div class="sh-card__shop">
+            <div class="sh-card__img-block">
+              <picture>
+                <source
+                  srcset="assets/img/shop-lom-max.jpg"
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="sh-card__img"
+                  src="assets/img/shop-lom.jpg"
+                  alt="Фото магазина на Ломоносова"
+                />
+              </picture>
+            </div>
+            <div>
+              <p class="sh-card__mode-title">Режим работы магазина</p>
+              <div class="sh-card__mode-wrapper">
+                <p class="sh-card__mode">
+                  пн-пт <strong>с 9.00 до 19.00</strong>
+                </p>
+                <p class="sh-card__mode">
+                  сб-вс <strong>с с 10.00 до 18.00</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="sh-card__center">
+            <p class="sh-card__title">Магазин на&nbsp;Ломоносова,&nbsp;6Б</p>
+            <p class="sh-card__pretitle">контакты</p>
+            <div class="sh-card__contact-block">
+              <div class="sh-card__contact">
+                <p class="sh-card__mail">
+                  <a href="mailto:info@protektor57.ru"
+                    >info@<strong>protektor57.ru</strong></a
+                  >
+                </p>
+                <p class="sh-card__desc">Для заказа и общей информации</p>
+              </div>
+              <div class="sh-card__contact">
+                <p class="sh-card__mail">
+                  <a href="mailto:zap1@protektor57.ru"
+                    >zap1@<strong>protektor57.ru</strong></a
+                  >
+                </p>
+                <p class="sh-card__desc">Для заказа запчастей</p>
+              </div>
+            </div>
+            <div class="sh-card__contact">
+              <p class="sh-card__tel">
+                <a href="tel:+74862634747.ru"
+                  >+7 (4862)<strong> 63-47-47</strong> доб.
+                  <strong>2</strong></a
+                >
+              </p>
+              <!-- <p class="sh-card__desc">Для заказа запчастей </p> -->
+            </div>
+            <button class="sh-card__btn" data-name="LOM">
+              <p class="sh-card__btn-text">Посмотреть на карте</p>
+            </button>
+          </div>
+          <div class="sh-card__shop">
+            <div class="sh-card__img-block">
+              <picture>
+                <source
+                  srcset="assets/img/tire-service-lom-max.jpg"
+                  media="(max-width: 767.9px)"
+                />
+                <img
+                  class="sh-card__img"
+                  src="assets/img/tire-service-lom.jpg"
+                  alt="Фото шиномонтажа на Ломоносова"
+                />
+              </picture>
+              <!-- <img class="sh-card__img" src="assets/img/tire-service-lom.jpg" alt="Фото магазина на комсомольской"> -->
+            </div>
+            <div>
+              <p class="sh-card__mode-title">Режим работы шиномонтажа</p>
+              <div class="sh-card__mode-wrapper">
+                <p class="sh-card__mode">
+                  пн-пт <strong>с 9.00 до 19.00</strong>
+                </p>
+                <p class="sh-card__mode">
+                  сб-вс <strong>с с 10.00 до 18.00</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="map">
+  <div class="map__container container1320">
+    <div class="container map__border">
+      <h2 class="map__title">Схема проезда к магазину и на шиномонтаж</h2>
+      <div class="map-area">
+        <div id="map" style="width: 100%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "html/includes/stocks-form.html" %} {% endblock %}

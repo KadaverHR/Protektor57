@@ -1,0 +1,398 @@
+{% set title = "Модель шина" %} {% set bodyClass = "is-model-type" %} {% extends
+"html/layouts/default.html" %} {% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+      <img
+        width="61"
+        height="297"
+        src="../../assets/img/img-53.png"
+        alt="Новый магазин">
+    </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/model-tyre-banner-mobile.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/model-tyre-banner-table.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/model-tyre-banner-middle.jpg"
+      />
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/model-tyre-banner.jpg"
+        alt="Сервис"
+      />
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img
+              src="../../assets/img/img-46.svg"
+              width="257"
+              height="30"
+              alt="Протектор57"
+            />
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input
+                  type="text"
+                  class="search__input"
+                  value=""
+                  placeholder="Поиск"
+                />
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            />
+            <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+            <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">Легковые шины</h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+            Шины, акб, масла, диски и камеры,
+            шиномонтаж, бесплатное хранение
+          </h3>
+          <a href="/" class="button main-banner-info__button">
+            подобрать
+          </a> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/model-tyre-banner-mobile-tyres.png"
+        />
+        <img
+          class="banner-tyres banner-tyres__img"
+          src="../../assets/img/model-tyre-banner-tyres.png"
+          alt="Сервис"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="model-tyre-section">
+  <div class="container-fluid">
+    <div class="model-tyre-section__container container1320">
+      <div class="container">
+        <div class="model-tyre-body">
+          {% include "html/includes/breadcrumbs.html" %}
+          <div class="model-tyre-area">
+            <!--                        <h1 class="model-tyre-area__title">-->
+            <!--                            Шина SP WINTER ICE-->
+            <!--                        </h1>-->
+            <div class="model-tyre">
+              <div class="model-tyre__image-block">
+                <img
+                  width="270"
+                  height="280"
+                  class="model-tyre__image"
+                  src="./assets/img/img-54.jpg"
+                  alt=""
+                />
+                <button class="button model-tyre__zoom">
+                  <img src="../../assets/img/img-21.svg" alt="Zoom" />
+                </button>
+              </div>
+
+              <div class="model-tyre__body">
+                <h1 class="model-tyre-area__title">
+                  Шина NOKIAN TYRES HAKKA BLACK 2
+                </h1>
+                <ul class="model-tyre-list">
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text"> Бренд </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span
+                        class="model-tyre-item__right-text model-tyre-item__right-text--red"
+                      >
+                        NOKIAN TYRES
+                      </span>
+                    </div>
+                  </li>
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text"> Модель </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text">
+                        HAKKA BLACK 2
+                      </span>
+                    </div>
+                  </li>
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text">
+                        Сезонность
+                      </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text"> Летние </span>
+                    </div>
+                  </li>
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text"> Шипы </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text"> нет </span>
+                    </div>
+                  </li>
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text"> тип ТС </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text">
+                        Легковые авто
+                      </span>
+                    </div>
+                  </li>
+                  <!--                                    <li class="model-tyre-item">-->
+                  <!--                                        <div class="model-tyre-item__left">-->
+                  <!--                      <span class="model-tyre-item__left-text">-->
+                  <!--                       шипы-->
+                  <!--                      </span>-->
+                  <!--                                        </div>-->
+                  <!--                                        <div class="model-tyre-item__right">-->
+                  <!--                      <span class="model-tyre-item__right-text">-->
+                  <!--                       нет-->
+                  <!--                      </span>-->
+                  <!--                                        </div>-->
+                  <!--                                    </li>-->
+                </ul>
+              </div>
+              <div class="model-tyre__info">
+                <div class="model-tyre-grid">
+                  <div class="model-tyre-grid__item">
+                    <div class="model-tyre-grid__item-img-block">
+                      <img
+                        class="model-tyre-grid__item-img"
+                        src="./assets/img/img-55.svg"
+                        alt=""
+                      />
+                    </div>
+
+                    <span class="model-tyre-grid__item-text">
+                      Скидка
+                      <br />на шиномонтаж
+                    </span>
+                  </div>
+                  <div class="model-tyre-grid__item">
+                    <div class="model-tyre-grid__item-img-block">
+                      <img
+                        class="model-tyre-grid__item-img"
+                        src="./assets/img/img-56.svg"
+                        alt=""
+                      />
+                    </div>
+                    <span class="model-tyre-grid__item-text">
+                      Товар
+                      <br />сертифицирован
+                    </span>
+                  </div>
+                  <div class="model-tyre-grid__item">
+                    <div class="model-tyre-grid__item-img-block">
+                      <img
+                        class="model-tyre-grid__item-img"
+                        src="./assets/img/img-58.svg"
+                        alt=""
+                      />
+                    </div>
+                    <span class="model-tyre-grid__item-text"> Гарантия </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="model-tyre__table model-table__wrapper">
+              <table class="model-table">
+                <thead class="model-table__thead">
+                  <tr>
+                    <th class="model-table__title">размер</th>
+                    <th class="model-table__title">артикул</th>
+                    <th class="model-table__title">
+                      индекс нагрузки/ скорости
+                    </th>
+                    <th class="model-table__title">Run flat</th>
+                    <th class="model-table__title">цена,₽</th>
+                    <th class="model-table__title">добавить в корзину</th>
+                  </tr>
+                </thead>
+                <tbody class="model-table__tbody">
+                  <tr>
+                    <td class="model-table__diameter" colspan="6">
+                      <p class="model-table__diameter-text">диаметр R20</p>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link"
+                        >285/70 R19.5146/ 144L TL</a
+                      >
+                    </td>
+                    <td class="model-table__text">T040019</td>
+                    <td class="model-table__text">141/140</td>
+                    <td class="model-table__text">есть</td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link"
+                        >285/70 R19.5146/ 144L TL</a
+                      >
+                    </td>
+                    <td class="model-table__text">T040019</td>
+                    <td class="model-table__text">141/140</td>
+                    <td class="model-table__text">есть</td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link"
+                        >285/70 R19.5146/ 144L TL</a
+                      >
+                    </td>
+                    <td class="model-table__text">T040019</td>
+                    <td class="model-table__text">141/140</td>
+                    <td class="model-table__text">есть</td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link"
+                        >285/70 R19.5146/ 144L TL</a
+                      >
+                    </td>
+                    <td class="model-table__text">T040019</td>
+                    <td class="model-table__text">141/140</td>
+                    <td class="model-table__text">есть</td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="model-table__diameter" colspan="6">
+                      <p class="model-table__diameter-text">диаметр R21</p>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link"
+                        >285/70 R19.5146/ 144L TL</a
+                      >
+                    </td>
+                    <td class="model-table__text">T040019</td>
+                    <td class="model-table__text">141/140</td>
+                    <td class="model-table__text">есть</td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link"
+                        >285/70 R19.5146/ 144L TL</a
+                      >
+                    </td>
+                    <td class="model-table__text">T040019</td>
+                    <td class="model-table__text">141/140</td>
+                    <td class="model-table__text">есть</td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

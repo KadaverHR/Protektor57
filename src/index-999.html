@@ -1,0 +1,63 @@
+{% set title = "Каталог шин" %}
+{% set bodyClass = "is-tire-catalog" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+<!-- <div class="filters">
+
+  <div class="filters__param-block filters__param-block--active">
+    <div class="filters__param-item">
+      <p class="filters__param-text">Диаметр</p>
+      <select class="select-filter select-diameter filters__param-select" style="width: 100%">
+        <option></option>
+        <option value="1">10</option>
+        <option value="1">20</option>
+      </select>
+    </div>
+    <div class="filters__param-item">
+      <p class="filters__param-text">Ширина</p>
+      <select class="select-filter select-type filters__param-select" style="width: 100%">
+        <option></option>
+        <option value="1">10</option>
+        <option value="1">20</option>
+      </select>
+    </div>
+    <div class="filters__param-item">
+      <p class="filters__param-text">Высота</p>
+      <select class="select-filter select-height filters__param-select" style="width: 100%">
+        <option></option>
+        <option value="1">10</option>
+        <option value="1">20</option>
+      </select>
+    </div>
+  </div>
+
+</div> -->
+
+<div class="tire-selection-item__body">
+  <div class="tire-selection-item__select">
+    <select class="select-filter select-type tire-selection-item__select" style="width: 100%">
+      <option></option>
+      <option class="summer" value="1">Летняя</option>
+      <option data-content="studded" value="1">Зимняя шипованная</option>
+    </select>
+  </div>
+  <div class="tire-selection-item__select">
+    <select class="select-filter select-type tire-selection-item__select" style="width: 100%">
+      <option></option>
+      <option value="1">10</option>
+      <option value="1">20</option>
+    </select>
+  </div>
+
+  <div class="tire-selection-item__buttons">
+    <a href="/" class="button button__gray-red card-product__button">
+      Подобрать
+    </a>
+  </div>
+</div>
+
+{% endblock %}

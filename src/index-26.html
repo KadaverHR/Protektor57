@@ -1,0 +1,640 @@
+{% set title = "ЛИТЫЕ ДИСКИ YAMATO ASIKAGA ESINORI" %}
+{% set bodyClass = "is-model-type" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+        <img
+          width="61"
+          height="297"
+          src="../../assets/img/img-53.png"
+          alt="Новый магазин">
+      </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source type="image/webp" media="(max-width: 767.9px)" srcset="../../assets/img/model-disk-banner-mobile.jpg" />
+      <source type="image/webp" media="(max-width: 1023.9px)" srcset="../../assets/img/model-disk-banner-table.jpg" />
+      <source type="image/webp" media="(max-width: 1139.9px)" srcset="../../assets/img/model-disk-banner-middle.jpg" />
+      <img class="main-banner-section__bg" src="../../assets/img/model-disk-banner.jpg" alt="Сервис" />
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg" width="257" height="30" alt="Протектор57" />
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск" />
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img class="main-banner-cart__image" src="../../assets/img/img-47.svg" alt="Корзина" width="42"
+              height="42" />
+            <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+            <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">Диски</h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+              Шины, акб, масла, диски и камеры,
+              шиномонтаж, бесплатное хранение
+            </h3>
+            <a href="/" class="button main-banner-info__button">
+              подобрать
+            </a> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <picture>
+        <source type="image/webp" media="(max-width: 767.9px)"
+          srcset="../../assets/img/model-disk-banner-disk-mobile.png" />
+        <img class="banner-tyres banner-tyres__disk" src="../../assets/img/model-disk-banner-disk.png" alt="Сервис" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="model-tyre-section ">
+
+  <div class="container-fluid">
+    <div class="model-tyre-section__container container1320">
+      <div class="container">
+        <div class="model-tyre-body">
+          {% include "html/includes/breadcrumbs.html" %}
+          <div class="model-tyre-area">
+            <h1 class="model-tyre-area__title">
+              ЛИТЫЕ ДИСКИ YAMATO ASIKAGA ESINORI
+            </h1>
+            <div class="model-tyre model-tyre--disk">
+              <div class="model-tyre__image-block model-tyre__image-block--disk">
+                <img width="270" height="270" class="model-tyre__image"
+                  src="https://protektor57.ru/files/images/disk/19958.jpg" alt="">
+                <button class="button model-tyre__zoom">
+                  <img src="../../assets/img/img-21.svg" alt="Zoom">
+                </button>
+              </div>
+
+
+              <div class="model-tyre__body model-tyre__body--disk">
+                <!--                                <h1 class="model-tyre-area__title">-->
+                <!--                                    ЛИТЫЕ ДИСКИ YAMATO ASIKAGA ESINORI-->
+                <!--                                </h1>-->
+                <ul class="model-tyre-list">
+
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text">
+                        Бренд
+                      </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text model-tyre-item__right-text--red">
+                        YAMATO
+                      </span>
+                    </div>
+                  </li>
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text">
+                        Модель
+                      </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text">
+                        ASIKAGA ESINORI
+                      </span>
+                    </div>
+                  </li>
+                  <li class="model-tyre-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text">
+                        Тип дисков
+                      </span>
+                    </div>
+                    <div class="model-tyre-item__right">
+                      <span class="model-tyre-item__right-text">
+                        Литые
+                      </span>
+                    </div>
+                  </li>
+                  <li class="model-disk-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text">
+                        Цвет
+                      </span>
+                    </div>
+                    <div class="model-tyre-item__center">
+                      <ul class="model-disk__list">
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk1.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                BB
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item model-disk__item--active">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk2.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                MGMFP
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk3.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                Pure polar
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk1.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                BB
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk2.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                MGMFP
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk3.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                Pure polar
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk1.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                BB
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk2.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                MGMFP
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item">
+                          <a href="#" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <img src="../../assets/img/color-disk3.png" width="54" height="54" alt="">
+                            </div>
+                            <div class="model-disk__color-wrapper">
+                              <p class="model-disk__color">
+                                Pure polar
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </li>
+                  <li class="model-disk-item">
+                    <div class="model-tyre-item__left">
+                      <span class="model-tyre-item__left-text">
+                        Радиус
+                      </span>
+                    </div>
+                    <div class="model-tyre-item__center">
+
+                      <ul class="model-disk__list model-disk__list--diameter">
+                        <li class="model-disk__item model-disk__item--diameter">
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <p class="model-disk__color">
+                                R14
+                              </p>
+                            </div>
+                          </a>
+
+                        </li>
+                        <li class="model-disk__item model-disk__item--diameter">
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <p class="model-disk__color">
+                                R16
+                              </p>
+                            </div>
+                          </a>
+
+                        </li>
+                        <li class="model-disk__item model-disk__item--diameter model-disk__item--active">
+
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+
+                              <p class="model-disk__color">
+                                R20
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item model-disk__item--diameter">
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <p class="model-disk__color">
+                                R22
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="model-disk__item model-disk__item--diameter model-disk__item--active">
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <p class="model-disk__color">
+                                R23
+                              </p>
+                            </div>
+                          </a>
+
+                        </li>
+                        <li class="model-disk__item model-disk__item--diameter model-disk__item--active">
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <p class="model-disk__color">
+                                R24
+                              </p>
+                            </div>
+                          </a>
+
+                        </li>
+                        <li class="model-disk__item model-disk__item--diameter">
+                          <a href="" class="model-disk__link">
+                            <div class="model-disk__img-wrapper">
+                              <p class="model-disk__color">
+                                R25
+                              </p>
+                            </div>
+                          </a>
+
+                        </li>
+
+                      </ul>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+              <div class="model-tyre__info model-tyre__info--disk">
+                <div class="model-tyre-grid">
+                  <div class="model-tyre-grid__item">
+                    <div class="model-tyre-grid__item-img-block">
+                      <img class="model-tyre-grid__item-img" src="./assets/img/img-55.svg" alt="">
+                    </div>
+
+                    <span class="model-tyre-grid__item-text">
+                      Скидка
+                      <br>на шиномонтаж
+                    </span>
+                  </div>
+                  <div class="model-tyre-grid__item">
+                    <div class="model-tyre-grid__item-img-block">
+                      <img class="model-tyre-grid__item-img" src="./assets/img/img-56.svg" alt="">
+                    </div>
+                    <span class="model-tyre-grid__item-text">
+                      Товар
+                      <br>сертифицирован
+                    </span>
+                  </div>
+                  <div class="model-tyre-grid__item">
+                    <div class="model-tyre-grid__item-img-block">
+                      <img class="model-tyre-grid__item-img" src="./assets/img/img-58.svg" alt="">
+                    </div>
+                    <span class="model-tyre-grid__item-text">
+                      Гарантия
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="model-tyre__table model-table__wrapper">
+              <table class="model-table model-table--disk">
+                <thead class="model-table__thead">
+                  <tr>
+                    <th class="model-table__title model-table__title--disk">
+                      размер
+                    </th>
+                    <th class="model-table__title model-table__title--disk">
+                      артикул
+                    </th>
+
+                    <th class="model-table__title model-table__title--disk">
+                      КОЛИЧЕСТВО КРЕПЕЖНЫХ ОТВЕРСТИЙ
+                    </th>
+                    <th class="model-table__title model-table__title--disk">
+                      ДИАМЕТР РАСПОЛОЖЕНИЯ ОТВЕРСТИЙ
+                    </th>
+
+                    <th class="model-table__title model-table__title--disk">
+                      ДИАМЕТР ЦЕНТРАЛЬНОГО ОТВЕРСТИЯ
+                    </th>
+                    <th class="model-table__title model-table__title--disk">
+                      ВЫЛЕТ (ET)
+                    </th>
+                    <th class="model-table__title model-table__title--disk">
+                      цвет
+                    </th>
+                    <th class="model-table__title model-table__title--disk">
+                      цена, ₽
+                    </th>
+                    <th class="model-table__title model-table__title--disk">
+                      добавить
+                      в корзину
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="model-table__tbody">
+                  <tr>
+                    <td class="model-table__diameter" colspan="9">
+                      <p class="model-table__diameter-text">
+                        диаметр R20
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link">6.5X16</a>
+                    </td>
+                    <td class="model-table__text">
+                      T040019
+                    </td>
+                    <td class="model-table__text">
+                      4
+                    </td>
+                    <td class="model-table__text">
+                      98
+                    </td>
+                    <td class="model-table__text">
+                      58.5
+                    </td>
+                    <td class="model-table__text">
+                      32
+                    </td>
+                    <td class="model-table__text">
+                      BB
+                    </td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red ">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link">6.5X16</a>
+                    </td>
+                    <td class="model-table__text">
+                      T040019
+                    </td>
+                    <td class="model-table__text">
+                      4
+                    </td>
+                    <td class="model-table__text">
+                      98
+                    </td>
+                    <td class="model-table__text">
+                      58.5
+                    </td>
+                    <td class="model-table__text">
+                      32
+                    </td>
+                    <td class="model-table__text">
+                      BB
+                    </td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red ">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link">6.5X16</a>
+                    </td>
+                    <td class="model-table__text">
+                      T040019
+                    </td>
+                    <td class="model-table__text">
+                      4
+                    </td>
+                    <td class="model-table__text">
+                      98
+                    </td>
+                    <td class="model-table__text">
+                      58.5
+                    </td>
+                    <td class="model-table__text">
+                      32
+                    </td>
+                    <td class="model-table__text">
+                      BB
+                    </td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red ">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link">6.5X16</a>
+                    </td>
+                    <td class="model-table__text">
+                      T040019
+                    </td>
+                    <td class="model-table__text">
+                      4
+                    </td>
+                    <td class="model-table__text">
+                      98
+                    </td>
+                    <td class="model-table__text">
+                      58.5
+                    </td>
+                    <td class="model-table__text">
+                      32
+                    </td>
+                    <td class="model-table__text">
+                      BB
+                    </td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red ">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="model-table__diameter" colspan="9">
+                      <p class="model-table__diameter-text">
+                        диаметр R21
+                      </p>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link">6.5X16</a>
+                    </td>
+                    <td class="model-table__text">
+                      T040019
+                    </td>
+                    <td class="model-table__text">
+                      4
+                    </td>
+                    <td class="model-table__text">
+                      98
+                    </td>
+                    <td class="model-table__text">
+                      58.5
+                    </td>
+                    <td class="model-table__text">
+                      32
+                    </td>
+                    <td class="model-table__text">
+                      BB
+                    </td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red ">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+                  <tr class="model-table__tr">
+                    <td class="model-table__text">
+                      <a href="#" class="model-table__text-link">6.5X16</a>
+                    </td>
+                    <td class="model-table__text">
+                      T040019
+                    </td>
+                    <td class="model-table__text">
+                      4
+                    </td>
+                    <td class="model-table__text">
+                      98
+                    </td>
+                    <td class="model-table__text">
+                      58.5
+                    </td>
+                    <td class="model-table__text">
+                      32
+                    </td>
+                    <td class="model-table__text">
+                      Pure polar
+                    </td>
+                    <td class="model-table__text">
+                      <strong>30 225</strong>
+                    </td>
+                    <td class="model-table__text">
+                      <button class="model-table__text--btn button button__red ">
+                        добавить
+                      </button>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

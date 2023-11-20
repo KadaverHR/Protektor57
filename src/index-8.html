@@ -1,0 +1,629 @@
+{% set title = "Корзина" %}
+{% set bodyClass = "is-shopping-cart" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/shopping-cart-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/shopping-cart-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/shopping-cart-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/shopping-cart-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="banner-container container1320">
+      <div class="container ">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="banner-container container1320">
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Корзина
+        </h1>
+        </div>
+
+    </div> 
+  </div>
+  </div>
+
+  <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/shopping-cart-banner-mobile-tyre.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__img shopping-cart-banner"
+            src="../../assets/img/shopping-cart-banner-tyre.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div>
+</section>
+
+
+<section class="shopping-cart-section">
+  <div class="container-fluid">
+    <div class="shopping-cart-section__container container1320">
+      <div class="container">
+        <div class="shopping-cart-body">
+          {% include "html/includes/breadcrumbs.html" %}
+        </div>
+        <div class="shopping-cart-card__box">
+          <div class="shopping-cart-card">
+            <div class="shopping-cart-card__img-wrapper">
+              <img src="https://protektor57.ru/files/images/tyre/14346.jpg" alt="" class="shopping-cart-card__img">
+              <button class="button zoom">
+                <img src="../assets/img/img-21.svg" alt="Zoom">
+              </button>
+            </div>
+
+            <div class="shopping-cart-card__content">
+
+              <div class="shopping-cart-card__title-wrapper">
+                <div class="card-product__link-wrapper">
+                  <a href="#" class="card-product__link">Шина 11L-16 10PR CARLISLE </a>
+                </div>
+                <button class="shopping-cart-card__delete">
+                </button>
+              </div>
+              <div class="shopping-cart-card__info">
+                <ul class="shopping-cart-card__property">
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile shopping-cart-card__property-item--padding">
+                    <p class="shopping-cart-card__property-name">
+                      Артикул:
+                    </p>
+                    <p class="shopping-cart-card__property-value">
+                      21447
+                    </p>
+
+                    <input type="hidden" value="21447" name="sku[]" form="order">
+                  </li>
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile">
+                    <p class="shopping-cart-card__property-name">
+                      сезонность:
+                    </p>
+                    <div class="shopping-cart-card__value-wrapper">
+                      <span class="shopping-cart-card__property-value">
+                        Зимняя
+                      </span>
+                      <img class="shopping-cart-card__property-img" src="../assets/img/img-20.svg" alt="">
+                    </div>
+                  </li>
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile">
+                    <p class="shopping-cart-card__property-name">
+                      бренд:
+                    </p>
+                    <p class="shopping-cart-card__property-value">
+                      CROSSLEADER
+                    </p>
+                  </li>
+                </ul>
+
+                <ul class="shopping-cart-card__property shopping-cart-card__property--center">
+
+
+                  <li class="shopping-cart-card__property-item">
+                    <p class="shopping-cart-card__property-name mobile-style">
+                      Цена:
+                    </p>
+                    <p class="shopping-cart-card__price-text">
+                      16 000
+                    </p>
+
+                  </li>
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--center">
+                    <p class="shopping-cart-card__property-name table-style">
+                      Количество:
+                    </p>
+
+                    <div class="count">
+                      <button class="button count__button count__button--dec">
+                        <span>-</span>
+                      </button>
+                      <input type="text" class="count__input" value="0">
+                      <button class="button count__button count__button--inc">
+                        <span>+</span>
+                      </button>
+                    </div>
+
+                  </li>
+
+<!--                  <li class="shopping-cart-card__property-item">-->
+<!--                    <img src="./assets/img/green-check.png" alt="">-->
+<!--                    <span class="shopping-cart-card__property-value">-->
+<!--                      В наличии-->
+<!--                    </span>-->
+<!--                  </li>-->
+                    <li class="shopping-cart-card__property-item">
+                        <img src="./assets/img/order.svg" alt="">
+                        <span class="shopping-cart-card__property-value">
+                     Под заказ
+                    </span>
+                    </li>
+
+
+                </ul>
+
+                <div class="shopping-cart-card__sum">
+                  <p class="shopping-cart-card__property-name mobile-style">
+                    Сумма:
+                  </p>
+
+                  <p class="shopping-cart-card__price-text shopping-cart-card__price-text--red">
+                    46 000
+                  </p>
+
+                </div>
+
+              <div class="shopping-cart-card__delete-mobile">
+                <a href="" class="shopping-cart-card__delete-text">
+                  Удалить товар
+                </a>
+              </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class="shopping-cart-card">
+            <div class="shopping-cart-card__img-wrapper">
+              <img src="https://protektor57.ru/files/images/tyre/14346.jpg" alt="" class="shopping-cart-card__img">
+              <button class="button zoom">
+                <img src="../assets/img/img-21.svg" alt="Zoom">
+              </button>
+            </div>
+
+            <div class="shopping-cart-card__content">
+
+              <div class="shopping-cart-card__title-wrapper">
+                <div class="card-product__link-wrapper">
+                  <a href="#" class="card-product__link">Шина 11L-16 10PR CARLISLE </a>
+                </div>
+                <button class="shopping-cart-card__delete">
+                </button>
+              </div>
+              <div class="shopping-cart-card__info">
+                <ul class="shopping-cart-card__property">
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile shopping-cart-card__property-item--padding">
+                    <p class="shopping-cart-card__property-name">
+                      Артикул:
+                    </p>
+                    <p class="shopping-cart-card__property-value">
+                      21448
+                    </p>
+                    <input type="hidden" value="21448" name="sku[]" form="order">
+                  </li>
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile">
+                    <p class="shopping-cart-card__property-name">
+                      сезонность:
+                    </p>
+                    <div class="shopping-cart-card__value-wrapper">
+                      <span class="shopping-cart-card__property-value">
+                        Зимняя
+                      </span>
+                      <img class="shopping-cart-card__property-img" src="../assets/img/img-20.svg" alt="">
+                    </div>
+                  </li>
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile">
+                    <p class="shopping-cart-card__property-name">
+                      бренд:
+                    </p>
+                    <p class="shopping-cart-card__property-value">
+                      CROSSLEADER
+                    </p>
+                  </li>
+                </ul>
+
+                <ul class="shopping-cart-card__property shopping-cart-card__property--center">
+
+
+                  <li class="shopping-cart-card__property-item">
+                    <p class="shopping-cart-card__property-name mobile-style">
+                      Цена:
+                    </p>
+                    <p class="shopping-cart-card__price-text">
+                      16 000
+                    </p>
+
+                  </li>
+                  <li class="shopping-cart-card__property-item shopping-cart-card__property-item--center">
+                    <p class="shopping-cart-card__property-name table-style">
+                      Количество:
+                    </p>
+
+                    <div class="count">
+                      <button class="button count__button count__button--dec">
+                        <span>-</span>
+                      </button>
+                      <input type="text" class="count__input" value="0">
+                      <button class="button count__button count__button--inc">
+                        <span>+</span>
+                      </button>
+                    </div>
+
+                  </li>
+
+                  <li class="shopping-cart-card__property-item">
+                    <img src="./assets/img/green-check.png" alt="">
+                    <span class="shopping-cart-card__property-value">
+                      В наличии
+                    </span>
+                  </li>
+
+
+                </ul>
+
+                <div class="shopping-cart-card__sum">
+                  <p class="shopping-cart-card__property-name mobile-style">
+                    Сумма:
+                  </p>
+
+                  <p class="shopping-cart-card__price-text shopping-cart-card__price-text--red">
+                    46 000
+                  </p>
+
+                </div>
+
+              <div class="shopping-cart-card__delete-mobile">
+                <a href="" class="shopping-cart-card__delete-text">
+                  Удалить товар
+                </a>
+              </div>
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <div class="shopping-cart-result">
+            <p class="shopping-cart-result__property-name">
+              Итого
+            </p>
+            <p class="shopping-cart-card__price-text shopping-cart-result__text">
+              777 000
+            </p>
+          </div>
+
+          <div class="shopping-cart-making">
+            <button class="shopping-cart-making__btn button button__blue">
+              Перейти к оформлению
+            </button>
+          </div>
+        </div>
+        <div class="shopping-cart-contacts">
+          <div class="title-block shopping-cart-contacts__title">
+            
+            <h2 class="title-block__title">
+              Оформление заказа
+            </h2>
+
+          </div>
+          <div class="form-order">
+            <form class="form-order__form" action="" id="order">
+              <div class="form-order__form-block">
+              <div class="form-order__item form-order__item--width-max">
+                <label class="form-order__label" for='fio'>ФИО*</label>
+                <input type="text" required id="fio" placeholder="Введите ФИО" class="form-order__input">
+              </div>
+
+              <div class="form-order__item form-order__item--width-min">
+                <label class="form-order__label" for='tel'>Номер телефона*</label>
+                <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-order__input">
+              </div>
+
+              <div class="form-order__item form-order__item--width-min">
+                <label class="form-order__label" for='email'>Email</label>
+                <input type="email" id="email" placeholder="Введите Email" class="form-order__input">
+              </div>
+
+            </div>
+
+            <div class="form-order__form-block">
+              <div class="form-order__item form-order__item--width-max">
+                <lebel class="form-order__label" for='select'>Пункт выдачи*</lebel>
+                <select value id="select"
+                  class="form-order__input select-filter select-type tire-selection-item__select" style="width:100%">
+                  <option></option>
+                  <option value="1">ул.Михалицына, 10</option>
+                  <option value="2">ул.Ломоносова, 6Б</option>
+                  <option value="3">ул.Комсомольская, 270</option>
+                </select>
+              </div>
+
+
+              <div class="form-order__item form-order__item--width-max form-order__item--table">
+                <label class="form-order__label" for='comment'>Комментарий</label>
+                <textarea type="email" id="comment" rows="1" class="form-order__input"> </textarea>
+
+              </div>
+            </div>
+
+              <div class="form-order__content-box">
+                <div class="form-order__item form-order__item--width-max ">
+                  <p class="form-order__required-text">
+                    * Поля являются обязательными для заполнения
+                  </p>
+                </div>
+
+                <div class="form-order__item form-order__item--width-max form-order__item--table">
+                  <label class="form-order__checkbox" for="checkbox">
+                    <input class="checkbox__input" type="checkbox" name="data" id="checkbox">
+
+                    <div class="checkbox__block">
+                      <span class="checkbox__custom"></span>
+                      <p class="checkbox__text">
+                        Я согласен с
+                        <a href="#" class="checkbox__text checkbox__text--link">условиями передачи данных
+                        </a>
+                        
+                      </p>
+                    </div>
+                  </label>
+
+
+                </div>
+              </div>
+
+              <div class="form-order__info-box">
+                <p class="form-order__info">
+                  После оформления заказа на указаный номер телефона придет sms-сообщение с номером заказа. Если вы
+                  оставляете адрес электронной почты, то на указанный адрес автоматически сформируется и отправится
+                  состав заказа и его описание.
+                </p>
+              </div>
+
+            </form>
+          </div>
+          <div class="form-submit">
+            <div class="form-submit__price">
+              <p class="form-submit__property-name">
+                Всего:
+              </p>
+              <p class="form-submit__sum">
+                155 000
+              </p>
+              <!-- <p class="form-submit__sum form-submit__sum--rub ">
+                &#8381;
+              </p> -->
+            </div>
+
+            <div class="form-submit__btn-wrapper">
+              <button class="form-submit__btn button button__red" type="submit" form="order">
+                Оформить покупку
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="shopping-cart-delivery">
+          <div class="title-block shopping-cart-delivery__title">
+
+            <h2 class="title-block__title">
+              Доставка и оплата
+            </h2>
+
+          </div>
+
+          <div class="info-block">
+
+            <div class="info-block__delivery">
+
+              <ul class="info-block__list">
+
+                <li class="info-block__item">
+                  <div class="info-block__text-wrapper">
+                    <p class="info-block__number">1</p>
+                    <p class="info-block__text"> Вы можете оплатить несколькими способами</p>
+                  </div>
+
+
+                <li class="info-block__item">
+                  <ul class="info-block__payment">
+                    <li class="info-block__pay-item">
+                      <div class="info-block__img-wrapper">
+                        <img src="../assets/img/pay1.svg" alt="" class="info-block__img">
+                      </div>
+                      <p class="info-block__pay">
+                        наличный расчет
+                      </p>
+                    </li>
+                    <li class="info-block__pay-item">
+                      <div class="info-block__img-wrapper">
+                        <img src="../assets/img/pay2.svg" alt="" class="info-block__img">
+                      </div>
+                      <p class="info-block__pay">
+                        Банковская карта
+                      </p>
+                    </li>
+                    <li class="info-block__pay-item">
+                      <div class="info-block__img-wrapper">
+                        <img src="../assets/img/pay3.svg" alt="" class="info-block__img">
+                      </div>
+                      <p class="info-block__pay">
+                        безналичный расчет
+                      </p>
+
+                    </li>
+                  </ul>
+                <li>
+
+                </li>
+                <li class="info-block__item">
+                  <div class="info-block__text-wrapper">
+                    <p class="info-block__number">2</p>
+                    <p class="info-block__text"> Доставка товара транспортными компаниями производится
+                      по всей территории России.
+                    </p>
+                  </div>
+                </li>
+                <li class="info-block__item">
+                  <div class="info-block__text-wrapper">
+                    <p class="info-block__number">3</p>
+                    <p class="info-block__text">Самовывоз товара осуществляется по адресам:
+                      ул.Михалицына, 10, ул.Ломоносова, 6Б, ул. Комсомольская, 260</p>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="info-block__stock info-stock">
+              <div class="info-stock__title-wrapper">
+                <p class="info-stock__title">
+                  Акции!
+                </p>
+              </div>
+
+              <div class="info-stock__list">
+
+                <div class="info-stock__item-top">
+
+                  <div class="info-stock__item ">
+                    <div class="info-stock__img-wrapper">
+                      <img src="../assets/img/stock1.svg" alt="">
+                    </div>
+                    <p class="info-stock__text">
+                      Скидка на  <span id="tire-service">шиномонтаж</span>
+                    </p>
+                  </div>
+
+
+                  <div class="info-stock__item ">
+                    <div class="info-stock__img-wrapper">
+                      <img src="../assets/img/stock3.svg" alt="">
+                    </div>
+                    <p class="info-stock__text">
+                      СЕЗОННОЕ
+                      ХРАНЕНИЕ
+                      ШИН *
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="info-stock__item-bottom">
+                  <div class="info-stock__item ">
+                    <div class="info-stock__img-wrapper">
+                      <img src="../assets/img/stock2.svg" alt="">
+                    </div>
+                    <p class="info-stock__text">
+                      СКИДКА
+                      НА АКБ,
+                      МАСЛА И ЗАПЧАСТИ
+                      НА СЛЕДУЮЩУЮ ПОКУПКУ
+                    </p>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="info-stock__alt-border">
+                <div class="info-stock__alt-wrapper">
+                  <p class="info-stock__alt info-stock__alt--star">
+                    *
+                  </p>
+                  <p class="info-stock__alt">
+                    Подготовка к сезонному хранению оплачивается отдельно
+                  </p>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+{% endblock %}

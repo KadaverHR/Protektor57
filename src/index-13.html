@@ -1,0 +1,560 @@
+{% set title = "Автосервис" %}
+{% set bodyClass = "is-car-service" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/car-service-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/car-service-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/car-service-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/car-service-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Сервис
+        </h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+      </div>
+
+    </div> 
+  </div>
+
+  <!-- <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/truck-service-banner-mobile-tyres.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__truck-service banner-tyres__img"
+            src="../../assets/img/truck-service-banner-tyres.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div> -->
+</section>
+
+<section class="collapse-service">
+
+    <div class="container-fluid">
+        <div class="container">
+            {% include "html/includes/breadcrumbs.html" %}
+
+            <div class="title-block service-title">
+
+                <div class="service-title__wrapper">
+                    <h2 class="title-block__title">
+                        Автосервис
+                    </h2>
+
+                    <a href="#" class="service-title__link">записаться</a>
+                </div>
+
+                <div class="service-title__info-wrapper">
+                    <p class="service-title__info">
+                        Постоянным клиентам <strong class="service-title__info service-title__info--red">
+                        скидка 5-15%
+                    </strong>
+                    </p>
+                </div>
+            </div>
+
+            <div iv class="service-nav__wrapper">
+                {% include "html/includes/service-nav.html" %}
+            </div>
+
+
+            <div class="service-contacts">
+
+                <div class="title-block service-title__subtitle-wrapper">
+                    <h3 class="service-title__subtitle title-block__subtitle title-block__subtitle--red">
+                        Контакты
+                    </h3>
+                </div>
+
+                <div class="service-contacts__block">
+                    <ul class="service-contacts__list">
+                        <li class="service-contacts__item">
+                            <ul class="service-contacts__list-internal">
+
+
+                                <!--                1 адрес-->
+                                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                                    <div class="service-contacts__address-wrapper">
+                                        <p class="service-contacts__address">г. Орел, Московское шоссе, 173</p>
+                                        <div class="service-contacts__link-wrapper">
+                                            <a href="#" class="service-contacts__link service-contacts__link--map">На
+                                                карте</a>
+                                            <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                                    <div class="service-contacts__tel-wrapper">
+                                        <div class="service-contacts__img-wrapper">
+                                            <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                                        </div>
+                                        <a type="tel" href="tel:74862631163"
+                                           class="service-contacts__link service-contacts__link--tel">+7
+                                            (4862)
+                                            <strong>631-163</strong></a>
+                                    </div>
+
+                                </li>
+
+                                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                                    <div class="service-contacts__mail-wrapper">
+                                        <div class="service-contacts__img-wrapper">
+                                            <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                                        </div>
+                                        <a type="mail" href="mailto:74862490625"
+                                           class="service-contacts__link service-contacts__link--mail">info<strong>@proauto57.ru</strong></a>
+                                    </div>
+
+                                </li>
+                                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                                    <div class="service-contacts__working-wrapper">
+                                        <div class="service-contacts__img-wrapper">
+                                            <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                                        </div>
+                                        <p class="service-contacts__working-text">пн-сб<strong> с 9.00 до 18.00</strong>
+                                        </p>
+                                    </div>
+
+
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!--            2 адрес-->
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="car-service__info-area">
+                <div class="car-service__info-block">
+
+                    <div class="title-block service-title__subtitle-wrapper">
+                        <h3 class="service-title__subtitle title-block__subtitle">
+                            О сервисе
+                        </h3>
+                    </div>
+                    <p class="collapse-service__info-text collapse-service__info-text--blue">Предоставляем полный спектр
+                        услуг по ремонту и обслуживанию автомобилей</p>
+                    <p class="collapse-service__info-text">Независимо от модели наши высококвалифицированные специалисты
+                        быстро и качественно устранят возникшие неполадки, используя для этого
+                        современное оборудование и новейшие технологии.
+                    </p>
+                    <p class="collapse-service__info-text">Кроме текущего технического обслуживания автомобиля (замена
+                        масла и других рабочих жидкостей, проверка состояния аккумулятора и др.) опытные работники
+                        компании произведут диагностику всех его узлов и агрегатов:
+                    </p>
+                    <ul class="truck-service__info-list">
+                        <li class="truck-service__info-item">
+                            <span class="truck-service__info-text">двигателей, а также их компонентов</span>
+                        </li>
+                        <li class="truck-service__info-item">
+                            <span class="truck-service__info-text">тормозной системы</span>
+                        </li>
+                        <li class="truck-service__info-item">
+                            <span class="truck-service__info-text">ходовой части</span>
+                        </li>
+                        <li class="truck-service__info-item">
+                            <span class="truck-service__info-text">системы обогрева салона</span>
+                        </li>
+                        <li class="truck-service__info-item">
+                            <span class="truck-service__info-text">автоматической или механической КПП</span>
+                        </li>
+                        <li class="truck-service__info-item">
+                            <span class="truck-service__info-text">других механизмов</span>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="car-service__price">
+                <div class="title-block service-title__subtitle-wrapper">
+                    <h3 class="service-title__subtitle title-block__subtitle">
+                        Стоимость услуг
+                    </h3>
+                    <!--          <p class="fixing-disks__price-comment">-->
+                    <!--            1 колесо-->
+                    <!--          </p>-->
+                </div>
+                <div class="service-table__wrapper collapse-service__table">
+
+
+                    <table class="service-table">
+                        <tr class="service-table__cell">
+                            <td class="service-table__heading">
+                                Устранение неисправности
+                            </td>
+                            <td class="service-table__heading">
+                                Отеч. легковые<span>, руб </span>
+                            </td>
+                            <td class="service-table__heading">
+                                Отеч. внедорожники<span>, руб </span>
+                            </td>
+                            <td class="service-table__heading">
+                                Иномарки<span>, руб </span>
+                            </td>
+                        </tr>
+                        <tr class="service-table__cell">
+                            <td class=" service-table__text">
+                                Капитальный ремонт
+                            </td>
+                            <td class="service-table__text">
+                                от 700
+                            </td>
+                            <td class="service-table__text">
+                                от 700
+                            </td>
+                            <td class="service-table__text">
+                                от 700
+                            </td>
+                        </tr>
+                        <tr class="service-table__cell">
+                            <td class="service-table__text">
+                                Замена маслосъемных колпачков
+                            </td>
+                            <td class="service-table__text">
+                                от 700
+                            </td>
+                            <td class="service-table__text">
+                                от 700
+                            </td>
+                            <td class="service-table__text">
+                                от 700
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="car-service__download-wrapper">
+                  
+                        <a data-fancybox href="#record" class="car-service__reception-btn button button__red car-service__btn-link">Записаться</a>
+
+                        <div style="display: none;" class="record models-container" id="record">
+                            <p class="record__title models-container__title">
+                              <span>записаться</span>
+                              в автосервис
+                            </p>
+
+                            <!-- <p class="record__title record__title--text">г. Орёл, Московское шоссе, д.173</p> -->
+                        
+                        
+                            <form action="" class="record__form" name="form-record">
+                        
+                              <ul class="record__service-list">
+                                <!-- <li class="record__service-item ">
+                                  <label class="record__radio">
+                                    <input class="radio__input" type="radio" name="form-cheaper">
+                                    <span class="radio__custom"></span>
+                                    <span class="radio__text">
+                                      Сход-развал
+                                    </span>
+                                  </label>
+                                </li>
+                        
+                                <li class="record__service-item ">
+                                  <label class="record__radio">
+                                    <input class="radio__input" type="radio" name="form-cheaper">
+                                    <span class="radio__custom"></span>
+                                    <span class="radio__text">
+                                      Сварка дисков
+                                    </span>
+                                  </label>
+                        
+                                </li>
+                        
+                                <li class="record__service-item">
+                                  <label class="record__radio">
+                                    <input class="radio__input" type="radio" name="form-cheaper">
+                                    <span class="radio__custom"></span>
+                                    <span class="radio__text">
+                                      Правка дисков
+                                    </span>
+                                  </label>
+                        
+                                </li>
+                        
+                                <li class="record__service-item">
+                                  <label class="record__radio">
+                                    <input class="radio__input" type="radio" name="form-cheaper">
+                                    <span class="radio__custom"></span>
+                                    <span class="radio__text">
+                                      Легковой шиномонтаж
+                                      </a>
+                                    </span>
+                                  </label>
+                        
+                                </li> -->
+                        
+                                <!-- <li class="record__service-item ">
+                                  <label class="record__radio">
+                                    <input class="radio__input" type="radio" name="form-cheaper">
+                                    <span class="radio__custom"></span>
+                                    <span class="radio__text">
+                                      Автосервис
+                                      </a>
+                                    </span>
+                                  </label>
+                        
+                                </li> -->
+                        
+                                <!-- <li class="record__service-item">
+                                  <label class="record__radio">
+                                    <input class="radio__input" type="radio" name="form-cheaper">
+                                    <span class="radio__custom"></span>
+                                    <span class="radio__text">
+                                      Автомойка
+                                      </a>
+                                    </span>
+                                  </label>
+                                </li> -->
+                        
+                              </ul>
+                        
+                        
+                        
+                        
+                              <ul class="record__contact-list">
+                                <li class="record__contact-item">
+                                  <label class="form-order__label" for='fio'>ФИО*</label>
+                                  <input type="text" required id="fio" placeholder="Введите ФИО" class="form-order__input">
+                                </li>
+                        
+                                <li class="record__contact-item record__contact-item--min-width">
+                                  <label class="form-order__label" for='tel'>Номер телефона*</label>
+                                  <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-order__input">
+                                </li>
+                        
+                                <li class="record__contact-item record__contact-item--min-width">
+                                  <label class="form-order__label" for='email'>Email</label>
+                                  <input type="email" id="email" placeholder="Введите Email" class="form-order__input">
+                                </li>
+                                <li class="record__contact-item">
+                                  <label class="form-order__label" for='car'>Автомобиль</label>
+                                  <input type="text" id="car" placeholder="Укажите марку и модель авто" class="form-order__input">
+                                </li>
+                        
+                        
+                        
+                                <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+                                  <label class="form-order__label" for='diameter'>Диаметр колес</label>
+                                  <input type="text" id="diameter" placeholder="Введите диаметр колес" class="form-order__input">
+                                </li>
+                        
+                                <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+                                  <label class="form-order__label" for='count'>Количество колес</label>
+                                  <input type="text" id="count" placeholder="Введите количество колес" class="form-order__input">
+                                </li>
+                        
+                                <li class="record__contact-item">
+
+                                 
+                                  <lebel class="form-order__label" for='select'>Адрес сервисного центра</lebel>
+                                  
+                                  <p class="record__title record__title--text">г. Орёл, Московское шоссе, д.173</p>
+                                  
+                                  <!-- <select value id="select"
+                                    class="record__input form-order__input select-filter select-type tire-selection-item__select"
+                                    style="width:100%">
+                                    <option></option>
+                                    <option value="1">ул.Михалицына, 10</option>
+                                    <option value="2">ул.Ломоносова, 6Б</option>
+                                    <option value="3">ул.Комсомольская, 270</option>
+                                  </select> --> 
+                                </li>
+                        
+                        
+                                <li class="record__contact-item">
+                                  <label class="form-order__label" for='comment'>Комментарий</label>
+                                  <textarea type="email" id="comment" rows="1" class="form-order__input"> </textarea>
+                        
+                                </li>
+                        
+                        
+                                <li class="record__contact-item">
+                                  <div class="form-order__item">
+                                    <p class="form-order__required-text">
+                                      * Поля являются обязательными для заполнения
+                                    </p>
+                                  </div>
+                        
+                                  <div class="form-order__item">
+                                    <label class="form-order__checkbox" for="checkbox">
+                                      <input class="checkbox__input" type="checkbox" name="data" id="checkbox">
+                                      <div class="checkbox__block">
+                                        <span class="checkbox__custom"></span>
+                                        <p class="checkbox__text">
+                                          Я согласен с
+                                          <a href="#" class="checkbox__text checkbox__text--link">условиями передачи данных
+                                          </a>
+                        
+                                        </p>
+                                      </div>
+                        
+                                    </label>
+                        
+                        
+                                  </div>
+                                </li>
+                        
+                              </ul>
+                        
+                              <div class="record__btn-wrapper">
+                        
+                        
+                              <a href="" class="button button__transparent record__btn-back">
+                                Отменить
+                              </a>
+                              <button class="button button__red record__btn-order" type="submit">
+                                Записаться
+                              </button>
+                        
+                              </div>
+                        
+                            </form>
+                          </div>
+
+
+                 
+                  
+                        <a href="#" class=" button button__gray car-service__btn-link">посмотреть прайс</a>
+                    
+                </div>
+
+            </div>
+
+            <div class="car-service__map service-map">
+                <div class="title-block service-title__subtitle-wrapper">
+                    <h3 class="service-title__subtitle title-block__subtitle">
+                        Схема проезда на сход-развал
+                    </h3>
+                </div>
+                <div class="service-map__block">
+                    <div class="service-map__scroll">
+                        <ul class="service-map__address-list">
+                            <li class="service-map__address-item">
+                                <p class="service-map__address-text"><strong>Орел</strong> ш. Московское, 173</p>
+                                <a type="mail" href="mailto:gruz@protektor57.ru"
+                                   class="service-map__address-mail">info@proauto57.ru</a>
+                                <div class="service-map__address-block">
+                                    <a type="tel" href="tel:84862631163" class="service-map__address-tel">+7 (4862)
+                                        <strong>
+                                            631-163</strong></a>
+                                    <div>
+                                        <p class="service-map__address-working">пн-сб с 9.00 до 18.00</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="service-map__map-wrapper">
+                      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a09683a1bf059da01aa9f06da1720916d38a2abad1a082c6f8e345794e43ed0&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

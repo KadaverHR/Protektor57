@@ -1,0 +1,743 @@
+{% set title = "модалки" %}
+{% set bodyClass = "is-modals" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="modals">
+
+  <div class="cheaper models-container" id="cheaper">
+
+    <!-- <div class="cheaper__exit"></div> -->
+    <p class="cheaper__title models-container__title">
+      <span>Нашли</span>
+      товар дешевле?
+    </p>
+
+    <p class="cheaper__text">
+      Пришлите нам ссылку на этот товар в другом магазине и мы
+      снизим цену! <a href="#" class="cheaper__link">Условия акции</a>
+    </p>
+
+    <div class="form-cheaper">
+      <form class="form-cheaper__form" action="" id="cheaper">
+        <div class="form-cheaper__item form-cheaper__item--width-max">
+          <label class="form-cheaper__label" for='fio'>ФИО*</label>
+          <input type="text" required id="fio" placeholder="Введите ФИО" class="form-cheaper__input">
+        </div>
+
+        <div class="form-cheaper__item form-cheaper__item--width-min">
+          <label class="form-cheaper__label" for='tel'>Номер телефона*</label>
+          <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-cheaper__input">
+        </div>
+
+        <div class="form-cheaper__item form-cheaper__item--width-min">
+          <label class="form-cheaper__label" for='email'>Email</label>
+          <input type="email" id="email" placeholder="Введите Email" class="form-cheaper__input">
+        </div>
+
+        <div class="form-cheaper__item form-cheaper__item--width-max">
+          <label class="form-cheaper__label" for='url'>ссылка на товар с другого сайта*</label>
+          <input type="url" required id="url" placeholder="Вставьте ссылку на товар " class="form-cheaper__input">
+        </div>
+
+
+        <div class="form-cheaper__item form-cheaper__item--width-max form-cheaper__item--table">
+          <label class="form-cheaper__label" for='comment'>ваше сообщение</label>
+          <textarea type="email" id="comment" rows="2" class="form-cheaper__input"> </textarea>
+
+        </div>
+
+
+        <div class="form-cheaper__content-box">
+          <div class="form-cheaper__item form-cheaper__item--width-max ">
+            <p class="form-cheaper__required-text">
+              * Поля являются обязательными для заполнения
+            </p>
+          </div>
+
+          <div class="form-cheaper__item form-cheaper__item--width-max form-cheaper__item--table">
+            <label class="form-cheaper__checkbox" for="checkbox">
+              <input class="checkbox__input" type="checkbox" name="data" id="checkbox">
+              <span class="checkbox__custom"></span>
+              <span class="checkbox__text">
+                Я согласен с <a href="#" class="checkbox__text--link">
+                  условиями передачи данных
+                </a> и ознакомлен с
+                <a href="#" class="checkbox__text--link">
+                  условиями акции
+                </a>
+              </span>
+
+
+            </label>
+
+
+          </div>
+          <div class="form-cheaper__btn-wrapper">
+            <button class="form-submit__btn button button__red" type="submit" form="cheaper">
+              отправить
+            </button>
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>
+  </div>
+
+  <div class="nds models-container" id="nds">
+    <p class="nds__title models-container__title">
+      работаем с ндс
+    </p>
+    <p class="nds__text">
+      При покупке товаров по безналичному расчету с НДС цена увеличивается на 5 % от стоимости товара на сайте.
+    </p>
+  </div>
+
+
+  <div class="one-click models-container" id="one-click">
+    <p class="one-click__title models-container__title">
+      <span>заказ</span> в 1 клик
+    </p>
+
+    <div class="one-click__card shopping-cart-card">
+      <div class="shopping-cart-card__img-wrapper">
+        <img src="https://protektor57.ru/files/images/tyre/14346.jpg" alt="" class="shopping-cart-card__img">
+        <button class="button zoom">
+          <img src="../assets/img/img-21.svg" alt="Zoom">
+        </button>
+      </div>
+
+      <div class="shopping-cart-card__content">
+
+        <div class="shopping-cart-card__title-wrapper">
+          <div class="card-product__link-wrapper">
+            <a href="#" class="card-product__link">Шина 11L-16 10PR CARLISLE </a>
+          </div>
+          <button class="shopping-cart-card__delete">
+          </button>
+        </div>
+        <div class="shopping-cart-card__info">
+          <ul class="shopping-cart-card__property">
+            <li
+              class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile shopping-cart-card__property-item--padding">
+              <p class="shopping-cart-card__property-name">
+                Артикул:
+              </p>
+              <p class="shopping-cart-card__property-value">
+                21447
+              </p>
+            </li>
+            <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile">
+              <p class="shopping-cart-card__property-name">
+                сезонность:
+              </p>
+              <div class="shopping-cart-card__value-wrapper">
+                <span class="shopping-cart-card__property-value">
+                  Зимняя
+                </span>
+                <img class="shopping-cart-card__property-img" src="../assets/img/img-20.svg" alt="">
+              </div>
+            </li>
+            <li class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile">
+              <p class="shopping-cart-card__property-name">
+                бренд:
+              </p>
+              <p class="shopping-cart-card__property-value">
+                CROSSLEADER
+              </p>
+            </li>
+          </ul>
+
+          <ul class="shopping-cart-card__property shopping-cart-card__property--center">
+
+
+            <li class="shopping-cart-card__property-item">
+              <p class="shopping-cart-card__property-name mobile-style">
+                Цена:
+              </p>
+              <p class="shopping-cart-card__price-text">
+                16 000
+              </p>
+
+            </li>
+            <li class="shopping-cart-card__property-item shopping-cart-card__property-item--center">
+              <p class="shopping-cart-card__property-name table-style">
+                Количество:
+              </p>
+
+              <div class="count">
+                <button class="button count__button count__button--dec">
+                  <span>-</span>
+                </button>
+                <input type="text" class="count__input" value="0">
+                <button class="button count__button count__button--inc">
+                  <span>+</span>
+                </button>
+              </div>
+
+            </li>
+
+            <!--                  <li class="shopping-cart-card__property-item">-->
+            <!--                    <img src="./assets/img/green-check.png" alt="">-->
+            <!--                    <span class="shopping-cart-card__property-value">-->
+            <!--                      В наличии-->
+            <!--                    </span>-->
+            <!--                  </li>-->
+            <li class="shopping-cart-card__property-item">
+              <img src="./assets/img/order.svg" alt="">
+              <span class="shopping-cart-card__property-value">
+                Под заказ
+              </span>
+            </li>
+
+
+          </ul>
+
+          <div class="shopping-cart-card__sum">
+            <p class="shopping-cart-card__property-name mobile-style">
+              Сумма:
+            </p>
+
+            <p class="shopping-cart-card__price-text shopping-cart-card__price-text--red">
+              46 000
+            </p>
+
+          </div>
+
+          <div class="shopping-cart-card__delete-mobile">
+            <a href="" class="shopping-cart-card__delete-text">
+              Удалить товар
+            </a>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="form-order">
+      <form class="form-order__form" action="" id="order">
+        <div class="form-order__item form-order__item--width-max">
+          <label class="form-order__label" for='fio'>ФИО</label>
+          <input type="text" id="fio" placeholder="Введите ФИО" class="form-order__input">
+        </div>
+
+        <div class="form-order__item form-order__item--width-max">
+          <label class="form-order__label" for='tel'>Номер телефона*</label>
+          <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-order__input">
+        </div>
+
+
+
+        <div class="form-order__item form-order__item--width-max">
+          <lebel class="form-order__label" for='select'>Пункт выдачи*</lebel>
+          <select value id="select" class="form-order__input select-filter select-type tire-selection-item__select"
+            style="width:100%">
+            <option></option>
+            <option value="1">ул.Михалицына, 10</option>
+            <option value="2">ул.Ломоносова, 6Б</option>
+            <option value="3">ул.Комсомольская, 270</option>
+          </select>
+        </div>
+
+
+
+
+        <div class="form-order__item form-order__item--width-max form-order__item--table">
+          <label class="form-order__checkbox">
+            <input class="checkbox__input" type="checkbox" name="data">
+
+            <span class="checkbox__text">
+              Я согласен с условиями передачи данных
+            </span>
+            <a href="#" class="checkbox__text checkbox__text--link">
+              Соглашение.
+            </a>
+            <span class="checkbox__custom"></span>
+          </label>
+
+
+        </div>
+
+        <div class="one-click__btn-wrapper">
+          <a href="" class="button button__transparent one-click__btn-back">
+            вернуться к покупкам
+          </a>
+          <button class="button button__red one-click__btn-order" type="submit" form="order">
+            оформить покупку
+          </button>
+
+        </div>
+    </div>
+
+
+    </form>
+  </div>
+
+
+  <div class="add-basket models-container" id="add-basket">
+    <p class="add-basket__title models-container__title">
+      <span>Товар</span>
+      добавлен в корзину
+    </p>
+    <div class="add-basket__content-wrapper">
+      <div class="shopping-cart-card__img-wrapper">
+        <img src="https://protektor57.ru/files/images/tyre/14346.jpg" alt="" class="shopping-cart-card__img">
+        <button class="button zoom">
+          <img src="../assets/img/img-21.svg" alt="Zoom">
+        </button>
+      </div>
+
+      <div class="shopping-cart-card__content">
+
+        <div class="shopping-cart-card__title-wrapper">
+          <div class="card-product__link-wrapper">
+            <a href="#" class="card-product__link">Шина 11L-16 10PR CARLISLE </a>
+          </div>
+
+        </div>
+        <div class="shopping-cart-card__info add-basket__info">
+
+          <ul class="add-basket__property shopping-cart-card__property shopping-cart-card__property--center">
+
+
+            <li class="shopping-cart-card__property-item">
+              <p class="shopping-cart-card__property-name mobile-style">
+                Цена:
+              </p>
+              <p class="shopping-cart-card__price-text">
+                16 000
+              </p>
+            </li>
+            <li class="shopping-cart-card__property-item shopping-cart-card__property-item--center">
+
+              <div class="count">
+                <button class="button count__button count__button--dec">
+                  <span>-</span>
+                </button>
+                <input type="text" class="count__input" value="0">
+                <button class="button count__button count__button--inc">
+                  <span>+</span>
+                </button>
+              </div>
+
+            </li>
+            <li class="shopping-cart-card__sum">
+              <p class="shopping-cart-card__property-name mobile-style">
+                Сумма:
+              </p>
+
+              <p class="shopping-cart-card__price-text shopping-cart-card__price-text--red">
+                46 000
+              </p>
+            </li>
+
+
+          </ul>
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="add-basket__btn-wrapper">
+      <a href="" class="button button__transparent add-basket__btn-back">
+        вернуться к покупкам
+      </a>
+      <button class="button button__red add-basket__btn-order" type="submit">
+        оформить покупку
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="record models-container" id="recordAll">
+    <p class="record__title models-container__title">
+      <span>записаться</span>
+      на обслуживание ТС
+    </p>
+
+
+    <form action="" class="record__form" name="form-record">
+
+      <ul class="record__service-list">
+
+        <li class="record__service-item">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Легковой шиномонтаж
+              </a>
+            </span>
+          </label>
+        </li>
+
+        <li class="record__service-item">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Правка/прокатка дисков
+            </span>
+          </label>
+        </li>
+
+        <li class="record__service-item ">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Сварка/ремонт дисков
+            </span>
+          </label>
+        </li>
+
+
+
+        <li class="record__service-item ">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Автосервис
+              </a>
+            </span>
+          </label>
+        </li>
+
+
+        <li class="record__service-item ">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Сход-развал
+            </span>
+          </label>
+        </li>
+
+   
+
+
+
+        <li class="record__service-item">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Автомойка
+              </a>
+            </span>
+          </label>
+        </li>
+
+      </ul>
+
+
+
+
+      <ul class="record__contact-list">
+        <li class="record__contact-item">
+          <label class="form-order__label" for='fio'>ФИО*</label>
+          <input type="text" required id="fio" placeholder="Введите ФИО" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item record__contact-item--min-width">
+          <label class="form-order__label" for='tel'>Номер телефона*</label>
+          <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item record__contact-item--min-width">
+          <label class="form-order__label" for='email'>Email</label>
+          <input type="email" id="email" placeholder="Введите Email" class="form-order__input">
+        </li>
+        <li class="record__contact-item">
+          <label class="form-order__label" for='car'>Автомобиль</label>
+          <input type="text" id="car" placeholder="Укажите марку и модель авто" class="form-order__input">
+        </li>
+
+
+
+        <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+          <label class="form-order__label" for='diameter'>Диаметр колес</label>
+          <input type="text" id="diameter" placeholder="Введите диаметр колес" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+          <label class="form-order__label" for='count'>Количество колес</label>
+          <input type="text" id="count" placeholder="Введите количество колес" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item">
+          <lebel class="form-order__label" for='select'>Адрес сервисного центра*</lebel>
+          <select value id="select"
+            class="record__input form-order__input select-filter select-type tire-selection-item__select"
+            style="width:100%">
+            <option></option>
+            <option value="1">ул.Михалицына, 10</option>
+            <option value="2">ул.Ломоносова, 6Б</option>
+            <option value="3">ул.Комсомольская, 270</option>
+          </select>
+        </li>
+
+    
+        <li class="record__contact-item record__contact-item--min-width">
+          <label class="form-order__label" for='time'>Время</label>
+          <input type="time" id="time" placeholder="" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item">
+          <label class="form-order__label" for='comment'>Комментарий</label>
+          <textarea type="email" id="comment" rows="1" class="form-order__input"> </textarea>
+
+        </li>
+
+
+        <li class="record__contact-item">
+          <div class="form-order__item">
+            <p class="form-order__required-text">
+              * Поля являются обязательными для заполнения
+            </p>
+          </div>
+
+          <div class="form-order__item">
+            <label class="form-order__checkbox" for="checkbox">
+              <input class="checkbox__input" type="checkbox" name="data" id="checkbox">
+              <div class="checkbox__block">
+                <span class="checkbox__custom"></span>
+                <p class="checkbox__text">
+                  Я согласен с
+                  <a href="#" class="checkbox__text checkbox__text--link">условиями передачи данных
+                  </a>
+
+                </p>
+              </div>
+
+            </label>
+
+
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="record__btn-wrapper">
+
+
+      <a href="" class="button button__transparent record__btn-back">
+        Отменить
+      </a>
+      <button class="button button__red record__btn-order" type="submit">
+        Записаться
+      </button>
+
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class="record models-container" id="record">
+    <p class="record__title models-container__title">
+      <span>записаться</span>
+      в автосервис
+    </p>
+
+    <!-- <p class="record__title record__title--text">г. Орёл, Московское шоссе, д.173</p> -->
+
+
+    <form action="" class="record__form" name="form-record">
+
+      <ul class="record__service-list">
+        <!-- <li class="record__service-item ">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Сход-развал
+            </span>
+          </label>
+        </li>
+
+        <li class="record__service-item ">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Сварка дисков
+            </span>
+          </label>
+
+        </li>
+
+        <li class="record__service-item">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Правка дисков
+            </span>
+          </label>
+
+        </li>
+
+        <li class="record__service-item">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Легковой шиномонтаж
+              </a>
+            </span>
+          </label>
+
+        </li> -->
+
+        <!-- <li class="record__service-item ">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Автосервис
+              </a>
+            </span>
+          </label>
+
+        </li> -->
+
+        <!-- <li class="record__service-item">
+          <label class="record__radio">
+            <input class="radio__input" type="radio" name="form-cheaper">
+            <span class="radio__custom"></span>
+            <span class="radio__text">
+              Автомойка
+              </a>
+            </span>
+          </label>
+        </li> -->
+
+      </ul>
+
+
+
+
+      <ul class="record__contact-list">
+        <li class="record__contact-item">
+          <label class="form-order__label" for='fio'>ФИО*</label>
+          <input type="text" required id="fio" placeholder="Введите ФИО" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item record__contact-item--min-width">
+          <label class="form-order__label" for='tel'>Номер телефона*</label>
+          <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item record__contact-item--min-width">
+          <label class="form-order__label" for='email'>Email</label>
+          <input type="email" id="email" placeholder="Введите Email" class="form-order__input">
+        </li>
+        <li class="record__contact-item">
+          <label class="form-order__label" for='car'>Автомобиль</label>
+          <input type="text" id="car" placeholder="Укажите марку и модель авто" class="form-order__input">
+        </li>
+
+
+
+        <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+          <label class="form-order__label" for='diameter'>Диаметр колес</label>
+          <input type="text" id="diameter" placeholder="Введите диаметр колес" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+          <label class="form-order__label" for='count'>Количество колес</label>
+          <input type="text" id="count" placeholder="Введите количество колес" class="form-order__input">
+        </li>
+
+        <li class="record__contact-item">
+
+         
+          <lebel class="form-order__label" for='select'>Адрес сервисного центра</lebel>
+          
+          <p class="record__title record__title--text">г. Орёл, Московское шоссе, д.173</p>
+          
+          <!-- <select value id="select"
+            class="record__input form-order__input select-filter select-type tire-selection-item__select"
+            style="width:100%">
+            <option></option>
+            <option value="1">ул.Михалицына, 10</option>
+            <option value="2">ул.Ломоносова, 6Б</option>
+            <option value="3">ул.Комсомольская, 270</option>
+          </select> --> 
+        </li>
+
+
+        <li class="record__contact-item">
+          <label class="form-order__label" for='comment'>Комментарий</label>
+          <textarea type="email" id="comment" rows="1" class="form-order__input"> </textarea>
+
+        </li>
+
+
+        <li class="record__contact-item">
+          <div class="form-order__item">
+            <p class="form-order__required-text">
+              * Поля являются обязательными для заполнения
+            </p>
+          </div>
+
+          <div class="form-order__item">
+            <label class="form-order__checkbox" for="checkbox">
+              <input class="checkbox__input" type="checkbox" name="data" id="checkbox">
+              <div class="checkbox__block">
+                <span class="checkbox__custom"></span>
+                <p class="checkbox__text">
+                  Я согласен с
+                  <a href="#" class="checkbox__text checkbox__text--link">условиями передачи данных
+                  </a>
+
+                </p>
+              </div>
+
+            </label>
+
+
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="record__btn-wrapper">
+
+
+      <a href="" class="button button__transparent record__btn-back">
+        Отменить
+      </a>
+      <button class="button button__red record__btn-order" type="submit">
+        Записаться
+      </button>
+
+      </div>
+
+    </form>
+  </div>
+
+
+
+
+</section>
+
+
+{% endblock %}

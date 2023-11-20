@@ -1,0 +1,630 @@
+{% set title = "Сезонное хранение шин" %}
+{% set bodyClass = "is-tire-storage" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/tire-storage-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/tire-storage-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/tire-storage-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/tire-storage-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Сервис
+        </h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+      </div>
+
+    </div> 
+  </div>
+
+  <!-- <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/truck-service-banner-mobile-tyres.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__truck-service banner-tyres__img"
+            src="../../assets/img/truck-service-banner-tyres.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div> -->
+</section>
+
+<section class="tire-storage">
+
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+
+      <div class="title-block service-title">
+
+        <div class="service-title__wrapper">
+          <h2 class="title-block__title">
+            Сезонное хранение шин
+          </h2>
+
+          <!--          <a href="#" class="service-title__link">записаться</a>-->
+        </div>
+
+        <div class="service-title__info-wrapper">
+          <p class="service-title__info">
+            Постоянным клиентам <strong class="service-title__info service-title__info--red">
+            скидка 5-15%
+          </strong>
+          </p>
+        </div>
+      </div>
+
+      <div iv class="service-nav__wrapper">
+        {% include "html/includes/service-nav.html" %}
+      </div>
+
+
+      <div class="service-contacts">
+
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle title-block__subtitle--red">
+            Контакты
+          </h3>
+        </div>
+
+        <div class="service-contacts__block">
+          <ul class="service-contacts__list">
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+
+
+                <!--                1 адрес-->
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г. Орел ул. Михалицына, 10</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:+74862490625" class="service-contacts__link service-contacts__link--tel">+7 (4862)
+                      <strong>488-660</strong> <span>доб. <strong>1</strong></span></a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">info<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до 19.00</strong>
+                    </p>
+                  </div>
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">сб-вс<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+
+                </li>
+              </ul>
+            </li>
+
+
+            <!--            2 адрес-->
+
+            <!-- <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г.Орел, Комсомольская, 270</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862488660" class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong>488-660</strong></a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">manager14<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до 19.00</strong>
+                    </p>
+                  </div>
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">сб-вс<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </li> -->
+
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <!--                  <div class="service-contacts__img-wrapper">-->
+                  <!--                    <img src="../assets/img/service-cont1.svg" class="service-contacts__img">-->
+                  <!--                  </div>-->
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address"> г.Орел, Ломоносова, 6Б ТЦ "Утёс"</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862488660" class="service-contacts__link service-contacts__link--tel">+7 (4862)
+                      <strong>488-660</strong> <span>доб. <strong>2</strong></span></a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">manager<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до 19.00 </strong>
+                    </p>
+                  </div>
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">сб-вс<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+
+
+                </li>
+              </ul>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="tire-storage__info-area">
+
+        <div class="tire-storage__info-block">
+
+          <div class="title-block service-title__subtitle-wrapper">
+            <h3 class="service-title__subtitle title-block__subtitle">
+              Как сдать шины на хранение
+            </h3>
+          </div>
+          <ul class="tire-storage__info-list">
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  1. Уведомить менеджера магазина о сдаче шин на хранение
+                </p>
+              </div>
+            </li>
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  2. Привезти шины по адресу: ул. Михалицына д.10
+                </p>
+              </div>
+            </li>
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  3. Получить пакет документов, который необходимо хранить
+                  до получения шин обратно
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tire-storage__info-block">
+
+          <div class="title-block service-title__subtitle-wrapper">
+            <h3 class="service-title__subtitle title-block__subtitle">
+              Как забрать шины с хранения
+            </h3>
+          </div>
+          <ul class="tire-storage__info-list">
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  1. За 1-2 дня уведомить менеджера магазина
+                </p>
+              </div>
+            </li>
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  2. Назвать номер договора
+                </p>
+              </div>
+            </li>
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  3. Оплатить стоимость услуг
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tire-storage__info-comment">
+          <p class="tire-storage__info-text">
+            Минимальный срок хранения шин — 1 месяц
+
+          </p>
+        </div>
+
+
+        <div class="tire-storage__info-sale">
+          <div class="tire-storage__img-wrapper">
+            <picture>
+              <source srcset="./assets/img/tire-storage-mobile.jpg" media="(max-width:767.9px)">
+              <img src="./assets/img/tire-storage.jpg" class="tire-storage__img">
+            </picture>
+
+          </div>
+          <div class="tire-storage__sale-comment">
+            <p class="tire-storage__info-text">
+              Условия акции
+            </p>
+          </div>
+
+          <ul class="tire-storage__info-list">
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  1. Шиномонтаж комплекта колес в нашем одном из наших сервисных центров
+                </p>
+              </div>
+            </li>
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  2. Подготовка к сезонному хранению шин осуществляется только силами нашей компании.
+                  Подготовка включает в себя: мойку, маркировку, транспортировку на склад и непосредственно
+                  складирование.
+                  <br>Стоимость подготовки шин к сезонному хранению составляет 1 000 руб/комплект для шин, диаметр
+                  которых не более 15 дюймов, и 1 500 руб/комплект для остальных шин.
+
+                </p>
+              </div>
+            </li>
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text">
+                  3. Хранение шин сроком до 7 месяцев*
+
+                </p>
+              </div>
+            </li>
+
+            <li class="tire-storage__info-item">
+              <div class="tire-storage__text-wrapper">
+                <p class="tire-storage__item-text tire-storage__item-text--grey">
+
+                  *Более длительный период оплачивается согласно установленному ниже тарифу
+
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tire-storage__price">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Стоимость услуг
+          </h3>
+          <p class="fixing-disks__price-comment">
+            4 шины
+          </p>
+        </div>
+        <div class="service-table__wrapper tire-storage__table">
+
+
+          <table class="service-table">
+            <tr class="service-table__cell">
+              <td class="service-table__heading">
+                Диаметр колеса
+              </td>
+              <td class="service-table__heading ">
+                Шины<span>, мес/руб</span>
+              </td>
+              <td class="service-table__heading ">
+                Шины в сборе с диском<span>, руб/см</span>
+              </td>
+
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                R12-13
+              </td>
+              <td class="service-table__text">
+                250
+              </td>
+              <td class="service-table__text">
+                300
+              </td>
+
+
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                R14-15
+              </td>
+              <td class="service-table__text">
+                300
+              </td>
+              <td class="service-table__text">
+                350
+              </td>
+
+
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                R16-17
+              </td>
+              <td class="service-table__text">
+                350
+              </td>
+              <td class="service-table__text">
+                400
+              </td>
+
+
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                R18-19
+              </td>
+              <td class="service-table__text">
+                450
+              </td>
+              <td class="service-table__text">
+                500
+              </td>
+
+
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                R20 и выше
+              </td>
+              <td class="service-table__text">
+                550
+              </td>
+              <td class="service-table__text">
+                600
+              </td>
+
+
+            </tr>
+
+          </table>
+
+        </div>
+<!--        <div class="tire-storage__comment-wrapper">-->
+<!--          <p class="tire-storage__comment">-->
+<!--            * Точную стоимость ремонта оценивает сервисный специалист перед началом работ-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="fixing-disks__download-wrapper">-->
+<!--          <button class="fixing-disks__download-btn button button__red">-->
+<!--            <a href="#" class="fixing-disks__download-link">Записаться</a>-->
+<!--          </button>-->
+<!--        </div>-->
+
+      </div>
+
+      <div class="tire-storage__map service-map">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Схема проезда
+          </h3>
+        </div>
+        <div class="service-map__block">
+          <div class="service-map__scroll">
+            <ul class="service-map__address-list">
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул. Михалицына, 10</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">info@protektor57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862488660" class="service-map__address-tel">+7 (4862) <strong>488-660</strong> <span>доб. <strong>1</strong></span></a>
+                  <div>
+                    <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                    <p class="service-map__address-working">сб-вс с 10.00 до 18.00</p>
+                  </div>
+                </div>
+              </li>
+              <!-- <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул. Комсомольская,270</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">manager14@protektor57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862488660" class="service-map__address-tel">+7 (4862)
+                    <strong>488-660</strong></a>
+                  <div>
+                    <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                    <p class="service-map__address-working">сб-вс с 10.00 до 18.00</p>
+                  </div>
+                </div>
+              </li> -->
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул.Ломоносова, 6Б </p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">manager@protektor57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862488660" class="service-map__address-tel">+7 (4862)
+                    <strong>488-660</strong> <span>доб. <strong>2</strong></span></a>
+                  <div>
+                    <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                    <p class="service-map__address-working">сб-вс с 10.00 до 18.00</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="service-map__map-wrapper">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Affea7b6657de25a8f32192ed276f33b0d99307ec47066cdadb3e899acc4a6ff7&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

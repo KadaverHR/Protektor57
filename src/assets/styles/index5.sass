@@ -1,0 +1,73 @@
+.error
+  &__container
+    width: 100%
+    background-image: url(../img/error-ban.jpg)
+    background-repeat: no-repeat
+    background-position: top center
+  &__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 35px
+    padding-top: 55px
+    padding-bottom: 250px
+  &__content img
+    width: 297px
+    height: 35px
+  &__404
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 170px
+    // line-height: 232px
+    color: #364352
+  &__title
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 26px
+    line-height: 26px
+    color: #364352
+  &__text
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 26px
+    color: #364352
+  &__btn
+    border-radius: 50px
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 15px
+    line-height: 20px
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 6px 66px
+    margin-top: 10px
+
+@media all and ($middle)
+  .error
+    &__container
+      background-position: 25% 0
+    &__content
+      padding-left: 50px
+
+@media all and ($table)
+  .error
+    &__container
+      background-position: 38% 0
+    &__content
+      padding-left: 0px
+
+@media all and ($mobile)
+  .error__content
+    gap: 0
+    & > *:not(:last-child)
+      margin-bottom: 35px
+  .error
+    &__container
+      background-position: 5% 81%
+    &__content
+      padding-bottom: 55px

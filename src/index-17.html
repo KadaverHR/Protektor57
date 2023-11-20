@@ -1,0 +1,1345 @@
+{% set title = "Легковой шиномонтаж" %}
+{% set bodyClass = "is-tire-service" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/tire-service-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/tire-service-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/tire-service-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/tire-service-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Сервис
+        </h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+      </div>
+
+    </div> 
+  </div>
+
+  <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/tire-service-banner-mobile-tyres.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__tire-service banner-tyres__img"
+            src="../../assets/img/tire-service-banner-tyres.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div>
+</section>
+
+<section class="tire-service">
+
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+
+      <div class="title-block service-title">
+
+        <div class="service-title__wrapper">
+          <h2 class="title-block__title">
+            Легковой шиномонтаж
+          </h2>
+
+          <a href="#" class="service-title__link">записаться</a>
+        </div>
+
+        <div class="service-title__info-wrapper">
+          <p class="service-title__info">
+            Постоянным клиентам <strong class="service-title__info service-title__info--red">
+            скидка 5-15%
+          </strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="service-nav__wrapper">
+        {% include "html/includes/service-nav.html" %}
+      </div>
+
+
+      <div class="service-contacts">
+
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle title-block__subtitle--red">
+            Контакты
+          </h3>
+        </div>
+
+        <div class="service-contacts__block">
+          <ul class="service-contacts__list">
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+
+
+                <!--                1 адрес-->
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г. Орел ул. Михалицына, 10</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На
+                        карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862490625"
+                       class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong>488-660</strong> <span>доб. <strong>1</strong></span>  </a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">info<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до 19.00</strong>
+                    </p>
+                  </div>
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">сб-вс<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+
+                </li>
+              </ul>
+            </li>
+
+
+            <!--            2 адрес-->
+
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г.Орел, Комсомольская, 270</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На
+                        карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862488660"
+                       class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong>488-660</strong><span> доб. <strong>3</strong></span> </a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">manager14<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до 19.00</strong>
+                    </p>
+                  </div>
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">сб-вс<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <!--                  <div class="service-contacts__img-wrapper">-->
+                  <!--                    <img src="../assets/img/service-cont1.svg" class="service-contacts__img">-->
+                  <!--                  </div>-->
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address"> г.Орел, Ломоносова, 6Б ТЦ "Утёс"</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На
+                        карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862488660"
+                       class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong> 488-660</strong><span> доб. <strong>2</strong></span> </a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">manager<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до
+                      19.00 </strong>
+                    </p>
+                  </div>
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">сб-вс<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+
+
+                </li>
+              </ul>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="tire-service__info-area">
+
+
+        <div class="tire-service__info-block">
+
+          <div class="title-block service-title__subtitle-wrapper">
+            <h3 class="service-title__subtitle title-block__subtitle">
+              О сервисе
+            </h3>
+          </div>
+
+          <p class="tire-service__info-text">
+            Наша компания выполняет широкий спектр работ по монтажу и ремонту шин от R10 до R24 по
+            привлекательным ценам, а именно:
+          </p>
+
+          <ul class="tire-service__info-list">
+            <li class="tire-service__info-item">
+              <span class="tire-service__info-text">снятие / установка шин на подъемнике</span>
+            </li>
+            <li class="tire-service__info-item">
+              <span class="tire-service__info-text">шиномонтаж на стенде с использованием «третьей руки» для низкопрофильных шин</span>
+            </li>
+            <li class="tire-service__info-item">
+              <span class="tire-service__info-text">качественная балансировка </span>
+            </li>
+            <li class="tire-service__info-item">
+                            <span class="tire-service__info-text">ремонт грыж, боковых порезов
+</span>
+            </li>
+            <li class="tire-service__info-item">
+              <span class="tire-service__info-text">мелкий ремонт шины, камеры, установка латки, жгута</span>
+            </li>
+          </ul>
+          <p class="tire-service__info-text">
+            Наши специалисты используют современное и высокотехнологическое оборудование, которое позволяет
+            справляться с любой, на первый взгляд, нерешаемой задачей.
+          </p>
+
+          <p class="tire-service__info-text tire-service__info-text--blue">
+            При покупке шин или дисков у нас Вы получаете скидку 20% на шиномонтажные работы этих товаров.
+          </p>
+        </div>
+      </div>
+
+      <div class="tire-service__calculator">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Рассчитать шиномонтаж
+          </h3>
+          <!--          <p class="fixing-disks__price-comment">-->
+          <!--            1 колесо-->
+          <!--          </p>-->
+        </div>
+        <div class="tire-service__download-wrapper">
+          <div id="buttons-price" class="d-flex justify-content-center flex-md-row flex-column">
+            <button id="button-full-price" class="tire-service__download-btn button button__gray">
+              <span class="tire-service__btn-link">Рассчитать шиномонтаж</span>
+            </button>
+            <button data-bs-toggle="modal"
+                    data-bs-target="#modal-enter"
+                    class="tire-service__reception-btn button button__red">
+              <span class="tire-service__btn-link">Записаться</span>
+            </button>
+          </div>
+          <div class="cost-calculation__info cost-form">
+            <span class="cost-calculation__title">Рассчитать стоимость услуг шиномонтажа</span>
+            <div class="cost-calculation__info  cost-calculation__info--visible">
+              <div class="cost-calculation__selects">
+                <select class="select-filter select-type">
+                  <option></option>
+                  <option value="1">sssssssssss</option>
+                  <option value="1">dddddddddddddddd</option>
+                  <option value="1">aaaaaaaaaaaaaaaaa</option>
+                  <option value="1">dddddddddddddddddd</option>
+                </select>
+                <select class="select-filter select-count">
+                  <option></option>
+                  <option value="1">sssssssssss</option>
+                  <option value="1">dddddddddddddddd</option>
+                  <option value="1">aaaaaaaaaaaaaaaaa</option>
+                  <option value="1">dddddddddddddddddd</option>
+                </select>
+                <select class="select-filter select-diameter">
+                  <option></option>
+                  <option value="1">sssssssssss</option>
+                  <option value="1">dddddddddddddddd</option>
+                  <option value="1">aaaaaaaaaaaaaaaaa</option>
+                  <option value="1">dddddddddddddddddd</option>
+                </select>
+              </div>
+              <div class="cost-calculation__row">
+                <div class="cost-calculation__col">
+                  <span class="cost-block-title">Прайс</span>
+                  <div class="cost-block">
+                    <table class="table table-mini">
+                      <thead>
+                      <tr>
+                        <th>
+                          <div class="table__header-item">
+                            Вид услуги
+                          </div>
+                        </th>
+                        <th>
+                          <div class="table__header-item">
+                            Цена (₽)
+                          </div>
+                        </th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>
+                          <label for="1" class="checkbox">
+                            <input type="checkbox" id="1">
+                            <span class="checkbox__square mr"></span>
+                            Снятие/установка колеса автомобиля
+                          </label>
+                        </td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label for="2" class="checkbox">
+                            <input type="checkbox" id="2">
+                            <span class="checkbox__square mr"></span>
+                            Монтаж/демонтаж
+                          </label>
+                        </td>
+                        <td>50</td>
+                      </tr>
+                      <tr class="price-bold">
+                        <td>
+                          стоимость работ за 1 колесо
+                        </td>
+                        <td>1500</td>
+                      </tr>
+                      <tr class="price-finally">
+                        <td>
+                          итого
+                        </td>
+                        <td>1500</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--     <div class="option-table__buttons">
+                         <button type="submit" class="button button&#45;&#45;gray">рассчитать</button>
+                       </div>-->
+                </div>
+                <form class="cost-calculation__col">
+                  <span class="cost-block-title">Запись на сервис</span>
+                  <div class="cost-block">
+                    <table class="table table-mini">
+                      <thead>
+                      <tr>
+                        <th>
+                          <div class="table__header-item text-left">
+                            контактные данные
+                          </div>
+                        </th>
+                      </tr>
+                      </thead>
+                    </table>
+                    <div class="form-user">
+                      <div class="form-group">
+                        <div class="input-container"
+                             id="dropdownMenuCalendar"
+                             data-bs-toggle="dropdown"
+                             data-bs-auto-close="outside"
+                             aria-expanded="false">
+                          <input
+                              type="text"
+                              class="input-container__input"
+                              placeholder="Дата*"
+                              required
+                          >
+                          <img src="../../assets/img/image-25.svg" alt="" class="svg">
+                        </div>
+
+                        <div
+                            class="dropdown-menu calendar-modal"
+                            aria-labelledby="dropdownMenuCalendar">
+                          <div class="">
+                            <div class="calendar-modal__body">
+                              <div class="calendar">
+                                <div class="calendar__month">
+                                  <button class="button calendar__month-prev">
+                                    <img src="./assets/img/image-12.svg" alt="Назад">
+                                  </button>
+                                  <span class="calendar__month-text">
+                                Сентябрь  2022
+                              </span>
+                                  <button class="button calendar__month-next">
+                                    <img src="./assets/img/image-12.svg" alt="Вперед">
+                                  </button>
+                                </div>
+                                <div class="calendar__days">
+        <span>
+          Пн
+        </span>
+                                  <span>
+          Вт
+        </span>
+                                  <span>
+          Ср
+        </span>
+                                  <span>
+          Чт
+        </span>
+                                  <span>
+          Пн
+        </span>
+                                  <span>
+          Пн
+        </span>
+                                  <span>
+          Пн
+        </span>
+                                </div>
+                                <div class="calendar__numbers">
+                                  <div class="calendar__numbers-row">
+                                    <span class="calendar__number other-month">24</span>
+                                    <span class="calendar__number other-month">25</span>
+                                    <span class="calendar__number other-month">26</span>
+                                    <span class="calendar__number other-month">27</span>
+                                    <span class="calendar__number other-month">28</span>
+                                    <span class="calendar__number">1</span>
+                                    <span class="calendar__number">2</span>
+                                  </div>
+                                  <div class="calendar__numbers-row">
+                                    <span class="calendar__number ">3</span>
+                                    <span class="calendar__number ">4</span>
+                                    <span class="calendar__number ">5</span>
+                                    <span class="calendar__number ">6</span>
+                                    <span class="calendar__number ">7</span>
+                                    <span class="calendar__number">8</span>
+                                    <span class="calendar__number">9</span>
+                                  </div>
+                                  <div class="calendar__numbers-row">
+                                    <span class="calendar__number ">10</span>
+                                    <span class="calendar__number ">11</span>
+                                    <span class="calendar__number ">12</span>
+                                    <span class="calendar__number ">13</span>
+                                    <span class="calendar__number ">14</span>
+                                    <span class="calendar__number">15</span>
+                                    <span class="calendar__number">16</span>
+                                  </div>
+                                  <div class="calendar__numbers-row">
+                                    <span class="calendar__number ">17</span>
+                                    <span class="calendar__number ">18</span>
+                                    <span class="calendar__number ">19</span>
+                                    <span class="calendar__number ">20</span>
+                                    <span class="calendar__number ">21</span>
+                                    <span class="calendar__number">22</span>
+                                    <span class="calendar__number">23</span>
+                                  </div>
+                                  <div class="calendar__numbers-row">
+                                    <span class="calendar__number ">24</span>
+                                    <span class="calendar__number ">25</span>
+                                    <span class="calendar__number ">26</span>
+                                    <span class="calendar__number ">27</span>
+                                    <span class="calendar__number ">28</span>
+                                    <span class="calendar__number">29</span>
+                                    <span class="calendar__number">30</span>
+                                  </div>
+                                  <div class="calendar__numbers-row">
+                                    <span class="calendar__number ">31</span>
+                                    <span class="calendar__number other-month">1</span>
+                                    <span class="calendar__number other-month">2</span>
+                                    <span class="calendar__number other-month">3</span>
+                                    <span class="calendar__number other-month">4</span>
+                                    <span class="calendar__number other-month">5</span>
+                                    <span class="calendar__number other-month">6</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                            class="input-container"
+                            id="dropdownMenuTime"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                          <input
+                              type="text"
+                              class="input-container__input"
+                              placeholder="Время*"
+                              required
+                          >
+                          <img src="../../assets/img/image-24.svg" alt="" class="svg">
+                        </div>
+                        <div
+                            class="dropdown-menu calendar-modal time-modal"
+                            aria-labelledby="dropdownMenuTime">
+                          <div class="">
+                            <div class="calendar-modal__body">
+                              <div class="time">
+                                <div class="time__title">
+                                  Расписание работы сервиса
+                                </div>
+                                <div class="time__text-area">
+                                  <div class="time__text time__text--free-time">Свободное время</div>
+                                  <div class="time__text time__text--busy-time">Занятое время</div>
+                                </div>
+                                <div class="time-buttons">
+                                  <div class="time-buttons__row">
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button time-button--active">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                  </div>
+                                  <div class="time-buttons__row">
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                    <span class="time-button">9.00</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-container">
+                          <input
+                              type="text"
+                              class="input-container__input"
+                              placeholder="Фио*"
+                              required
+                          >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-container">
+                          <input
+                              type="text"
+                              class="input-container__input"
+                              placeholder="Контактный телефон*"
+                              required
+                          >
+                        </div>
+                        <div class="input-container">
+                          <input
+                              type="text"
+                              class="input-container__input"
+                              placeholder="Email*"
+                              required
+                          >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-container">
+                          <textarea class="input-container__textarea" placeholder="Комментарий"></textarea>
+                        </div>
+                      </div>
+                      <p class="form-user__required-text">* Поля являются обязательными для заполнения</p>
+                      <label for="4" class="checkbox">
+                        <input type="checkbox" id="4">
+                        Я согласен с условиями передачи данных. <a href="/">Соглашение</a>. &nbsp;
+                        <span class="checkbox__square mr"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="option-table__buttons">
+                    <button type="submit" class="button button__red">записаться</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tire-service__price">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Стоимость услуг
+          </h3>
+          <p class="fixing-disks__price-comment">
+            1 колесо
+          </p>
+        </div>
+        <!--                <div class="tire-service__download-wrapper">-->
+        <!--                    <button class="tire-service__download-btn button">-->
+        <!--                        <a href="#" class="tire-service__btn-link">Рассчитать шиномонтаж</a>-->
+        <!--                    </button>-->
+        <!--                    <button class="tire-service__reception-btn button button__red">-->
+        <!--                        <a href="#" class="tire-service__btn-link">Записаться</a>-->
+        <!--                    </button>-->
+        <!--                </div>-->
+
+        <div class="service-table__wrapper">
+          <div class="service-table__subtitle-wrapper">
+            <p class="service-table__subtitle">
+              Ремонт шины и камеры
+            </p>
+          </div>
+          <div class="fixing-disks__table">
+
+            <table class="service-table service-table--tire-service">
+              <tr class="service-table__cell">
+                <td class="service-table__heading">
+                  Услуга
+                </td>
+                <td class="service-table__heading service-table__text--center">
+                  Цена<span>, руб </span>
+                </td>
+
+              </tr>
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Вулканизация камеры
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  от 80
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Вулканизация шины
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  от 300
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Установка латки на камеру
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  80
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Установка латки на шину б/к
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  100
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Установка жгута
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  80
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Установка жгута без снятия шины
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  100
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Установка грибка
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  150
+                </td>
+              </tr>
+
+
+            </table>
+          </div>
+        </div>
+
+        <div class="service-table__wrapper">
+          <div class="service-table__subtitle-wrapper">
+            <p class="service-table__subtitle">
+              Установка кордового пластыря
+            </p>
+          </div>
+          <div class="fixing-disks__table">
+
+            <table class="service-table service-table--tire-service">
+              <tr class="service-table__cell">
+                <td class="service-table__heading">
+                  Услуга
+                </td>
+                <td class="service-table__heading service-table__text--center">
+                  Цена<span>, руб </span>
+                </td>
+
+              </tr>
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R10
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  250
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R18
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  300
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R19
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  350
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R20
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  400
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+
+        <div class="service-table__wrapper">
+          <div class="service-table__subtitle-wrapper">
+            <p class="service-table__subtitle">
+              Уплотнение борта бескамерной шины герметиком
+            </p>
+          </div>
+          <div class="fixing-disks__table">
+
+            <table class="service-table service-table--tire-service">
+              <tr class="service-table__cell">
+                <td class="service-table__heading">
+                  Услуга
+                </td>
+                <td class="service-table__heading service-table__text--center">
+                  Цена<span>, руб </span>
+                </td>
+
+              </tr>
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R12, R13, R14
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  50
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R15,R16,R17
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  70
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  R19
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  350
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  от R18
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  100
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+
+        <div class="service-table__wrapper">
+          <div class="service-table__subtitle-wrapper">
+            <p class="service-table__subtitle">
+              Другие услуги
+            </p>
+          </div>
+          <div class="fixing-disks__table">
+
+            <table class="service-table service-table--tire-service">
+              <tr class="service-table__cell">
+                <td class="service-table__heading">
+                  Услуга
+                </td>
+                <td class="service-table__heading service-table__text--center">
+                  Цена<span>, руб </span>
+                </td>
+
+              </tr>
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Использование при балансировке адаптера по посадочному отверстию диска
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  50
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Проверка давления в шинах 4 шт
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  20
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Проверка давления в шинах 1 шт.
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  10
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Упаковочный пакет 1 шт.
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  25
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Использование домкрата 1шт.
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  50
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Вентиль чёрный + установка
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  30
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Вентиль хром + установка
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  50
+                </td>
+              </tr>
+
+              <tr class="service-table__cell">
+                <td class="service-table__text">
+                  Стоимость грузов свыше 100г на 1 колесо
+                </td>
+                <td class="service-table__text service-table__text--center">
+                  1 p/г
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+
+
+        <div class="tire-service__download-wrapper">
+          <button class="tire-service__reception-btn button button__red">
+            <a href="#" class="tire-service__btn-link">Записаться</a>
+          </button>
+        </div>
+
+
+      </div>
+
+      <div class="tire-service__map service-map">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Схема проезда
+          </h3>
+        </div>
+        <div class="service-map__block">
+          <div class="service-map__scroll">
+            <ul class="service-map__address-list">
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул. Михалицына, 10</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">info@protektor57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862488660" class="service-map__address-tel">+7 (4862)
+                    <strong>488-660</strong> <span>доб. <strong>1</strong></span></a>
+                  <div>
+                    <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                    <p class="service-map__address-working">сб-вс с 10.00 до 18.00</p>
+                  </div>
+                </div>
+              </li>
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул. Комсомольская,270</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">manager14@protektor57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862488660" class="service-map__address-tel">+7 (4862)
+                    <strong>488-660</strong> <span>доб. <strong>3</strong></span></a>
+                  <div>
+                    <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                    <p class="service-map__address-working">сб-вс с 10.00 до 18.00</p>
+                  </div>
+                </div>
+              </li>
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул.Ломоносова, 6Б </p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">manager@protektor57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862488660" class="service-map__address-tel">+7 (4862)
+                    <strong>488-660</strong> <span>доб. <strong>2</strong></span></a>
+                  <div>
+                    <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                    <p class="service-map__address-working">сб-вс с 10.00 до 18.00</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="service-map__map-wrapper">
+            <script type="text/javascript" charset="utf-8" async
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A871b7d965d5e7185851f591fa626c82dfcf0067961a0d0683fdc13b63bf026ff&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<div class="modal modal-enter fade " id="modal-enter" tabindex="-1" role="dialog"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-body">
+        <button type="button" class="button modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <img src="../../assets/img/icon-32.svg" alt="Закрыть">
+        </button>
+        <form class="cost-calculation__col">
+          <span class="cost-block-title">Запись на сервис</span>
+          <div class="cost-block">
+            <table class="table table-mini">
+              <thead>
+              <tr>
+                <th>
+                  <div class="table__header-item text-left">
+                    контактные данные
+                  </div>
+                </th>
+              </tr>
+              </thead>
+            </table>
+            <div class="form-user">
+              <div class="form-group">
+                <div class="input-container"
+                     id="dropdownMenuCalendar"
+                     data-bs-toggle="dropdown"
+                     data-bs-auto-close="outside"
+                     aria-expanded="false">
+                  <input
+                      type="text"
+                      class="input-container__input"
+                      placeholder="Дата*"
+                      required
+                  >
+                  <img src="../../assets/img/image-25.svg" alt="" class="svg">
+                </div>
+
+                <div
+                    class="dropdown-menu calendar-modal"
+                    aria-labelledby="dropdownMenuCalendar">
+                  <div class="">
+                    <div class="calendar-modal__body">
+                      <div class="calendar">
+                        <div class="calendar__month">
+                          <button class="button calendar__month-prev">
+                            <img src="./assets/img/image-12.svg" alt="Назад">
+                          </button>
+                          <span class="calendar__month-text">
+                                Сентябрь  2022
+                              </span>
+                          <button class="button calendar__month-next">
+                            <img src="./assets/img/image-12.svg" alt="Вперед">
+                          </button>
+                        </div>
+                        <div class="calendar__days">
+        <span>
+          Пн
+        </span>
+                          <span>
+          Вт
+        </span>
+                          <span>
+          Ср
+        </span>
+                          <span>
+          Чт
+        </span>
+                          <span>
+          Пн
+        </span>
+                          <span>
+          Пн
+        </span>
+                          <span>
+          Пн
+        </span>
+                        </div>
+                        <div class="calendar__numbers">
+                          <div class="calendar__numbers-row">
+                            <span class="calendar__number other-month">24</span>
+                            <span class="calendar__number other-month">25</span>
+                            <span class="calendar__number other-month">26</span>
+                            <span class="calendar__number other-month">27</span>
+                            <span class="calendar__number other-month">28</span>
+                            <span class="calendar__number">1</span>
+                            <span class="calendar__number">2</span>
+                          </div>
+                          <div class="calendar__numbers-row">
+                            <span class="calendar__number ">3</span>
+                            <span class="calendar__number ">4</span>
+                            <span class="calendar__number ">5</span>
+                            <span class="calendar__number ">6</span>
+                            <span class="calendar__number ">7</span>
+                            <span class="calendar__number">8</span>
+                            <span class="calendar__number">9</span>
+                          </div>
+                          <div class="calendar__numbers-row">
+                            <span class="calendar__number ">10</span>
+                            <span class="calendar__number ">11</span>
+                            <span class="calendar__number ">12</span>
+                            <span class="calendar__number ">13</span>
+                            <span class="calendar__number ">14</span>
+                            <span class="calendar__number">15</span>
+                            <span class="calendar__number">16</span>
+                          </div>
+                          <div class="calendar__numbers-row">
+                            <span class="calendar__number ">17</span>
+                            <span class="calendar__number ">18</span>
+                            <span class="calendar__number ">19</span>
+                            <span class="calendar__number ">20</span>
+                            <span class="calendar__number ">21</span>
+                            <span class="calendar__number">22</span>
+                            <span class="calendar__number">23</span>
+                          </div>
+                          <div class="calendar__numbers-row">
+                            <span class="calendar__number ">24</span>
+                            <span class="calendar__number ">25</span>
+                            <span class="calendar__number ">26</span>
+                            <span class="calendar__number ">27</span>
+                            <span class="calendar__number ">28</span>
+                            <span class="calendar__number">29</span>
+                            <span class="calendar__number">30</span>
+                          </div>
+                          <div class="calendar__numbers-row">
+                            <span class="calendar__number ">31</span>
+                            <span class="calendar__number other-month">1</span>
+                            <span class="calendar__number other-month">2</span>
+                            <span class="calendar__number other-month">3</span>
+                            <span class="calendar__number other-month">4</span>
+                            <span class="calendar__number other-month">5</span>
+                            <span class="calendar__number other-month">6</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                    class="input-container"
+                    id="dropdownMenuTime"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                  <input
+                      type="text"
+                      class="input-container__input"
+                      placeholder="Время*"
+                      required
+                  >
+                  <img src="../../assets/img/image-24.svg" alt="" class="svg">
+                </div>
+                <div
+                    class="dropdown-menu calendar-modal time-modal"
+                    aria-labelledby="dropdownMenuTime">
+                  <div class="">
+                    <div class="calendar-modal__body">
+                      <div class="time">
+                        <div class="time__title">
+                          Расписание работы сервиса
+                        </div>
+                        <div class="time__text-area">
+                          <div class="time__text time__text--free-time">Свободное время</div>
+                          <div class="time__text time__text--busy-time">Занятое время</div>
+                        </div>
+                        <div class="time-buttons">
+                          <div class="time-buttons__row">
+                            <span class="time-button">9.00</span>
+                            <span class="time-button time-button--active">9.00</span>
+                            <span class="time-button">9.00</span>
+                            <span class="time-button">9.00</span>
+                            <span class="time-button">9.00</span>
+                          </div>
+                          <div class="time-buttons__row">
+                            <span class="time-button">9.00</span>
+                            <span class="time-button">9.00</span>
+                            <span class="time-button">9.00</span>
+                            <span class="time-button">9.00</span>
+                            <span class="time-button">9.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-container">
+                  <input
+                      type="text"
+                      class="input-container__input"
+                      placeholder="Фио*"
+                      required
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-container">
+                  <input
+                      type="text"
+                      class="input-container__input"
+                      placeholder="Контактный телефон*"
+                      required
+                  >
+                </div>
+                <div class="input-container">
+                  <input
+                      type="text"
+                      class="input-container__input"
+                      placeholder="Email*"
+                      required
+                  >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-container">
+                  <textarea class="input-container__textarea" placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+              <p class="form-user__required-text">* Поля являются обязательными для заполнения</p>
+              <label for="5" class="checkbox">
+                Я согласен с условиями передачи данных. <a href="/">Соглашение</a>. &nbsp;
+                <input type="checkbox" id="5">
+                <span class="checkbox__square mr"></span>
+              </label>
+            </div>
+          </div>
+          <div class="option-table__buttons">
+            <button type="submit" class="button button__red">подтвердить запись</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

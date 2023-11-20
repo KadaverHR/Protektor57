@@ -1,0 +1,493 @@
+{% set title = "Грузовой шиномонтаж" %}
+{% set bodyClass = "is-truck-service" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/truck-service-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/truck-service-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/truck-service-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/truck-service-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Сервис
+        </h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+      </div>
+
+    </div> 
+  </div>
+
+  <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/truck-service-banner-mobile-tyres.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__truck-service banner-tyres__img"
+            src="../../assets/img/truck-service-banner-tyres.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="truck-service">
+
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+
+      <div class="title-block service-title">
+
+        <div class="service-title__wrapper">
+          <h2 class="title-block__title">
+            Грузовой шиномонтаж
+          </h2>
+
+<!--          <a href="#" class="service-title__link">записаться</a>-->
+        </div>
+
+        <div class="service-title__info-wrapper">
+          <p class="service-title__info">
+            Постоянным клиентам <strong class="service-title__info service-title__info--red">
+            скидка 5-15%
+          </strong>
+          </p>
+        </div>
+      </div>
+
+      <div iv class="service-nav__wrapper">
+        {% include "html/includes/service-nav.html" %}
+      </div>
+
+
+      <div class="service-contacts">
+
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle title-block__subtitle--red">
+            Контакты
+          </h3>
+        </div>
+
+        <div class="service-contacts__block">
+          <ul class="service-contacts__list">
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+
+
+                <!--                1 адрес-->
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г. Орел, пер. Маслозаводской, 28А</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862490625" class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong>490-625</strong></a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">gruz<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-вс<strong> с 9.00 до 21.00</strong>
+                    </p>
+                  </div>
+
+
+                </li>
+              </ul>
+            </li>
+
+
+            <!--            2 адрес-->
+
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г. Орел, ул. Итальянская, 1Г</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862630044" class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong>630-044</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">gruz<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-вс<strong> круглосуточно</strong></p>
+                  </div>
+
+
+                </li>
+              </ul>
+            </li>
+
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <!--                  <div class="service-contacts__img-wrapper">-->
+                  <!--                    <img src="../assets/img/service-cont1.svg" class="service-contacts__img">-->
+                  <!--                  </div>-->
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г. Орел, ш. Московское, 173</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862634747" class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong> 634-747</strong></a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">gruz<strong>@protektor57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-пт<strong> с 9.00 до 20.00</strong>
+                    </p>
+                  </div>
+
+
+                </li>
+              </ul>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="truck-service__info">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Мы производим следующие виды работ
+          </h3>
+        </div>
+
+        <ul class="truck-service__info-list">
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Снятие / установка шин</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Монтаж / демонтаж на стенде </span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Качественная балансировка</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Нарезка протектора грузовых шин</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт  грыж, проколов, боковых порезов </span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт шин сельхозтехники и тракторов</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт шин карьерных самовалов, крановой техники </span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Шиномонтаж с/х  шин до 56 дюймов </span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт сложных боковых порезов и повреждений (порезы до 20см)</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт сложных повреждений  по беговой дорожке</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт плечевой зоны шины и ремонт вырова протектора</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт шин фронтальных погрузчиков,  экскаватров, грейдеров </span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт порывов крупногабаритных камер</span>
+          </li>
+          <li class="truck-service__info-item">
+            <span class="truck-service__info-text">Ремонт шин карьерных самосвалов, крановой техники</span>
+          </li>
+        </ul>
+        <p class="truck-service__info-comment">Стоимость работ по монтажу/демонтажу шины определяется мастером и зависит
+          от ширины шины, высоты и толщины борта, массы колеса. </p>
+        <p class="truck-service__info-comment">Окончательная стоимость ремонта определяется только после
+          диагностики(разработки) повреждения шины и согласования используемых в ремонте
+          материалов в порядке очереди в течение одного-двух часов рабочего времен на одно
+          колесо.
+          Колеса в ремонт принимаются только в чистом виде. </p>
+
+
+      </div>
+
+
+      <!-- <div class="truck-service__price">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Стоимость услуг
+          </h3>
+          <p class="truck-service__price-comment">
+            1 колесо
+          </p>
+        </div>
+        <div class="truck-service__table">
+          <table class=" service-table">
+            <tr class="service-table__cell">
+              <td class="service-table__heading">
+                Услуга
+              </td>
+              <td class="service-table__heading">
+                Цена<span>, руб </span>
+              </td>
+            </tr>
+            <tr class="service-table__cell">
+              <td class=" service-table__text">
+                Снятие и постановка одиночного колеса л/грузовика, микроавтобуса
+              </td>
+              <td class="service-table__text">
+                от 300
+              </td>
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                Снятие и постановка одиночного колеса л/грузовика, микроавтобуса
+              </td>
+              <td class=" service-table__text">
+                от 300
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="truck-service__download-wrapper">
+         
+            <a href="#" class="truck-service__download-link button button__gray">скачать прайс</a>
+        
+        </div>
+
+      </div> -->
+
+      <div class="truck-service__map service-map">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Схема проезда на шиномонтаж
+          </h3>
+        </div>
+
+        <div class="service-map__block">
+          <div class="service-map__scroll">
+            <ul class="service-map__address-list">
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> пер. Маслозаводской, 28А</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">gruz@protektor57.ru </a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862490625" class="service-map__address-tel">+7 (4862) <strong>
+                    490-625</strong></a>
+                  <div>
+                  <p class="service-map__address-working">пн-вс с 9.00 до 19.00</p>
+                  </div>
+                </div>
+              </li>
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул. Итальянская, 1Г</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">gruz@protektor57.ru </a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862630044" class="service-map__address-tel">+7 (4862)
+                    <strong>630-044</strong></a>
+                  <div>
+                  <p class="service-map__address-working">круглосуточно</p>
+                  </div>
+                </div>
+              </li>
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ул.Московское шоссе, 173</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">gruz@protektor57.ru </a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:+74862634747" class="service-map__address-tel">+7 (4862) <strong>634-747</strong></a>
+                  <div>
+                  <p class="service-map__address-working">пн-пт с 9.00 до 20.00</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="service-map__map-wrapper">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A07fd408e1de9ec36a0bb3b737b8c7240026df85179dbe017cce5b5264b42a4de&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  </div>
+</section>
+
+
+{% endblock %}

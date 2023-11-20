@@ -1,0 +1,76 @@
+.fixing-disks
+  &__info-list
+    border-bottom: 1px solid #D6DFE6
+    display: flex
+    flex-direction: column
+  &__info-item
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    @media all and ($mobile)
+      flex-direction: column
+  &__info-item div:first-child
+    margin-right: 30px
+    @media all and ($mobile)
+      margin-right: 0
+  @media all and ($mobile)
+    &__info-item--mobile div:first-child
+      order: 1
+  &__text-wrapper
+    display: flex
+    flex-direction: column
+    max-width: 80%
+    @media all and ($mobile)
+      max-width: 100%
+  &__text
+    font: 400 15px/150% 'Open Sans', sans-serif
+  &__img-wrapper
+    min-width: 161px
+    @media all and ($mobile)
+      width: 100%
+      display: flex
+      justify-content: center
+      padding-top: 24px
+    img
+      border-radius: 5px
+      object-fit: cover
+  &__price
+    padding-top: 30px
+    margin-bottom: 30px
+  &__price-comment
+    font: 400 15px/20px "Open Sans", sans-sarif
+    color: #222
+    text-transform: uppercase
+    position: relative
+    padding-left: 5px
+    &::before
+      content: ""
+      position: absolute
+      height: 18px
+      width: 1px
+      background: #AAB2C2
+      bottom: 10%
+      left: 0
+  &__table
+    width: 100%
+    overflow-x: auto
+  &__download-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 25px 0
+    background: #FFFFFF
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 15%)
+    border-radius: 10px
+    margin-top: 50px
+    @media all and ($mobile)
+      margin-top: 30px
+  &__download-btn
+    border-radius: 50px
+    padding: 9px 77px
+    font: 700 13px/18px "Open Sans", sans-sarif
+    color: #FFF
+    text-transform: uppercase
+    &:hover, &:focus, &:active
+      color:  #FFF    

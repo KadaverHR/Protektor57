@@ -1,0 +1,375 @@
+{% set title = "Подбор по авто" %}
+{% set bodyClass = "is-selection-by-car" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+    <!-- <a href="/" class="new-store">
+      <img
+        width="61"
+        height="297"
+        src="../../assets/img/img-53.png"
+        alt="Новый магазин">
+    </a> -->
+    <div class="container-fluid">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/selection-by-car-banner-mobile.jpg"
+        >
+        <source
+          type="image/webp"
+          media="(max-width: 1023.9px)"
+          srcset="../../assets/img/selection-by-car-banner-table.jpg"
+        >
+        <source
+          type="image/webp"
+          media="(max-width: 1139.9px)"
+          srcset="../../assets/img/selection-by-car-banner-middle.jpg"
+        >
+        <img
+          class="main-banner-section__bg"
+          src="../../assets/img/selection-by-car-banner.jpg"
+          alt="Сервис">
+      </picture>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="main-banner-navigation">
+            <a href="/" class="main-banner-navigation__logo">
+              <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+            </a>
+  
+            <div class="main-banner-navigation__search">
+              <div class="search-area">
+                <form class="search">
+                  <input type="text" class="search__input" value="" placeholder="Поиск">
+                  <button class="button search__button" type="submit">
+                    <img src="../../assets/img/img-40.svg" alt="Найти">
+                  </button>
+  
+                </form>
+              </div>
+            </div>
+            <div class="main-banner-navigation__cart main-banner-cart">
+              <img
+                class="main-banner-cart__image"
+                src="../../assets/img/img-47.svg"
+                alt="Корзина"
+                width="42"
+                height="42"
+              >
+              <div class="main-banner-cart__count">
+                <strong>2 </strong>товара
+              </div>
+              <div class="main-banner-cart__price">
+                <strong>12 345 </strong>₽
+              </div>
+            </div>
+            <div class="main-banner-cart-mobile">
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-50.svg" alt="Поиск">
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-51.svg" alt="Звонок">
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-52.svg" alt="Корзина">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="container">
+        <div class="main-banner-info main-banner-info--small">
+          <h1 class="main-banner-info__title-small">
+            Подбор шин и дисков
+          </h1>
+          <!-- <h3  class="main-banner-info__sub-title">
+            Шины, акб, масла, диски и камеры,
+            шиномонтаж, бесплатное хранение
+          </h3>
+          <a href="/" class="button main-banner-info__button">
+            подобрать
+          </a> -->
+        </div>
+  
+      </div> 
+    </div>
+  
+    <!-- <div class="container-fluid">
+        <div class="container">
+       
+        <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/truck-service-banner-mobile-tyres.png"
+            >
+            <img
+              class="banner-tyres banner-tyres__truck-service banner-tyres__img"
+              src="../../assets/img/truck-service-banner-tyres.png"
+              alt="Сервис">
+          </picture>
+        </div>
+    </div> -->
+  </section>
+
+<section class="selection-by-car">
+
+    <div class="container-fluid">
+        <div class="container">
+            {% include "html/includes/breadcrumbs.html" %}
+            {% include "html/includes/car-forms.html" %}
+
+            <div class="title-block">
+                <h2 class="title-block__title">Acura CDX Кроссовер 1.5T 201 6</h2>
+            </div>
+            <div class="selection-by-car__area">
+                <div class="selection-by-car__block-wrapper selection-by-car__grid1">
+                    <div class="selection-by-car__title-wrapper">
+                        <p class="selection-by-car__title">
+                            Шины
+                        </p>
+                    </div>
+                    <div class="selection-by-car__img-wrapper">
+                        <img src="../../assets/img/selection-by-car-img1.jpg" alt="" class="selection-by-car__img">
+                    </div>
+                </div>
+                <div class="selection-by-car__block-wrapper selection-by-car__grid2">
+                    <div class="selection-by-car__title-wrapper">
+                        <p class="selection-by-car__title">
+                            Диски
+                        </p>
+                    </div>
+                    <div class="selection-by-car__img-wrapper">
+                        <img src="../../assets/img/selection-by-car-img2.jpg" alt="" class="selection-by-car__img">
+                    </div>
+                </div>
+                <div class="selection-by-car__content selection-by-car__grid3">
+                    <div class="selection-by-car__subtitle-wrapper">
+                        <p class="selection-by-car__subtitle">
+                            Заводская комплектация
+                        </p>
+                    </div>
+                    <div class="selection-by-car__axis-block">
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Обе оси
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">225/45 R17</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">235/35 R19</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">225/45 R17</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">235/35 R19</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Передняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">225/45 R17</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Задняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-by-car__content selection-by-car__grid4">
+                    <div class="selection-by-car__subtitle-wrapper">
+                        <p class="selection-by-car__subtitle">
+                            Заводская комплектация
+                        </p>
+                    </div>
+                    <div class="selection-by-car__axis-block">
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Обе оси
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">7.5x18/5x98 DIA58.1 ET35</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x19/5x98 DIA58.1 ET35</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Передняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Задняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-by-car__content selection-by-car__grid5">
+                    <div class="selection-by-car__subtitle-wrapper">
+                        <p class="selection-by-car__subtitle">
+                            Альтернативные размеры
+                        </p>
+                    </div>
+                    <div class="selection-by-car__axis-block">
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Обе оси
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">225/45 R17</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">235/35 R19</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">225/45 R17</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">235/35 R19</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Передняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">225/45 R17</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Задняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-by-car__content selection-by-car__grid6">
+                    <div class="selection-by-car__subtitle-wrapper">
+                        <p class="selection-by-car__subtitle">
+                            Альтернативные размеры
+                        </p>
+                    </div>
+                    <div class="selection-by-car__axis-block">
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Обе оси
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Передняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="selection-by-car__axis-wrapper">
+                            <p class="selection-by-car__axis">
+                                Задняя ось
+                            </p>
+                            <ul class="selection-by-car__axis-list">
+                                <li class="selection-by-car__axis-item">
+                                    <button class="selection-by-car__axis-btn">
+                                        <a href="#" class="selection-by-car__axis-link">8x18/5x98 DIA58.1 ET32</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

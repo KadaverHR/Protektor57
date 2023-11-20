@@ -1,0 +1,340 @@
+{% set title = "Ссылки" %} {% set bodyClass = "is-main" %} {% extends
+"html/layouts/default.html" %} {% block content %}
+
+<section class="main-banner-section">
+  <a href="/" class="new-store">
+    <img width="61" height="297" src="../../assets/img/img-53.png" alt="Новый магазин" />
+  </a>
+
+  <!-- Шапка банера -->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="main-banner-navigation">
+        <a href="/" class="main-banner-navigation__logo">
+          <img src="../../assets/img/img-46.svg" width="257" height="30" alt="Протектор57" />
+        </a>
+
+        <div class="main-banner-navigation__search">
+          <div id="search" class="search-area">
+            <form  class="search">
+              <select class="search__select select-type" style="width: 100%">
+                <!-- <option></option> -->
+                <option value="1">Шины</option>
+                <option value="2">Диски</option>
+                <option value="3">Масла</option>
+                <option value="4">Жидкости</option>
+                <option value="5">Аккумуляторы</option>
+                <option value="6">Камеры</option>
+              </select>
+              <input type="text" class="search__input" value="" placeholder="Поиск" />
+              <button class="button search__button" type="submit">
+                <img src="../../assets/img/img-40.svg" alt="Найти" />
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="main-banner-navigation__cart main-banner-cart">
+          <img class="main-banner-cart__image" src="../../assets/img/img-47.svg" alt="Корзина" width="42" height="42" />
+          <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+          <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+        </div>
+        <div class="main-banner-cart-mobile">
+          <a class="main-banner-cart-mobile__link main-banner-cart-mobile__link--search">
+            <img src="../../assets/img/img-50.svg" alt="Поиск" />
+          </a>
+          <a href="/" class="main-banner-cart-mobile__link">
+            <img src="../../assets/img/img-51.svg" alt="Звонок" />
+          </a>
+          <a href="/" class="main-banner-cart-mobile__link">
+            <img src="../../assets/img/img-52.svg" alt="Корзина" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- конец шапки баннера -->
+
+  <div class="swiper swiper-banner">
+    <div class="swiper-wrapper">
+
+
+      <!-- Слайд-1 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <!-- <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner1-mobile.jpg"
+            /> -->
+          <img class="main-banner-section__bg" src="../../assets/img/banner1.jpg" alt="Сервис" />
+          <!-- </picture> -->
+          <div class="container-fluid">
+            <div class="container">
+              <!-- <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner1-info-mobile.png"
+                /> -->
+              <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner1-info.png" alt="Сервис" />
+              <!-- </picture> -->
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Слайд-2 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <picture>
+            <!-- <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner2-mobile.jpg"
+            /> -->
+            <img class="main-banner-section__bg" src="../../assets/img/banner2.jpg" alt="Сервис" />
+            <!-- </picture> -->
+            <div class="container-fluid">
+              <div class="container">
+                <!-- <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner2-info-mobile.png"
+                /> -->
+                <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner2-info.png" alt="Сервис" />
+                <!-- </picture> -->
+              </div>
+            </div>
+        </div>
+      </a>
+
+      <!-- Слайд-3 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <!-- <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner3-mobile.jpg"
+            /> -->
+          <img class="main-banner-section__bg" src="../../assets/img/banner3.jpg" alt="Сервис" />
+          <!-- </picture> -->
+          <div class="container-fluid">
+            <div class="container">
+              <!-- <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner3-info-mobile.png"
+                /> -->
+              <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner3-info.png" alt="Сервис" />
+              <!-- </picture> -->
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Слайд-4 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <!-- <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner4-mobile.jpg"
+            /> -->
+          <img class="main-banner-section__bg" src="../../assets/img/banner4.jpg" alt="Сервис" />
+          <!-- </picture> -->
+          <div class="container-fluid">
+            <div class="container">
+              <!-- <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner4-info-mobile.png"
+                /> -->
+              <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner4-info.png" alt="Сервис" />
+              <!-- </picture> -->
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Слайд-5 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <!-- <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner5-mobile.jpg"
+            /> -->
+          <img class="main-banner-section__bg" src="../../assets/img/banner5.jpg" alt="Сервис" />
+          <!-- </picture> -->
+          <div class="container-fluid">
+            <div class="container">
+              <picture>
+                <!-- <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner4-info-mobile.png"
+                /> -->
+                <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner5-info.png" alt="Сервис" />
+                <!-- </picture> -->
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Слайд-6 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <!-- <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner6-mobile.jpg"
+            /> -->
+          <img class="main-banner-section__bg" src="../../assets/img/banner6.jpg" alt="Сервис" />
+          <!-- </picture> -->
+          <div class="container-fluid">
+            <div class="container">
+              <!-- <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner6-info-mobile.png"
+                /> -->
+              <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner6-info.png" alt="Сервис" />
+              <!-- </picture> -->
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- Слайд-7 -->
+      <a href="/" class="swiper-slide">
+        <div class="container-fluid">
+          <!-- <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767.9px)"
+              srcset="../../assets/img/banner6-mobile.jpg"
+            /> -->
+          <img class="main-banner-section__bg" src="../../assets/img/banner7.jpg" alt="Сервис" />
+          <!-- </picture> -->
+          <div class="container-fluid">
+            <div class="container">
+              <!-- <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767.9px)"
+                  srcset="../../assets/img/banner6-info-mobile.png"
+                /> -->
+              <img class="banner-tyres banner-tyres__info" src="../../assets/img/banner7-info.png" alt="Сервис" />
+              <!-- </picture> -->
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="swiper-pagination swiper-banner__pagination"></div>
+  </div>
+</section>
+
+<section class="tire-selection-section section-common-title">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="tire-selection-body">
+        <div class="title-block">
+          <h2 class="title-block__title">Подбор шин и дисков</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-12 tire-selection-section__col">
+            <div class="tire-selection-item" id="1">
+              <div class="tire-selection-item__header">
+                <div class="tire-selection-item__header-info">
+                  <img class="tire-selection-item__header-icon" src="./assets/img/img-36.svg" alt="Icon-1" />
+                  <span class="tire-selection-item__header-text">
+                    Подбор шин
+                  </span>
+                </div>
+              </div>
+              <div class="tire-selection-item__body">
+                <div class="tire-selection-item__select">
+                  <select class="select-filter select-type tire-selection-item__select" style="width: 100%">
+                    <option></option>
+                    <option value="1">10</option>
+                    <option value="1">20</option>
+                  </select>
+                </div>
+                <div class="tire-selection-item__select">
+                  <select class="select-filter select-type tire-selection-item__select" style="width: 100%">
+                    <option></option>
+                    <option value="1">10</option>
+                    <option value="1">20</option>
+                  </select>
+                </div>
+
+                <div class="tire-selection-item__buttons">
+                  <a href="/" class="button button__gray-red card-product__button">
+                    Подобрать
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 tire-selection-section__col">
+            <div class="tire-selection-item" id="2">
+              <div class="tire-selection-item__header">
+                <div class="tire-selection-item__header-info">
+                  <img class="tire-selection-item__header-icon" src="./assets/img/img-37.svg" alt="Icon-1" />
+                  <span class="tire-selection-item__header-text">
+                    Подбор дисков
+                  </span>
+                </div>
+              </div>
+              <div class="tire-selection-item__body">
+                <div class="tire-selection-item__buttons">
+                  <a href="/" class="button button__gray-red card-product__button">
+                    Подобрать
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 tire-selection-section__col">
+            <div class="tire-selection-item" id="3">
+              <div class="tire-selection-item__header">
+                <div class="tire-selection-item__header-info">
+                  <img class="tire-selection-item__header-icon" src="./assets/img/img-38.svg" alt="Icon-1" />
+                  <span class="tire-selection-item__header-text">
+                    По автомобилю
+                  </span>
+                </div>
+              </div>
+              <div class="tire-selection-item__body">
+                <div class="tire-selection-item__buttons">
+                  <a href="/" class="button button__gray-red card-product__button">
+                    Подобрать
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "html/includes/swiper-catalog.html" %} {% include
+"html/includes/swiper-service.html" %} {% include
+"html/includes/swiper-discounts.html" %} {% include
+"html/includes/swiper-stocks.html" %} {% include
+"html/includes/swiper-company.html" %} {% include
+"html/includes/swiper-brand.html" %} {% include "html/includes/stocks-form.html"
+%} {% endblock %}

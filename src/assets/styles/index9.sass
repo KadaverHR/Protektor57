@@ -1,0 +1,372 @@
+.service-title
+  display: flex
+  align-items: center
+  justify-content: space-between
+  align-items: baseline
+  margin-top: 30px
+  @media all and ($table)
+    margin-top: 13px
+  &__wrapper
+    display: flex
+    align-items: flex-end
+    align-items: baseline
+    @media all and ($mobile)
+      flex-wrap: wrap
+  &__subtitle-wrapper
+    display: flex
+    justify-content: flex-start
+    margin-bottom: 20px
+    align-items: flex-end
+    align-items: baseline
+    @media all and ($mobile)
+      margin-bottom: 5px
+  &__link
+    position: relative
+    padding-bottom: 10px
+    padding-right: 10px
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 13px
+    line-height: 30px
+    text-decoration-line: underline
+    text-transform: uppercase
+    color: #E30613
+    &::before
+      content: ""
+      position: absolute
+      height: 18px
+      width: 1px
+      background: #AAB2C2
+      bottom: 40%
+      left: -5px
+      @media all and ($mobile)
+        display: none
+  &__info-wrapper
+    height: 100% 
+    padding-left: 10px
+    @media all and ($table)
+      padding-left: 0
+
+  &__info
+    padding-bottom: 10px
+    // padding-left: 10px
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 21px
+    line-height: 29px
+    color: #222222
+    @media all and ($mobile)
+      font-size: 15px
+      line-height: 20px
+    &--red
+      font-weight: 600
+      color: #e30613
+
+.service-contacts
+  margin: 50px 0
+  @media all and ($mobile)
+    margin: 25px 0
+  &__block
+    width: 100%
+    overflow-x: auto
+  &__list
+    min-width: 1024px
+    display: flex
+    flex-direction: column
+    @media all and ($table)
+      flex-direction: row
+      min-width: 320px
+
+  &__item
+    padding: 10px 0
+    border-bottom:  1px solid #AAB2C2
+    @media all and ($table)
+      border-bottom: 0
+    &:last-child
+      border-bottom: 0
+    &:hover .service-contacts__address-wrapper
+      background-image: url(../../assets/img/service-cont1-hover.svg)
+  &__list-internal
+    display: flex
+    justify-items: start
+    align-items: center
+    justify-content: space-between
+    @media all and ($table)
+      align-items: flex-start
+      flex-direction: column
+
+
+  &__item-internal
+    //width: calc((100% - 30px)/4)
+    min-width: 200px
+    margin-right: 15px
+    display: flex
+    flex-direction: column
+
+    &:last-child
+      margin-right: 0
+      text-align: right
+    &--row
+      min-width: 310px
+      flex-direction: row
+    &--tel
+      width: 205px
+    &--mail
+      width: 250px
+    &--working
+      width: 215px
+  &__img-wrapper
+    padding-right: 10px
+  &__img
+    vertical-align: middle
+  &__address-wrapper
+    display: flex
+    flex-direction: column
+    background-image: url(../../assets/img/service-cont1.svg)
+    background-repeat: no-repeat
+    padding-left: 25px
+  &__link-wrapper
+    display: flex
+    flex-direction: row
+    padding-top: 8px
+
+  &__address
+    font: 600 15px/18px 'Open Sans', sans-serif
+    color: #222
+  &__link
+    font: 400 15px/20px 'Open Sans', sans-serif
+    color: #2E3541
+    &--map
+      text-decoration-line: underline
+      transition: color 0.3s ease-in-out
+      margin-right: 8px
+      &:hover, &:focus, &:active
+        color: #E40B12
+    &--print
+      color: #000
+      text-decoration-line: underline
+      transition: color 0.3s ease-in-out
+      &:hover, &:focus, &:active
+        color: #2C5367
+    &--tel
+      font: 400 16px/25px 'Open Sans', sans-serif
+      transition: color 0.3s ease-in-out
+      &:hover, &:focus, &:active
+        color: #2C5367
+      & strong
+        font-weight: 700
+      & span
+        font: 400 13px/25px 'Open Sans', sans-serif
+    &--mail
+      font: 400 15px/24px 'Open Sans', sans-serif
+      transition: color 0.3s ease-in-out
+      &:hover, &:focus, &:active
+        color: #2C5367
+    &--mail strong
+      font-weight: 600
+  &__tel-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 2px 0
+  &__mail-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 2px 0
+  &__working-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 2px 0
+  &__working-text
+    font: 400 14px/170% 'Open Sans', sans-serif
+    text-transform: uppercase
+    color: #2E3541
+  &__working-text strong
+    font-weight: 700
+
+.truck-service
+  &__info
+    padding-bottom: 30px
+    // border-bottom: 1px solid #D6DFE6
+    @media all and ($mobile)
+      padding-bottom: 20px
+  &__info-list
+    padding-bottom: 15px
+  &__info-item
+    display: inline
+    padding-right: 15px
+    padding-left: 20px
+    position: relative
+    @media all and ($table)
+      display: block
+    &::before
+      content: ""
+      position: absolute
+      width: 6.25px
+      height: 6.25px
+      border-radius: 50px
+      background-color: #E30613
+      top: 6px
+      left: 5px
+      @media all and ($table)
+       top: 9px
+
+  &__info-text
+    font: 400 15px/30px 'Open Sans', sans-sarif
+    color: #000
+    @media all and ($table)
+      line-height: 150%
+  &__info-comment
+    font: 400 15px/150% 'Open Sans', sans-sarif
+    color: #000
+    padding: 15px 0
+    @media all and ($table)
+      padding: 5px 0
+  &__price
+    padding-top: 30px
+    margin-bottom: 30px
+    @media all and ($mobile)
+      padding-top: 20px
+
+  &__price-comment
+    font: 400 15px/20px 'Open Sans', sans-sarif
+    color: #222
+    text-transform: uppercase
+    position: relative
+    padding-left: 5px
+    @media all and ($mobile)
+      display: none
+    &::before
+      content: ""
+      position: absolute
+      height: 18px
+      width: 1px
+      background: #AAB2C2
+      bottom: 10%
+      left: 0
+  &__download-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 25px 0
+    background: #FFFFFF
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+    border-radius: 10px
+    margin-top: 50px
+    @media all and ($mobile)
+      margin-top: 15px
+  &__download-btn
+    background: #656777
+    border-radius: 50px
+    padding: 9px 77px
+    border: 1px solid #656777
+  &__download-link
+    text-transform: uppercase
+  &__table
+    width: 100%
+    overflow-x: auto
+
+
+
+
+
+.service-map
+  margin-bottom: 80px
+  @media all and ($mobile)
+    margin-bottom: 0
+  &__map-wrapper
+    width: 66.66%
+    height: 400px
+    @media all and ($table)
+      width: 50%
+    @media all and ($mobile)
+      width: auto
+      min-width: 320px
+      margin-left: -15px
+      margin-right: -15px
+      height: 189px
+
+  &__block
+    display: flex
+    width: 100%
+    border: 1px solid #D7DFE6
+    border-radius: 5px
+    @media all and ($mobile)
+      flex-direction: column
+      border: 0
+  &__scroll
+    width: 33.33%
+    height: 100%
+    overflow-y: auto
+    border-right: 1px solid #D7DFE6
+    @media all and ($table)
+      width: 50%
+    @media all and ($mobile)
+      width: 100%
+      border: 0
+
+  &__address-list
+    width: 100%
+    height: 400px
+    @media all and ($mobile)
+      height: auto
+
+  &__address-item
+    padding: 26px 22px
+    display: flex
+    flex-direction: column
+    border-bottom: 1px solid #D7DFE6
+    @media all and ($mobile)
+      padding: 15px 0
+    &:last-child
+      border-bottom: 0
+  &__address-text
+    font: 400 15px/20px 'Open Sans', sans-sarif
+    color: #000
+    padding-bottom: 10px
+    @media all and ($mobile)
+      padding-bottom: 5px
+  &__address-text strong
+    font-weight: 700
+  &__address-mail
+    font: 400 15px/20px 'Open Sans', sans-sarif
+    color: #174F76
+    text-decoration-line: underline
+    padding-bottom: 10px
+    @media all and ($mobile)
+      padding-bottom: 5px
+    &:hover, &:active , &:focus
+      color: #E30613
+      
+  &__address-block
+    display: flex
+    flex-direction: row
+    align-items: center
+    @media all and ($mobile)
+      flex-direction: column
+      align-items: flex-start
+  &__address-tel
+    font: 400 14px/20px 'Open Sans', sans-sarif
+    color: #6D6F7C
+    padding-right: 10px
+    border-right: 1px solid #6D6F7C
+    @media all and ($mobile)
+      border: 0
+      padding-bottom: 5px
+  &__address-tel strong
+    font-weight: 700
+    color: #2E3541
+  &__address-working
+    font: 400 12px/16px 'Open Sans', sans-sarif
+    color: #000
+    text-transform: uppercase
+    padding-left: 5px
+    @media all and ($mobile)
+      padding-left: 0
+
+

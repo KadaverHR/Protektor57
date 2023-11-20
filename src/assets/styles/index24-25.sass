@@ -1,0 +1,611 @@
+.card-tyre-section
+  background-color: #fff
+  &__container
+    background-color: #fff
+  & .breadcrumb__wrapper
+    margin-top: 0
+    padding-top: 20px
+    @media all and ($table)
+      margin-bottom: 20px
+.card-tyre-area
+  //padding-top: 30px
+  padding-bottom: 58px
+  @media all and ($table)
+    padding-top: 10px
+  @media all and ($mobile)
+    padding-bottom: 20px
+  &__title
+    color: #222222
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 30px
+    line-height: 38px
+    padding: 10px 00px
+    @media all and ($table)
+      font-size: 21px
+      line-height: 28px
+    @media all and ($mobile)
+      padding: 10px 0 20px 0
+      font-size: 21px
+      line-height: 29px
+.card-tyre-section
+  .card-tyre-item
+    grid-template-columns: repeat(2,auto)
+.card-tyre
+  border-bottom: 3px solid #D6DFE6
+  // width: 100%
+  // min-height: 335px
+  // display: flex
+  display: grid
+  // grid-template-columns: repeat(2, auto)
+  grid-template-columns: 1fr 3fr
+  @media all and ($table)
+    grid-template-columns: repeat(1, auto)
+  @media all and ($mobile)
+    flex-direction: column
+    border: none
+    margin-bottom: 10px
+  &__block
+    border: 1px solid #D6DFE6
+    border-radius: 3px
+    @media all and ($mobile)
+      border: 0
+  &__image-block-grid
+    align-items: start
+    display: grid
+    border-right: 1px solid #D6DFE6
+    @media all and ($middle)
+      justify-content: center
+    @media all and ($table)
+      border-right: 0
+      border-bottom: 1px solid #D6DFE6
+      grid-column: 1/2
+
+  &__image-block
+    padding: 25px 40px
+    // width: 30%
+    // min-width: 300px
+    // border-right: 1px solid #D6DFE6
+    // display: flex
+    justify-self: center
+    align-self: center
+    position: relative
+    max-width: 346px
+    margin: 0 auto
+    @media all and ($middle)
+      max-width: 312px
+
+    @media all and ($table)
+      min-width: 200px
+  // 
+      padding: 15px
+    @media all and ($mobile)
+      width: 100%
+      border: none
+  &__image
+    object-position: center
+    object-fit: contain
+  &__zoom
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 20px
+    & img
+      width: 32px
+  &__info-technology
+    padding: 10px 0
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(45px, max-content))
+    gap: 10px
+    justify-items: center
+    justify-content: space-evenly
+  &__body
+    // display: flex
+    flex-direction: row
+    // justify-content: space-between
+    // width: 70%
+    padding: 30px
+    min-width: 420px
+    display: grid
+    // grid-template-columns: repeat(2, auto)
+    grid-template-columns: 1.5fr 1fr
+    gap: 10px 30px
+    @media all and ($table)
+      min-width: 320px
+      width: 100%
+    @media all and ($mobile)
+      grid-template-columns: repeat(1, auto)
+      border: none
+      min-width: 0
+      padding: 15px 0
+  //height: 100%
+  &__info
+    width: 100%
+    min-width: 150px
+    padding: 10px
+    border-bottom: 1px solid #D6DFE6
+    // @media all and ($mobile)
+    //   display: none
+  &__info-block
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(150px,max-content))
+    justify-content: space-evenly
+    align-items: start
+    // justify-items: center
+    gap: 20px
+  &__color-block
+    grid-column: 1/3
+    padding-top: 15px
+    @media all and ($mobile)
+      grid-column: 1/2
+      grid-row: 2/3
+  .model-disk__list
+    grid-template-columns: repeat(auto-fit, minmax(100px,max-content))
+    padding: 20px 0
+
+    @media all and ($mobile)
+      gap: 10px
+  &__info-item
+    display: flex
+    flex-direction: row
+    align-items: center
+  &__info-text
+    position: relative
+    top: -3px
+    color: #222222
+    font: 600 13px/16px "Open Sans", sans-serif
+    padding-left: 10px
+  &__descroption-area
+    padding: 0 20px 20px 20px
+    @media all and ($mobile)
+      padding: 0 0 20px 0
+  &__descroption-block
+    padding-bottom: 20px
+    &:last-child
+      padding-bottom: 0
+  &__descroption-title
+    font: 600 18px/21px "Open Sans", sans-serif
+    color: #222
+    padding-bottom: 10px
+  &__descroption-text
+    font: 400 15px/21px "Open Sans", sans-serif
+    color: #000
+    padding-bottom: 10px
+  &__descroption-img-wrapper
+    img
+      max-width: 100%
+  &__descroption-list
+    display: grid
+    grid-template-columns: 1fr
+    gap: 15px
+  &__descroption-item
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    gap: 15px
+
+.card-tyre-grid
+  display: grid
+  gap: 30px 10px
+  grid-template-columns: repeat(1,1fr)
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+  //margin-bottom: 22px
+  &__item-img-block
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 5px
+  &__item-img
+    position: relative
+
+  &__button
+    width: 100%
+    background: #ECEEF2
+    padding: 2px 15px
+    border-radius: 5px
+    color: #222
+    grid-column: 1 / 3
+    text-transform: uppercase
+    font: 600 15px/26px 'Open Sans',sans-serif
+  &__item-text
+    text-align: center
+    color: #222222
+    font: 600 13px/16px 'Open Sans', sans-serif
+.card-tyre-list
+  // width: 60%
+  display: flex
+  flex-direction: column
+  // padding: 30px 15px 30px 30px
+  //@media all and ($table)
+  //  padding: 15px
+  @media all and ($mobile)
+    // padding: 5px
+    // width: 100%
+    grid-column: 1/2
+
+.card-tyre-item
+  // display: flex
+  display: grid
+  grid-template-columns: 1fr 0.3fr
+  // align-items: flex-end
+  margin-bottom: 15px
+  position: relative
+  justify-items: end
+  justify-content: space-between
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    border-bottom: 1px dashed #6D6F7C
+    bottom: 7px
+    z-index: 1
+  @media all and ($mobile)
+    margin-bottom: 15px
+  &:last-child
+    margin-bottom: 0
+  & > *
+    flex: 0 1 50%
+  &--other
+    padding: 20px 0
+    flex-direction: column
+    align-items: flex-start
+    @media all and ($mobile)
+      display: none
+    & > *
+      margin-bottom: 20px
+  &__left
+    position: relative
+    // background-color: #fff
+    z-index: 2
+    align-self: end
+    justify-self: start
+    max-width: max-content
+    // &:after
+    //   content: ''
+    //   position: absolute
+    //   width: 100%
+    //   border-bottom: 1px dashed #6D6F7C
+    //   bottom: 7px
+    &--other::after
+      display: none
+    // &--big:after
+    //   content: ''
+    //   position: absolute
+    //   width: 100%
+    //   border-bottom: 1px dashed #6D6F7C
+    //   bottom: 7px
+    //   @media all and ($middle)
+    //     width: 50%
+    //   @media all and ($table)
+    //     width: 60%
+    //   @media all and ($mobile)
+    //     width: 90%
+
+  &__left-text
+    position: relative
+    background-color: #fff
+    color: #222222
+    font: 700 15px/150% 'Open Sans', sans-serif
+    text-transform: uppercase
+    padding-right: 10px
+  &__right
+    background-color: #fff
+    position: relative
+    background-color: #fff
+    z-index: 2
+    align-self: end
+  &__right-text
+    padding-left: 8px
+    font: 700 15px/150% 'Open Sans', sans-serif
+    color: #6D6F7C
+    text-transform: uppercase
+    position: relative
+    &--red
+      color: #E30613
+  &__link
+    font: 600 14px/26px 'Open Sans', sans-serif
+    text-decoration-line: underline
+    color: #194A64
+    transition: color 0.3s ease-in-out
+    &:hover, &:focus, &:active
+      color: #2C5367
+
+.card-tyre-cart
+  // display: flex
+  // padding: 30px 30px 30px 15px
+  // align-items: center
+  align-self: center
+  // padding: 15px
+  padding-left: 15px
+  @media all and ($mobile)
+    grid-column: 1/2
+  &__body
+    background: #FFFFFF
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15)
+    border-radius: 10px
+    padding: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-width: 300px
+    @media all and ($mobile)
+      padding: 0
+      box-shadow: none
+      border-radius: 0
+      min-width: 0
+      width: 100%
+  &__title-wrapper
+    padding-bottom: 20px
+    @media all and ($mobile)
+      display: none
+  &__title
+    font: 600 18px/150% 'Open Sans', sans-serif
+    color: #010202
+  &__list
+    width: 100%
+    display: flex
+    flex-direction: column
+    @media all and ($mobile)
+      align-items: center
+  &__item
+    display: flex
+    align-items: baseline
+    margin-bottom: 20px
+    justify-content: space-between
+    @media all and ($mobile)
+      margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+    &--center
+      justify-content: center
+    &--order
+      @media all and ($mobile)
+        order: -1
+  &__left
+    position: relative
+    @media all and ($mobile)
+      display: none
+    &:after
+      content: ''
+      position: absolute
+      width: 130px
+      border-bottom: 1px dashed #6D6F7C
+      bottom: 7px
+  &__left-text
+    font: 600 18px/150% 'Open Sans', sans-serif
+    color: #6D6F7C
+    padding-right: 5px
+    @media all and ($table)
+      font: 600 15px/150% 'Open Sans', sans-serif
+  &__right-text
+    font: 700 21px/150% 'Open Sans', sans-serif
+    color: #0F1213
+    padding-left: 5px
+    @media all and ($table)
+      font: 700 18px/150% 'Open Sans', sans-serif
+    & span
+      font-weight: 400
+      color: #6D6F7C
+    &--red
+      color: #E30613
+  &__availability-wrapper
+    display: flex
+    align-items: center
+  &__availability
+    padding-left: 5px
+  &__availability-text
+    font: 400 15px/130% 'Open Sans', sans-serif
+    color: #010202
+  &__btn
+    font: 700 15px/20px 'Open Sans', sans-serif
+    border-radius: 50px
+    padding: 7px 40px
+    text-transform: uppercase
+  &__link
+    font: 600 14px/26px 'Open Sans', sans-serif
+    text-decoration-line: underline
+    color: #194A64
+    transition: color 0.3s ease-in-out
+    &:hover, &:focus, &:active
+      color: #2C5367
+
+.compatibility-tyre
+  &__title-wrapper
+    padding: 30px 20px 0px 20px
+    width: 100%
+    // border-bottom: 1px solid #D6DFE6
+    @media all and ($mobile)
+      // border-top: 1px solid #D6DFE6
+      padding-left: 0
+      width: auto
+      padding: 20px 0 5px 0
+  &__title
+    font: 600 18px/26px 'Open Sans', sans-serif
+    color: #2E3541
+    position: relative
+    width: fit-content
+    white-space: nowrap
+    @media all and ($mobile)
+      font-size: 16px
+
+    // &::before
+    //   content: ""
+    //   position: absolute
+    //   bottom: -6px
+    //   height: 6px
+    //   width: 100%
+    //   background-color: #2C5367
+    //   border-radius: 10px
+  &__cars-title
+    font: 600 18px/26px 'Open Sans', sans-serif
+    color: #222222
+    padding: 5px 20px 15px 20px
+    @media all and ($mobile)
+      padding-left: 0
+  &__list
+    padding: 10px 20px 35px 20px
+    display: grid
+    grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) )
+    gap: 5px 20px
+    border-bottom: 1px solid #D6DFE6
+    @media all and ($table)
+      // grid-template-columns: repeat(5,auto)
+    @media all and ($mobile)
+      // grid-template-columns: repeat(2,auto)
+      padding-left: 0
+      border-bottom: 0
+  &__item
+    &--active .compatibility-tyre__link
+      font: 700 18px/26px 'Open Sans', sans-serif
+      text-decoration: underline
+
+  &__link
+    font: 400 18px/26px 'Open Sans', sans-serif
+    color: #174F76
+    transition: color 0.3s ease-in-out
+    white-space: nowrap
+    &:hover, &:focus, &:active
+      color: #2C5367
+  &__table
+    overflow-x: auto
+    @media all and ($mobile)
+      border: 1px solid #D6DFE6
+      margin: 0 -15px
+.compatibility-models
+  width: 100%
+  min-width: 520px
+  overflow: hidden
+  & tr
+    border-bottom: 1px solid #D6DFE6
+    &:last-child
+      border-bottom: none
+  &__title-wrapper
+    border-right: 1px solid #D6DFE6
+    &:last-child
+      border-right: none
+
+  &__title-background
+    background: #2C5367
+    padding: 13px
+    margin: 5px
+  &__title
+    font: 700 18px/26px 'Open Sans', sans-serif
+    color: #ffffff
+    text-align: center
+    text-transform: uppercase
+    @media all and ($mobile)
+      font: 700 15px/20px 'Open Sans', sans-serif
+  &__brand
+    padding: 20px
+    vertical-align: middle
+    border-right: 1px solid #D6DFE6
+
+  &__brand-text
+    font: 400 21px/29px 'Open Sans', sans-serif
+    color: #174F76
+  &__model
+    padding: 20px
+    border-right: 1px solid #D6DFE6
+    &:last-child
+      border-bottom: none
+  &__model-text
+    font: 600 15px/26px 'Open Sans', sans-serif
+    color: #222222
+  &__modification
+    padding: 20px
+  &__modification-list
+    display: flex
+    flex-direction: column
+  &__modification-item
+    padding-bottom: 10px
+    &:last-child
+      padding-bottom: 0
+  &__modification-text
+    font: 600 15px/26px 'Open Sans', sans-serif
+    color: #222222
+    & span
+      color: #174F76
+
+.tabs
+  width: 100%
+
+/* Стили для списка вкладок */
+.tab-header
+  width: 100%
+  // overflow: hidden
+  list-style: none
+  padding-left: 0
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin: 0
+  @media all and ($mobile)
+    // width: fit-content
+    // display: grid
+    // gap: 10px
+    // grid-template-columns: repeat(3, minmax(min-content,max-content))
+  &__block
+    padding-bottom: 5px
+    overflow-x: auto
+    overflow-y: hidden
+    // @media all and ($mobile)
+    //   padding: 0
+    // // width: 100%
+
+/* Стили для вкладки */
+.tab-header__item
+  padding: 10px 20px
+  
+  cursor: pointer
+  @media all and ($mobile)
+    padding: 0
+    margin-right: 15px
+
+/* Стили для активной вкладки */
+.tab-header__item.active
+  border-bottom: none
+  position: relative
+  background-color: #fff
+  &::before
+    content: ""
+    position: absolute
+    bottom: -6px
+    height: 6px
+    width: 80%
+    background-color: #2C5367
+    border-radius: 10px
+    @media all and ($mobile)
+      width: 100%
+      bottom: -10px
+
+/* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content
+  border-top: 1px solid #D6DFE6
+  list-style: none
+  padding: 5px 0 0 0
+  margin: 0
+  .model-table__wrapper
+    border: none
+    border-radius: 0
+  .model-table
+    border-radius: 0
+
+/* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+.tab-content__item
+  display: none
+
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active
+  display: block
+  padding-top: 10px
+
+.swiper-card
+  width: 100%
+.card-tyre__swiper-pagination
+  // z-index: 100 !important
+  bottom: 0px !important

@@ -1,0 +1,53 @@
+.pagination-area
+  padding: 20px 0
+  & > *
+    flex: 1 1 33.333%
+  &__button
+    margin-bottom: 20px
+    max-width: 255px
+    width: 100%
+    text-transform: uppercase
+    color: #222222
+    border-radius: 50px
+    background-color: #ECEEF2
+    font: 600 13px/18px 'Open Sans', sans-serif
+    padding: 6px 10px
+    transition: 0.3s color easy-in-out,  0.3s background-color easy-in-out
+    &:hover,
+    &:active
+      color: #fff
+      background-color: #656777
+
+
+.pagination
+  justify-content: flex-end
+  align-items: center
+  margin-bottom: 20px
+  .num
+    flex: 0 0 30px
+    height: 30px
+    margin: 0 3px
+    position: relative
+    padding: 0 5px
+    color: #6D6F7C
+    display: flex
+    justify-content: center
+    align-items: center
+    font: 400 17px/26px 'Open Sans', sans-serif
+    &--action, &:hover
+      border-radius: 3px
+      color: #222
+      background-color: #ECEEF2
+      font-weight: 600
+  &__arrow-prev
+    padding-right: 5px
+  &__arrow-next
+    padding-left: 5px
+
+
+.num-dots
+  pointer-events: none
+
+@media all and ($table)
+  .pagination-area > *
+    justify-content: center

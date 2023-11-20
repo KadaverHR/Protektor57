@@ -1,0 +1,135 @@
+.tire-selection-section
+  background: #ffffff
+  &__col
+    flex: 1
+    display: flex
+
+.tire-selection-body
+  padding: 50px 0 60px
+
+.tire-selection-item
+  width: 100%
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15)
+  border-radius: 0 0 5px 5px
+  display: flex
+  flex-direction: column
+  &__header
+    pointer-events: none
+    background: #656777
+    padding: 10px
+    border-radius: 5px 5px 0 0
+  &__header-info
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+  &__header-icon
+    margin-right: 13px
+  &__header-text
+    color: #ffffff
+    font: 700 18px/25px 'Open Sans', sans-serif
+    text-transform: uppercase
+    position: relative
+    &:after
+      content: ''
+      background-image: url("../../assets/img/img-35.svg")
+      width: 13px
+      height: 7px
+      background-repeat: no-repeat
+      position: absolute
+      top: 4px
+      right: -19px
+      transition: 0.2s ease all
+      display: none
+  &__body
+    display: flex
+    flex-direction: column
+    flex: 1
+    background: #ffffff
+    padding: 20px
+    border-radius: 0 0 5px 5px
+  &__buttons
+    display: flex
+    justify-content: center
+    margin-top: auto
+  &__button-red
+    border-radius: 50px
+  &__select
+    margin-bottom: 10px
+.tire-selection-item--active
+  .tire-selection-item__header-text:after
+    transform: rotate(180deg)
+
+@media all and ($middle)
+  .tire-selection-body
+    padding: 23px 0 40px 0
+  .tire-selection-item
+    &__header
+      padding: 8px 10px
+    &__header-icon
+      width: 21px
+      height: 21px
+      margin-right: 10px
+    &__header-text
+      font: 700 16px/22px "Open Sans", sans-serif
+    &__body
+      padding: 12px 20px 14px 20px
+    &__select
+      margin-bottom: 8px
+    .card-product__button
+      padding: 7px 28px
+      font: 700 13px/17px "Open Sans", sans-serif
+      margin-top: 10px
+  // .tire-selection-body
+  //   .row
+  //     margin-right: -10px
+  //     margin-left: -10px
+  .tire-selection-section__col
+    padding: 0 10px
+
+@media all and ($table)
+  .tire-selection-item
+    &__body
+      padding: 13px 15px
+
+@media all and ($mobile)
+  .tire-selection-section
+    &__col
+      // padding: 0
+      flex: auto
+      &:last-child
+        .tire-selection-item
+          margin-bottom: 0
+  .tire-selection-body
+    padding: 10px 0 28px 0
+  .tire-selection-item
+    box-shadow: none
+    border-radius: 0
+    margin-bottom: 20px
+    &__header
+      border-radius: 5px
+      pointer-events: all
+    &__header-text
+      font: 700 15px/20px "Open Sans", sans-serif
+      &:after
+        display: block
+    &__body
+      pointer-events: none
+      padding: 0px 15px 0px 15px
+      max-height: 0
+      overflow: hidden
+      transition: 0.3s ease max-height, 0.5s ease padding
+    .card-product__button
+      padding: 10px 28px
+  // .tire-selection-body
+  //   .row
+  //     margin-right: -15px
+  //     margin-left: -15px
+  .tire-selection-item--active
+    .tire-selection-item__body
+      pointer-events: all
+      //overflow: auto
+      max-height: 500px
+      padding: 10px 15px 0px 15px
+
+

@@ -1,0 +1,256 @@
+{% set title = "О компании" %} {% set bodyClass = "is-about-company" %} {%
+extends "html/layouts/default.html" %} {% block content %}
+<section class="main-banner-section main-banner-section--small">
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/banner-about-mobile.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/banner-about-table.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/banner-about-middle.jpg"
+      />
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/banner-about.jpg"
+        alt="Сервис"
+      />
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img
+              src="../../assets/img/img-46.svg"
+              width="257"
+              height="30"
+              alt="Протектор57"
+            />
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input
+                  type="text"
+                  class="search__input"
+                  value=""
+                  placeholder="Поиск"
+                />
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            />
+            <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+            <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">О компании</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <!-- <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/model-tyre-banner-mobile-tyres.png"
+        />
+        <img
+          class="banner-tyres banner-tyres__img"
+          src="../../assets/img /model-tyre-banner-tyres.png"
+          alt="Сервис"
+        />
+      </picture> -->
+    </div>
+  </div>
+</section>
+<section class="swiper-company-section section-common-title">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="swiper-company-body">
+        <!-- <div class="title-block">
+          <h2 class="title-block__title">О компании</h2>
+        </div> -->
+
+        <h3 class="swiper-company-body__sub-title">УВАЖАЕМЫЙ ПОКУПАТЕЛЬ!</h3>
+        <p class="swiper-company-body__text">
+          <strong>«Протектор 57» </strong> — одна из крупнейших розничных сетей по реализации шин
+          и дисков в г.Орёл. Компания начала свою деятельность с 2006 года и
+          предлагает своим покупателям более 100 000 наименований шин, дисков,
+          масел, АКБ и автомобильных аксессуаров. Ассортимент сети «Протектора
+          57» представлен как отечественными, так и иностранными
+          производителями. Мы являемся официальными дилерами крупнейших мировых
+          производителей шин и дисков.
+        </p>
+        <p class="swiper-company-body__text">
+          Сеть магазинов и сервисных центров «Протектор57» включает в себя:
+        </p>
+
+        <ul class="company-main__text-list">
+          <li class="company-main__text-item">
+            <p class="swiper-company-body__text">
+              Магазины на ул. Михалицына 10, ул. Ломоносова 6Б ТЦ "Утёс" и ул.
+              Комсомольская 270;
+            </p>
+          </li>
+
+          <li class="company-main__text-item">
+            <p class="swiper-company-body__text">
+              Легковые и грузовой шиномонтажи;
+            </p>
+          </li>
+          <li class="company-main__text-item">
+            <p class="swiper-company-body__text">
+              Легковые и грузовые сервисы;
+            </p>
+          </li>
+
+          <li class="company-main__text-item">
+            <p class="swiper-company-body__text">Интернет-магазин;</p>
+          </li>
+        </ul>
+
+        <div class="swiper-company-area">
+          <div class="swiper swiper-company">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <img src="../../assets/img/img-14.jpg" alt="" />
+                </div>
+
+                <div class="swiper-company__location">
+                  <p class="swiper-company__location-text">
+                    Орел: ул.Михалицына, 10
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <img src="../../assets/img/img-12.jpg" alt="" />
+                </div>
+                <div class="swiper-company__location">
+                  <p class="swiper-company__location-text">
+                    Орел: ул.Ломоносова, 6Б ТЦ "УТЁС"
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <img src="../../assets/img/img-13.jpg" alt="" />
+                </div>
+                <div class="swiper-company__location">
+                  <p class="swiper-company__location-text">
+                    Орел: ул.Комсомольская,270
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination swiper-company__swiper-pagination"
+          ></div>
+        </div>
+
+        <p class="swiper-company-body__text">
+          Единая система розничной продажи и предоставления сопутствующих услуг
+          позволяет делать низкие цены на товары, тем самым становясь ближе к
+          клиенту. Шиномонтаж «Протектор 57» находится в каждом магазине сети и
+          предоставляет широкий спектр услуг: ремонт колес и дисков, дошиповка,
+          сезонное хранение. Уточняйте полный перечень услуг у продавцов, на
+          сайте или по телефону. Также компания предоставляет полный спектр
+          сервисных услуг для автомобилей в районе Московское шоссе, д.173.
+        </p>
+        <p class="swiper-company-body__text">
+          Мы работаем не только с розничными покупателями, но и с юридическими
+          лицами, индивидуальными предпринимателями как за наличный расчет, так
+          и по безналичному расчету. Для организаций, работающих на общей
+          системе налогообложения, наша компания при безналичной форме расчетов
+          выделяет НДС.
+        </p>
+
+
+
+
+        <div class="swiper-company-area">
+          <div class="swiper swiper-company-sale">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <img src="../../assets/img/company-sale1.jpg" alt="" />
+                </div>
+
+      
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <img src="../../assets/img/company-sale2.jpg" alt="" />
+                </div>
+      
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__image">
+                  <img src="../../assets/img/company-sale3.jpg" alt="" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination swiper-company-sale__swiper-pagination"
+          ></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,455 @@
+.card-product
+  width: 100%
+  border-radius: 5px
+  padding-top: 10px
+  display: flex
+  transition: 0.2s linear background-color
+  background-color: #CBCCCF
+  box-shadow: 0px 2px 15px rgb(0 0 0 / 15%)
+  cursor: pointer
+  &:hover
+    background-color: #828390
+  &__body
+    width: 100%
+    background-color: #fff
+    border-radius: 5px
+    display: grid
+    grid-template-rows: repeat(17, auto)
+    grid-template-columns: 2fr 1fr
+    gap: 10px
+    padding: 10px 20px
+  &__image-block
+    display: flex
+    justify-content: center
+    background-color: #fff
+    border-radius: 5px 5px 0 0
+    position: relative
+    grid-row: 1/8
+    grid-column: 1/3
+
+  &__icon-block
+    min-height: 46px
+    padding: 10px 0
+    display: grid
+    justify-content: center
+    border-top: 1px solid #D6DFE6
+    border-bottom: 1px solid #D6DFE6
+    grid-row: 8/9
+    grid-column: 1/3
+    grid-template-columns: repeat(auto-fit, minmax(20px, max-content))
+  &__icon-img
+    width: 50%
+    position: relative
+    z-index: 1
+  &__icon-item
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 33px
+      height: 33px
+      border-radius: 100%
+      background: #EFF3F6
+      z-index: 0
+      opacity: 0
+      transition: opacity 0.3s ease-in-out
+    &:hover::before,
+    &:active::before,
+    &:focus::before
+      opacity: 1
+  &__tooltip-area
+    position: absolute
+    left: 50%
+    top: 130%
+    transform: translateX(-50%)
+    z-index: 10
+  &__tooltip-text
+    min-width: max-content
+
+  &__image
+    width: 180px
+    height: 185px
+    position: relative
+    img
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__link
+    display: inline-block
+    color: #010202
+    text-decoration-line: underline
+    font: 600 18px/24px 'Open Sans', sans-serif
+    grid-row: 9/11
+    grid-column: 1/3
+    @media all and ($mobile)
+      justify-self: center
+    &--model
+      text-decoration-line: none
+  &__article
+    grid-row: 12/13
+    grid-column: 1/3
+  &__article-text
+    margin-right: 5px
+    text-transform: uppercase
+    font: 600 13px/21px 'Open Sans', sans-serif
+    color: #6D6F7C
+  &__article-number
+    font: 600 15px/21px 'Open Sans', sans-serif
+    color: #222222
+  &__price-block
+    display: flex
+    justify-content: space-between
+    gap: 10px
+  &__price
+    grid-row: 13/14
+    grid-column: 1/2
+    span
+      white-space: nowrap
+  &__price-old
+    font: 400 15px/21px 'Open Sans', sans-serif
+    color: #D4121E
+    grid-row: 13/14
+    grid-column: 2/3
+    justify-self: end
+    align-self: end
+    white-space: nowrap
+  &__all-price
+    text-transform: uppercase
+    font: 400 13px/21px 'Open Sans', sans-serif
+    color: #6D6F7C
+    grid-row: 14/15
+    grid-column: 1/2
+    strong
+      font-weight: 600
+  &__presence
+    color: #222222
+    font: 400 15px/21px 'Open Sans', sans-serif
+    text-decoration-line: underline
+    grid-row: 14/15
+    grid-column: 2/3
+    justify-self: end
+    white-space: nowrap
+    @media all and ($middle)
+      grid-row: 15/16
+      grid-column: 1/2
+      justify-self: start
+      white-space: nowrap
+      padding-bottom: 5px
+    @media all and ($table)
+      grid-row: 14/15
+      grid-column: 2/3
+      justify-self: end
+      white-space: nowrap
+  &__red
+    justify-self: center
+    grid-column: 1/3
+    @media all and ($middle)
+      grid-row: 16/17
+    @media all and ($mobile)
+      grid-row: 15/16
+  &__red-text
+    font: 400 15px/130% 'Open Sans', sans-serif
+    color: #D4121E
+
+    span
+      font-weight: 600
+  &__footer
+    border-top: 1px solid #D6DFE6
+    padding-top: 17px
+    display: flex
+    justify-content: center
+    grid-row: 16/17
+    grid-column: 1/3
+    @media all and ($middle)
+      grid-row: 17/18
+    @media all and ($mobile)
+      grid-row: 16/17
+    &--horizontal
+      border: none
+      padding-bottom: 0
+      button
+        margin: 0
+  &__button
+    min-width: 150px
+    padding: 10px 29px
+    text-transform: uppercase
+    font: 700 15px/20px 'Open Sans', sans-serif
+    transition: 0.3s ease all
+    &:hover
+      color: #ffffff
+      background-color: #E30613
+  &__count-area
+    grid-row: 11/12
+    grid-column: 1/3
+    padding: 5px 0
+
+  &__stocks
+    position: absolute
+    z-index: 5
+    background: linear-gradient(141.32deg, #E30613 -18.29%, #E77B06 102.82%)
+    border-radius: 10px 0 10px 0
+    color: #FFFFFF
+    text-transform: uppercase
+    font: 800 12px/12px 'Open Sans', sans-serif
+    padding: 10px 8px
+    top: 15px
+    left: 0
+  &__type-block
+    position: absolute
+    top: 15px
+    right: 0
+    display: flex
+    flex-direction: column
+    height: 85%
+    .img
+      margin-bottom: 10px
+    .zoom
+      padding: 0
+      cursor: pointer
+      margin-top: auto
+  &__border
+    border-top: 1px solid #D6DFE6
+
+.card-product-price
+  &__price
+    text-transform: uppercase
+    font: 600 21px/26px 'Open Sans', sans-serif
+    color: #010202
+  &__rub
+    font: 400 21px/26px 'Open Sans', sans-serif
+    text-transform: uppercase
+    color: #6D6F7C
+  &__count
+    font: 600 12px/26px 'Open Sans', sans-serif
+    text-transform: uppercase
+    color: #6D6F7C
+  &__border
+    padding-top: 16px
+    width: 100%
+    text-align: center
+
+.card-product--horizontal
+  padding-top: 0
+  padding-left: 10px
+  @media all and ($mobile)
+    padding-left: 0
+    padding-top: 10px
+  .card-product__body
+    grid-template-rows: repeat(5, auto)
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr))
+    gap: 0
+    padding: 0 30px
+    @media all and ($mobile)
+      display: grid
+      grid-template-rows: repeat(17, auto)
+      grid-template-columns: 2fr 1fr
+      gap: 10px
+      padding: 10px 20px
+  .card-product__image-block
+    grid-row: 1/6
+    grid-column: 1/10
+    margin: 20px 0
+    align-self: start
+    justify-self: start
+    // border-right: 1px solid #D6DFE6
+    // right: -30px
+    // position: relative
+    // &::before
+    //   content: ""
+    //   position: absolute
+    //   border-right: 1px solid #D6DFE6
+    //   width: 100%
+    //   height: 100%
+    //   top: 0
+    //   right: -10%
+    @media all and ($mobile)
+      grid-row: 1/8
+      grid-column: 1/3
+      margin: auto
+      justify-self: stretch
+  .card-product__icon-block
+    grid-column: 4/9
+    grid-row: 2/3
+    justify-content: start
+    padding-left: 20px
+    border: none
+    position: relative
+    // &::before
+    //   content: ""
+    //   position: absolute
+    //   grid-row: 1/6
+    //   border-left: 1px solid #D6DFE6
+    //   border-right: 1px solid #D6DFE6
+    //   width: 100%
+    //   height: 100%
+    //   top: 0
+    //   left: 0
+    //   right: 0
+    @media all and ($mobile)
+      grid-row: 8/9
+      grid-column: 1/3
+      border-top: 1px solid #D6DFE6
+      border-bottom: 1px solid #D6DFE6
+      padding-left: 0
+      justify-content: center
+  .card-product__link
+    grid-row: 1/2
+    grid-column: 4/9
+    padding-top: 30px
+    padding-left: 20px
+    padding-right: 20px
+    // border-left: 1px solid #D6DFE6
+    // border-right: 1px solid #D6DFE6
+    position: relative
+    // &::before
+    //   content: ""
+    //   position: absolute
+    //   grid-row: 1/6
+    //   border-left: 1px solid #D6DFE6
+    //   border-right: 1px solid #D6DFE6
+    //   width: 100%
+    //   height: 100%
+    //   top: 0
+    //   left: 0
+    //   right: 0
+    @media all and ($mobile)
+      grid-row: 9/11
+      grid-column: 1/3
+      border: none
+      padding: 0
+  .card-product__article
+    grid-column: 4/9
+    grid-row: 3/4
+    align-self: center
+    padding-left: 20px
+    @media all and ($mobile)
+      grid-row: 12/13
+      grid-column: 1/3
+      padding: 0
+  .card-product__presence
+    grid-column: 4/9
+    grid-row: 4/5
+    justify-self: start
+    align-self: center
+    // padding-bottom: 30px
+    padding-left: 20px
+    @media all and ($mobile)
+      grid-row: 14/15
+      grid-column: 2/3
+      justify-self: end
+      white-space: nowrap
+      padding: 0
+  .card-product__red-text
+    @media all and ($mobile)
+      text-align: center
+
+  .card-product__red
+    grid-row: 1/6
+    grid-column: 4/9
+    justify-self: stretch
+    padding-left: 20px
+    align-self: stretch
+    padding-bottom: 30px
+    border-left: 1px solid #D6DFE6
+    border-right: 1px solid #D6DFE6
+    display: flex
+    align-items: flex-end
+    @media all and ($mobile)
+      border: none
+      grid-column: 1/3
+      grid-row: 15/16
+      padding-bottom: 0
+      justify-self: center
+  .card-product__price
+    grid-column: 9/11
+    grid-row: 1/2
+    justify-self: center
+    padding-top: 30px
+    padding-left: 20px
+    @media all and ($mobile)
+      grid-row: 13/14
+      grid-column: 1/2
+      padding: 0
+      justify-self: start
+  .card-product__price-old
+    grid-column: 9/11
+    grid-row: 2/3
+    justify-self: center
+    align-self: center
+    padding-left: 20px
+    @media all and ($mobile)
+      grid-row: 13/14
+      grid-column: 2/3
+      padding: 0
+      justify-self: end
+      align-self: end
+  .card-product__all-price
+    grid-column: 9/11
+    grid-row: 3/4
+    justify-self: center
+    padding-left: 20px
+    white-space: nowrap
+    @media all and ($mobile)
+      grid-row: 14/15
+      grid-column: 1/2
+      justify-self: start
+      padding: 0
+  .card-product__count-area
+    grid-column: 9/11
+    grid-row: 4/5
+    justify-self: center
+    padding-left: 20px
+    @media all and ($mobile)
+      grid-row: 11/12
+      grid-column: 1/3
+      padding: 5px 0
+  .card-product__footer
+    grid-column: 9/11
+    grid-row: 5/6
+    border-top: 0
+    padding-bottom: 20px
+    justify-self: center
+    align-self: center
+    padding-top: 0
+    // padding-bottom: 30px
+    padding-left: 20px
+    @media all and ($mobile)
+      border-top: 1px solid #D6DFE6
+      padding-top: 17px
+      justify-self: stretch
+      grid-row: 16/17
+      grid-column: 1/3
+      padding-bottom: 0
+      padding-left: 0
+  .card-product__button
+    font: 700 13px/18px "Open Sans", sans-serif
+    padding: 5px 14px
+    min-width: 0
+    margin: 0
+    @media all and ($mobile)
+      min-width: 150px
+      padding: 10px 29px
+      text-transform: uppercase
+      font: 700 15px/20px 'Open Sans', sans-serif
+      margin: auto
+
+.card-product-min
+  .card-product__body
+    grid-template-rows: repeat(4, auto)
+    grid-template-columns: 1fr
+  .card-product__image-block
+    grid-row: 1/2
+  .card-product__info
+    grid-row: 2/3
+  .card-product__price-block
+    grid-row: 3/4

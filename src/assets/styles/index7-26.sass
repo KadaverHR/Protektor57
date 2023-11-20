@@ -1,0 +1,306 @@
+.model-tyre-section
+  background-color: #ECEEF2
+  &__container
+    background-color: #fff
+  & .breadcrumb__wrapper
+    margin-top: 0
+    padding-top: 20px
+    @media all and ($table)
+      margin-bottom: 20px
+.model-tyre-area
+  //padding-top: 30px
+  padding-bottom: 58px
+  @media all and ($table)
+    padding-top: 10px
+  &__title
+    color: #222222
+    font-family: 'Open Sans', sans-serif
+    font-style: normal
+    font-weight: 700
+    font-size: 30px
+    line-height: 38px
+    padding: 10px 30px
+    @media all and ($table)
+      font-size: 21px
+      line-height: 28px
+    @media all and ($mobile)
+      padding: 10px 0 20px 0
+      font-size: 21px
+      line-height: 29px
+
+.model-tyre
+  border: 1px solid #D8D8D8
+  border-radius: 3px
+  width: 100%
+  min-height: 335px
+  display: flex
+  margin-bottom: 60px
+  @media all and ($mobile)
+    flex-direction: column
+    border: none
+    margin-bottom: 40px
+  &--disk
+    @media all and ($table)
+      flex-direction: column
+      border: none
+      margin-bottom: 40px
+
+  &__image-block
+    padding: 25px 40px
+    width: 30%
+    min-width: 300px
+    //height: 100%
+    border-right: 1px solid #D8D8D8
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    @media all and ($table)
+      min-width: 250px
+    @media all and ($mobile)
+      width: 100%
+      border: none
+    &--disk
+      @media all and ($table)
+        width: 100%
+        border: none
+  &__image
+    object-position: center
+    object-fit: contain
+  &__zoom
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 20px
+    & img
+      width: 32px
+  &__body
+    display: flex
+    flex-direction: column
+    justify-content: center
+    border-right: 1px solid #D8D8D8
+    width: 55%
+    min-width: 420px
+    @media all and ($table)
+      min-width: 320px
+    @media all and ($mobile)
+      width: 100%
+      border: none
+      min-width: 0
+    &--disk
+      @media all and ($table)
+        width: 100%
+        border: none
+        min-width: 0
+  //height: 100%
+  &__info
+    width: 15%
+    min-width: 150px
+    padding: 30px 10px
+    @media all and ($mobile)
+      display: none
+    &--disk
+      @media all and ($table)
+        display: none
+.model-tyre-grid
+  display: grid
+  gap: 30px 10px
+  grid-template-columns: repeat(1,1fr)
+  &__item
+    display: flex
+    flex-direction: column
+    align-items: center
+    //margin-bottom: 22px
+  &__item-img-block
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 5px
+  &__item-img
+    position: relative
+    max-height: 42px
+  &__button
+    width: 100%
+    background: #ECEEF2
+    padding: 2px 15px
+    border-radius: 5px
+    color: #222
+    grid-column:  1 / 3
+    text-transform: uppercase
+    font: 600 15px/26px 'Open Sans',sans-serif
+  &__item-text
+    text-align: center
+    color: #222222
+    font: 600 13px/16px 'Open Sans', sans-serif
+.model-tyre-list
+  display: flex
+  flex-direction: column
+  padding: 30px
+  @media all and ($mobile)
+    padding: 5px
+
+.model-tyre-item
+  display: flex
+  align-items: flex-start
+  margin-bottom: 25px
+  @media all and ($mobile)
+    margin-bottom: 15px
+  &:last-child
+    margin-bottom: 0
+  & > *
+    flex: 0 1 50%
+  &__left
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      border-bottom: 1px dashed #6D6F7C
+      bottom: 7px
+  &__left-text
+    position: relative
+    background-color: #fff
+    color: #222222
+    font: 700 15px/19px 'Open Sans', sans-serif
+    text-transform: uppercase
+    padding-right: 10px
+  &__right
+    background-color: #fff
+    position: relative
+  &__right-text
+    left: 8px
+    font: 700 15px/19px 'Open Sans', sans-serif
+    color: #6D6F7C
+    text-transform: uppercase
+    position: relative
+    &--red
+      color: #E30613
+
+
+.model-table
+  width: 100%
+  overflow: hidden
+  border-radius: 5px
+  min-width: 991px
+  &__wrapper
+    border: 1px solid #CAC7C7
+    border-radius: 5px
+    overflow-x: auto
+  &__tr
+    background: #D6DCE9
+    min-height: 40px
+    &:nth-child(2n)
+      background: #F9FDFF
+  & td, & th
+    width: calc(100% / 6)
+  &--disk td, &--disk th
+    width: calc(100% / 9)
+  & td
+    border-right: 1px solid #CAC7C7
+    &:last-child
+      border-right: none
+  & tr
+    border-top: 1px solid #CAC7C7
+    border-bottom: 1px solid #CAC7C7
+    &:first-child
+      border-top: none
+    &:last-child
+      border-bottom: none
+  &__title
+    background: #6D6F7C
+    padding: 10px
+    height: 61px
+    font: 700 15px/130% 'Open Sans', sans-serif
+    color: #ffffff
+    text-transform: uppercase
+    text-align: center
+    vertical-align: middle
+    border-right: 1px solid #FFFFFF
+    &--disk
+      font: 700 12px/130% 'Open Sans', sans-serif
+    &:last-child
+      border-right: none
+  &__diameter
+    background: #E7F3F9
+    height: 40px
+    padding: 8px
+  &__diameter-text
+    font: 700 14px/130% 'Open Sans', sans-serif
+    color: #2E3541
+    text-transform: uppercase
+    padding: 2px 20px
+    border: 1px solid #AAB2C2
+    border-radius: 5px
+    background: #FFFFFF
+    max-width: 150px
+    margin: 0 auto
+  &__text
+    font: 400 14px/130% 'Open Sans', sans-serif
+    color: #272727
+    padding: 10px
+    text-align: center
+    vertical-align: middle
+    & strong
+      font-weight: 700
+    &--btn
+      padding: 3px 32px
+      font: 700 11px/15px 'Open Sans', sans-serif
+      text-transform: uppercase
+      color: #ffffff
+      border-radius: 50px
+      text-align: center
+      margin: auto
+  &__text-link
+    color: #272727
+    text-decoration-line: underline
+    transition: color 0.3s ease-in-out
+    &:hover, &:focus, &:active
+      color: #E30613
+
+
+.model-disk-item
+  display: flex
+  flex-direction: column
+  & .model-tyre-item__left::after
+    display: none
+.model-disk
+  &__list
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    padding: 20px 0
+    gap: 20px
+    @media all and ($mobile)
+      grid-template-columns: repeat(2,1fr)
+    &--diameter
+      grid-template-columns: repeat(10,1fr)
+      @media all and ($mobile)
+        grid-template-columns: repeat(4,1fr)
+  &__item
+    cursor: pointer
+    padding: 5px 10px
+    border: 1px solid #D6DFE6
+    border-radius: 5px
+    min-width: 100px
+    transition: border 0.3s ease-in-out
+    &:hover
+      border: 1px solid #E30613
+    &--active
+      border: 0.5px solid #E30613
+      box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15)
+      & .model-disk__color
+        color: #E30613
+    &--diameter
+      min-width: 50px
+  &__link
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__color
+    font: 400 12px/19px "Open Sans", sans-serif
+    color: #6D6F7C
+    text-transform: uppercase
+    position: relative
+    text-align: center
+
+

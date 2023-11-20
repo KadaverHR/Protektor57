@@ -1,0 +1,59 @@
+.breadcrumb
+  display: flex
+  //padding: 0 0 20px 0
+  align-items: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    align-items: center
+    padding-top: 20px
+    @media all and ($mobile)
+      margin-bottom: 20px
+  &__item
+    cursor: pointer
+    margin-right: 15px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: -13px
+      width: 12px
+      top: 10px
+      height: 1px
+      background-color: #323542
+      transform: rotate(110deg)
+  &__item span
+    color: #727584
+    font: 400 15px/18px 'Open Sans', sans-serif
+  &__item:last-of-type span
+    color: #323542
+  &__item:last-child:before
+    display: none
+  &__nds-wrapper
+    margin-bottom: 1rem
+    display: none
+  &__nds
+    font: 600 15px/18px 'Open Sans', sans-serif
+    color: #E30613
+    transition: color 0.3s ease-in-out
+    &:hover, &:focus, &:active
+      color: #CD0410
+    @media all and ($mobile)
+      font: 600 11px/18px 'Open Sans', sans-serif
+  &__span
+    color: #364352
+    text-decoration-line: underline
+    font: 700 15px/18px 'Open Sans', sans-serif
+  &__link
+    font: 400 15px/18px 'Open Sans',  sans-serif
+    color: #222
+    transition: color 0.3s ease-in-out
+    &:hover, &:active, &:focus
+      color: #E30613
+    strong
+      font-weight: 400
+      color: #222
+
+.tire-catalog .breadcrumb__nds-wrapper, .models-brands .breadcrumb__nds-wrapper
+  display: block

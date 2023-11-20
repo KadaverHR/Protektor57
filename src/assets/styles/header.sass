@@ -1,0 +1,411 @@
+.header-area
+  position: relative
+
+.header-top
+  background-color: #2E3541
+  &__info
+    display: flex
+    justify-content: space-between
+    padding: 18px 0 18px 40px
+    color: #fff
+  &__locations
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &__strong
+    font: 700 15px/20px 'Open Sans', sans-serif
+  &__text
+    font: 400 15px/20px 'Open Sans', sans-serif
+    position: relative
+    padding-left: 16px
+    &:before
+      content: ''
+      position: absolute
+      height: 16px
+      width: 1px
+      background-color: #B0B6C6
+      left: 7px
+      top: 4px
+  &__contact
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+  &__phone
+    color: #fff
+  &__button-call
+    padding: 0
+    color: #fff
+    margin-left: 20px
+    text-decoration-line: underline
+    font: 600 15px/20px 'Open Sans', sans-serif
+  &__contact-table,
+  &__info-mobile
+    display: none
+
+.header-top__locations,
+.header-top__contact
+  position: relative
+  .header-top__text:first-of-type
+    padding-left: 0
+    &:before
+      display: none
+
+.header-top-info-mobile
+  display: none
+  justify-content: center
+  position: relative
+  &__text
+    padding: 10px
+    color: #fff
+    font: 600 15px/20px 'Open Sans', sans-serif
+  &__drop
+    display: none
+    width: 320px
+    padding: 5px 13px
+    background-color: #ffffff
+    position: absolute
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
+    left: 50%
+    bottom: 0
+    transform: translate(-50%, 100%)
+    z-index: 21
+  &__drop-icon
+    margin-right: 9px
+  &__drop-item
+    padding: 4px
+    display: flex
+    align-items: center
+    .header-top__text
+      padding-left: 0
+      &:before
+        display: none
+
+.catalog-button
+  padding: 0
+  width: 20px
+  margin-right: 20px
+  position: relative
+  border-radius: 0
+  &:after
+    content: ''
+    position: absolute
+    width: 40px
+    height: 40px
+    left: -10px
+    top: -10px
+
+.catalog-button--active
+  .header-body__navigation-menu--open
+    display: none
+  .header-body__navigation-menu--close
+    display: block
+
+.header-body__navigation-menu--open
+  display: block
+
+.header-body__navigation-menu--close
+  display: none
+
+.header-body
+  background-color: #4E5F74
+  padding: 5px 0
+  &__navigation
+    width: 100%
+    user-select: none
+    display: grid
+    grid-template-columns: repeat(8, auto)
+    justify-content: space-between
+    overflow-x: auto
+    padding: 8px 0
+    -ms-overflow-style: none
+    overflow: -moz-scrollbars-none
+    &::-webkit-scrollbar
+      width: 0
+      height: 0
+  &__navigation-item
+    display: flex
+    align-items: center
+    color: #F6F6F8
+    text-transform: uppercase
+    font: 700 15px/20px 'Open Sans', sans-serif
+    white-space: nowrap
+    padding: 5px 0
+    position: relative
+    border-radius: 20px
+    transition: 0.2s ease color
+    cursor: pointer
+    a
+      color: #F6F6F8
+      font: 700 15px/20px 'Open Sans', sans-serif
+      &:hover, &:focus, &:active
+        color: #e7e7e7
+    span
+      position: relative
+    &:hover, &:focus, &:active
+      color: #e7e7e7
+    &--stocks
+      color: #2C3744
+      padding: 5px 20px
+      background-color: #ffffff
+      &:hover, &:focus, &:active
+        color: #2C3744
+      &:after
+        content: ''
+        position: absolute
+        background-color: #E30613
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        top: 4px
+        right: 12px
+    &--arrow
+      &:after
+        content: ''
+        position: absolute
+        width: 10px
+        height: 5px
+        background-image: url("../../assets/img/img-44.svg")
+        background-repeat: no-repeat
+        top: 10px
+        right: -15px
+  &__navigation-menu
+    margin-right: 20px
+
+.catalog-drop
+  //height: 460px
+  //overflow-y: auto
+  background-color: #ffffff
+  position: absolute
+  width: 100%
+  z-index: 15
+  overflow: hidden
+  display: none
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25)
+  &__container
+    display: flex
+    @media all and ($mobile)
+      display: none
+      
+
+.catalog-navigation
+  padding: 10px 0 0 0
+  max-width: 370px
+  width: 100%
+  background-color: #f6f6f8
+  border-right: 1px solid #D6DFE6
+  position: relative
+  &:before
+    content: ''
+    width: 1000%
+    height: 100%
+    position: absolute
+    left: 0
+    transform: translateX(-100%)
+    top: 0
+    background-color: #f6f6f8
+  &__item
+    font: 600 14px/18px 'Open Sans', sans-serif
+    text-transform: uppercase
+    padding: 8px 27px 8px 35px
+    position: relative
+    background-color: transparent
+    transition: 0.2s ease all
+    cursor: pointer
+    margin-bottom: 15px
+    &:hover
+      background-color: #ffffff
+      color: #E40B12
+      &:before
+        display: block
+    &:before
+      display: none
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: 3px
+      background-color: #2C5367
+    &:after
+      content: ''
+      position: absolute
+      right: 20px
+      top: 50%
+      transform: translateY(-50%)
+      background-image: url("../../assets/img/img-45.svg")
+      opacity: 0.5
+      width: 7px
+      height: 10px
+
+.catalog-links-area
+  border-right: 1px solid #D6DFE6
+  width: 100%
+  background-color: #fff
+  max-height: 460px
+  overflow-y: auto
+
+.catalog-links
+  //display: none
+  padding: 10px 30px 20px 30px
+  background-image: url("../../assets/img/img-46.png")
+  background-repeat: no-repeat
+  background-position: right bottom
+  display: flex
+  flex-wrap: wrap
+  &__row
+    display: flex
+    flex-direction: column
+    flex: 1 1 33.33%
+
+.catalog-link
+  display: block
+  padding: 10px 0
+  font: 400 13px/17px 'Open Sans', sans-serif
+  color: #222222
+  &__strong
+    font-weight: 700
+  &--mini
+    padding: 0 0 6px 0
+    &:hover, &:focus, &:active
+      color: #174F76
+      text-decoration-line: underline
+
+@media all and ($middle)
+  .header-top
+    &__info
+      padding: 18px 0
+  .catalog-drop
+    &__container
+      padding-left: 0
+  .catalog-navigation
+    max-width: 350px
+    &__item
+      margin-bottom: 13px
+      padding: 8px 20px
+      &:after
+        right: 10px
+  .catalog-links
+    background-position: 120% bottom
+  .header-body
+    & > .container
+      padding-left: 0
+      padding-right: 0
+    &__navigation
+      padding: 8px 15px
+@media all and ($table)
+  .header-top
+    &__contact
+      display: none
+    &__contact-table
+      display: flex
+  .catalog-links
+    padding: 10px 20px
+    background-position: 270% bottom
+    &__row
+      flex: 1 1 50%
+  .header-body__navigation-item
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+  .catalog-drop
+    &__container
+      padding-right: 12px
+
+@media all and ($mobile)
+  .catalog-navigation__item:after
+    right: 15px
+  .header-top
+    &__info
+      display: none
+    &__info-mobile
+      display: flex
+  .header-top-info-mobile
+    display: flex
+  .header-body
+    &__navigation-item
+      margin-right: 25px
+      font: 700 12px/16px 'Open Sans', sans-serif
+  .catalog-navigation
+    max-width: 100%
+    padding-top: 55px
+    &__item
+      padding: 18px 20px 18px 15px
+      margin-bottom: 0
+  .catalog-drop__container
+    padding-right: 0px
+    .catalog-links-area
+      display: none
+//&:last-of-type
+//  margin-right: 0
+
+
+
+
+
+///мобильное меню
+
+.accordion 
+  cursor: pointer
+  // padding: 16px
+  width: 100%
+  border: none
+  text-align: left
+  outline: none
+  // font-size: 18px
+  // transition: 0.5s
+
+
+// .active, .accordion:hover 
+//   background-color: #607D8B
+
+
+.panel 
+  padding: 0 18px
+  color: #212121
+  background-color: #fff
+  max-height: 0
+  overflow: hidden
+  transition: max-height 0.3s ease-out
+
+
+.catalog-mobile
+  &__container
+    padding-top: 58px
+    display: none
+    @media all and ($mobile)
+      display: block
+  &__button
+    font: 700 12px/16px 'Open Sans', sans-serif
+    text-transform: uppercase
+    padding: 8px 0
+    position: relative
+    background-color: transparent
+    transition: 0.2s ease all
+    cursor: pointer
+    // margin-bottom: 15px
+    &:hover
+      background-color: #ffffff
+      color: #E40B12
+      &:before
+        display: block
+    // &:before
+    //   display: none
+    //   content: ''
+    //   position: absolute
+    //   left: 0
+    //   top: 0
+    //   height: 100%
+    //   width: 3px
+    //   background-color: #2C5367
+    &:after
+      content: ''
+      position: absolute
+      right: 20px
+      top: 50%
+      transform: translateY(-50%)
+      background-image: url("../../assets/img/img-45.svg")
+      opacity: 0.5
+      width: 7px
+      height: 10px

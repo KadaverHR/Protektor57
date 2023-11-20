@@ -1,0 +1,54 @@
+.ui-widget.ui-widget-content
+  border: none
+  height: 3px
+  background: #D6DFE6
+.ui-slider-horizontal .ui-slider-range
+  background: #929AA8
+.ui-slider-horizontal .ui-slider-handle
+  width: 12px
+  height: 12px
+  background: #929AA8
+  border-radius: 50%
+  top: -4px
+  cursor: pointer
+  @media all and ($mobile)
+    width: 16px
+    height: 16px
+    top: -6px
+    
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  border: none
+  color: #929AA8
+  outline: 0
+
+
+
+.filter-price
+  // position: absolute
+  // bottom: -5px
+  // width: 100%
+  // left: 0
+  // transform: translateY(100%)
+  padding-top: 25px
+  display: flex
+  justify-content: space-between
+  &__input-text
+    position: relative
+    padding-left: 8px
+    display: flex
+    align-items: center
+    color: #6B6F7B
+    font: 400 15px/20px 'Open Sans', sans-serif
+    border: 1px solid #D6DFE6
+    border-radius: 5px
+    background: transparent
+  &__input
+    background: transparent
+    padding: 8px 10px
+    max-width: 94px
+    color: #222
+    font: 400 15px/20px 'Open Sans', sans-serif
+
+.range
+  padding-top: 25px
+

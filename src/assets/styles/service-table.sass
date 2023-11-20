@@ -1,0 +1,68 @@
+.service-table
+  width: 100%
+  min-width: 460px
+  border-collapse: separate
+  border-spacing: 5px
+  padding-bottom: 5px
+  &--fixing-disks
+    min-width: 1120px
+  &--tire-service
+    min-width: 460px
+  &--tire-service td:first-child
+    width: 80%
+    //@media all and ($middle)
+    //  min-width: 700px
+    //@media all and ($table)
+    //  min-width: 500px
+    @media all and ($mobile)
+      width: 90%
+
+  &__wrapper
+    margin-bottom: 40px
+    margin-left: -5px
+    margin-right: -5px
+    @media all and ($mobile)
+      margin-bottom: 30px
+  &__subtitle-wrapper
+    color: #222
+    padding-bottom: 29px
+    @media all and ($mobile)
+      padding-bottom: 15px
+  &__subtitle
+    font: 700 21px/18px 'Open Sans', sans-sarif
+    @media all and ($mobile)
+      font: 700 17px/18px 'Open Sans', sans-sarif
+  &__heading
+    font: 700 15px/20px 'Open Sans', sans-sarif
+    color: #222
+    padding: 10px 20px
+    border-radius: 5px
+    white-space: nowrap
+    @media all and ($mobile)
+      font: 700 13px/18px 'Open Sans', sans-sarif
+  &__heading span
+    font: 400 15px/20px 'Open Sans', sans-sarif
+    color: #222
+  &__service
+    font: 400 14px/20px 'Open Sans', sans-sarif
+    padding: 10px 20px
+    border-radius: 5px
+  &__text
+    font: 400 14px/20px 'Open Sans', sans-sarif
+    padding: 10px 20px
+    border-radius: 5px
+    @media all and ($mobile)
+      font: 400 13px/18px 'Open Sans', sans-sarif
+    &--center
+      text-align: center
+  &__text span
+    font: 400 12px/16px 'Open Sans', sans-sarif
+  &__cell
+    background: #ECEEF2
+    &:nth-child(2n)
+      background: #F4F5F7
+
+
+.service-table--fixing-disks th:first-child, .service-table--fixing-disks td:first-child
+  width: 241px
+  white-space: nowrap

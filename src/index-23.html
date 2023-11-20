@@ -1,0 +1,438 @@
+{% set title = "Заказ принят" %} {% set bodyClass = "is-order-accepted" %} {%
+extends "html/layouts/default.html" %} {% block content %}
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+      <img
+        width="61"
+        height="297"
+        src="../../assets/img/img-53.png"
+        alt="Новый магазин">
+    </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/shopping-cart-banner-mobile.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/shopping-cart-banner-table.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/shopping-cart-banner-middle.jpg"
+      />
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/shopping-cart-banner.jpg"
+        alt="Сервис"
+      />
+    </picture>
+    <div class="container-fluid">
+      <div class="banner-container container1320">
+        <div class="container">
+          <div class="main-banner-navigation">
+            <a href="/" class="main-banner-navigation__logo">
+              <img
+                src="../../assets/img/img-46.svg"
+                width="257"
+                height="30"
+                alt="Протектор57"
+              />
+            </a>
+
+            <div class="main-banner-navigation__search">
+              <div class="search-area">
+                <form class="search">
+                  <input
+                    type="text"
+                    class="search__input"
+                    value=""
+                    placeholder="Поиск"
+                  />
+                  <button class="button search__button" type="submit">
+                    <img src="../../assets/img/img-40.svg" alt="Найти" />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="main-banner-navigation__cart main-banner-cart">
+              <img
+                class="main-banner-cart__image"
+                src="../../assets/img/img-47.svg"
+                alt="Корзина"
+                width="42"
+                height="42"
+              />
+              <div class="main-banner-cart__count">
+                <strong>2 </strong>товара
+              </div>
+              <div class="main-banner-cart__price">
+                <strong>12 345 </strong>₽
+              </div>
+            </div>
+            <div class="main-banner-cart-mobile">
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-50.svg" alt="Поиск" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-51.svg" alt="Звонок" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-52.svg" alt="Корзина" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-container container1320">
+      <div class="container">
+        <div class="main-banner-info main-banner-info--small">
+          <h1 class="main-banner-info__title-small">Корзина</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/shopping-cart-banner-mobile-tyre.png"
+        />
+        <img
+          class="banner-tyres banner-tyres__img shopping-cart-banner"
+          src="../../assets/img/shopping-cart-banner-tyre.png"
+          alt="Сервис"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+<section class="order-accepted">
+  <div class="container-fluid">
+    <div class="container1320 order-accepted__area">
+      <div class="container ">
+        {% include "html/includes/breadcrumbs.html" %}
+  
+        <div class="order-accepted__block">
+          <div class="title-block">
+            <h3 class="title-block__title">Заказ принят</h3>
+          </div>
+          <!-- <div class="order-accepted__text-wrapper">
+            <p class="order-accepted__text">
+              <strong>Номер заказа № 123478-254.</strong> На указаный номер телефона придет sms-сообщение с номером заказа.
+              Если вы оставлили адрес электронной почты, то на указанный адрес
+              отправлен состав заказа и его описание.
+            </p>
+          </div> -->
+  
+      
+  
+    <h4 class="order-accepted__subtitle">
+      Информация о заказе <strong>№ 123478-254</strong>
+    </h4>
+  
+
+
+
+
+
+    <div class="order-accepted__info-block">
+
+      <div class="form-order__form-block order-accepted__border">
+              <div class="form-order__item order-accepted__item--width">
+                <p class="form-order__label" for='fio'>ФИО</p>
+               <p class="order-accepted__info-text">
+                Краснопресненский Вениамин Геннадьевич
+               </p>
+              </div>
+
+              <div class="form-order__item order-accepted__item--width">
+                <p class="form-order__label" for='tel'>Номер телефона</p>
+                <p class="order-accepted__info-text">
+                  +7 (980) 369 22-18
+                 </p>
+              </div>
+
+              <div class="form-order__item order-accepted__item--width">
+                <p class="form-order__label" for='email'>Email</p>
+                <p class="order-accepted__info-text">
+                  test@mtkrosberg.ru
+                 </p>
+              </div>
+
+            </div>
+
+            <div class="form-order__form-block ">
+              <div class="form-order__item order-accepted__item--width">
+                <p class="form-order__label" for='select'>Пункт выдачи</p>
+                <p class="order-accepted__info-text">
+                  г. Орёл, ул. Михалицына, д.10
+                 </p>
+              </div>
+
+
+              <div class="form-order__item order-accepted__item--width-max">
+                <p class="form-order__label" for='comment'>Комментарий</з>
+                  <p class="order-accepted__info-text">
+                    Колеса поедут с Тольяттив Таганрог. Лада Приора Седан 2011, двигатель бензиновый
+                    1.6 л. Колеса поедут с Тольятти в Таганрог. Лада Приора  
+                    
+
+                   </p>
+
+              </div>
+            </div>
+    </div>
+
+
+        <!-- Состав заказа -->
+          <div class="shopping-cart-card__box">
+            <div class="shopping-cart-card">
+              <div class="shopping-cart-card__img-wrapper">
+                <img
+                  src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                  alt=""
+                  class="shopping-cart-card__img"
+                />
+                <button class="button zoom">
+                  <img src="../assets/img/img-21.svg" alt="Zoom" />
+                </button>
+              </div>
+  
+              <div class="shopping-cart-card__content">
+                <div class="shopping-cart-card__title-wrapper">
+                  <div class="card-product__link-wrapper">
+                    <a href="#" class="card-product__link"
+                      >Шина 11L-16 10PR CARLISLE
+                    </a>
+                  </div>
+           
+                </div>
+                <div class="shopping-cart-card__info">
+                  <ul class="shopping-cart-card__property">
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile shopping-cart-card__property-item--padding"
+                    >
+                      <p class="shopping-cart-card__property-name">Артикул:</p>
+                      <p class="shopping-cart-card__property-value">21447</p>
+  
+                      <input
+                        type="hidden"
+                        value="21447"
+                        name="sku[]"
+                        form="order"
+                      />
+                    </li>
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile"
+                    >
+                      <p class="shopping-cart-card__property-name">сезонность:</p>
+                      <div class="shopping-cart-card__value-wrapper">
+                        <span class="shopping-cart-card__property-value">
+                          Зимняя
+                        </span>
+                        <img
+                          class="shopping-cart-card__property-img"
+                          src="../assets/img/img-20.svg"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile"
+                    >
+                      <p class="shopping-cart-card__property-name">бренд:</p>
+                      <p class="shopping-cart-card__property-value">
+                        CROSSLEADER
+                      </p>
+                    </li>
+                  </ul>
+  
+                  <ul
+                    class="shopping-cart-card__property shopping-cart-card__property--center"
+                  >
+                    <li class="shopping-cart-card__property-item">
+                      <p class="shopping-cart-card__property-name mobile-style">
+                        Цена:
+                      </p>
+                      <p class="shopping-cart-card__price-text">16 000</p>
+                    </li>
+                    <li
+                      class="shopping-cart-card__property-item"
+                    >
+                      <p class="shopping-cart-card__property-name table-style">
+                        Количество:
+                      </p>
+  
+                      <p class="shopping-cart-card__property-value order-accepted__text--bold">
+                        4 <span>шт.</span>
+                      </p>
+                    </li>
+  
+                    <li class="shopping-cart-card__property-item">
+                      <img src="./assets/img/order.svg" alt="" />
+                      <span class="shopping-cart-card__property-value">
+                        Под заказ
+                      </span>
+                    </li>
+                  </ul>
+  
+                  <div class="shopping-cart-card__sum">
+                    <p class="shopping-cart-card__property-name mobile-style">
+                      Сумма:
+                    </p>
+  
+                    <p
+                      class="shopping-cart-card__price-text shopping-cart-card__price-text--red"
+                    >
+                      46 000
+                    </p>
+                  </div>
+  
+           
+                </div>
+              </div>
+            </div>
+            <div class="shopping-cart-card">
+              <div class="shopping-cart-card__img-wrapper">
+                <img
+                  src="https://protektor57.ru/files/images/tyre/14346.jpg"
+                  alt=""
+                  class="shopping-cart-card__img"
+                />
+                <button class="button zoom">
+                  <img src="../assets/img/img-21.svg" alt="Zoom" />
+                </button>
+              </div>
+  
+              <div class="shopping-cart-card__content">
+                <div class="shopping-cart-card__title-wrapper">
+                  <div class="card-product__link-wrapper">
+                    <a href="#" class="card-product__link"
+                      >Шина 11L-16 10PR CARLISLE
+                    </a>
+                  </div>
+              
+                </div>
+                <div class="shopping-cart-card__info">
+                  <ul class="shopping-cart-card__property">
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile shopping-cart-card__property-item--padding"
+                    >
+                      <p class="shopping-cart-card__property-name">Артикул:</p>
+                      <p class="shopping-cart-card__property-value">21448</p>
+                      <input
+                        type="hidden"
+                        value="21448"
+                        name="sku[]"
+                        form="order"
+                      />
+                    </li>
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile"
+                    >
+                      <p class="shopping-cart-card__property-name">сезонность:</p>
+                      <div class="shopping-cart-card__value-wrapper">
+                        <span class="shopping-cart-card__property-value">
+                          Зимняя
+                        </span>
+                        <img
+                          class="shopping-cart-card__property-img"
+                          src="../assets/img/img-20.svg"
+                          alt=""
+                        />
+                      </div>
+                    </li>
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--mobile"
+                    >
+                      <p class="shopping-cart-card__property-name">бренд:</p>
+                      <p class="shopping-cart-card__property-value">
+                        CROSSLEADER
+                      </p>
+                    </li>
+                  </ul>
+  
+                  <ul
+                    class="shopping-cart-card__property shopping-cart-card__property--center"
+                  >
+                    <li class="shopping-cart-card__property-item">
+                      <p class="shopping-cart-card__property-name mobile-style">
+                        Цена:
+                      </p>
+                      <p class="shopping-cart-card__price-text">16 000</p>
+                    </li>
+                    <li
+                      class="shopping-cart-card__property-item shopping-cart-card__property-item--center"
+                    >
+                      <p class="shopping-cart-card__property-name table-style">
+                        Количество:
+                      </p>
+  
+                      <p class="shopping-cart-card__property-value order-accepted__text--bold">
+                        4 <span>шт.</span>
+                      </p>
+                      
+                    </li>
+  
+                    <li class="shopping-cart-card__property-item">
+                      <img src="./assets/img/green-check.png" alt="" />
+                      <span class="shopping-cart-card__property-value">
+                        В наличии
+                      </span>
+                    </li>
+                  </ul>
+  
+                  <div class="shopping-cart-card__sum">
+                    <p class="shopping-cart-card__property-name mobile-style">
+                      Сумма:
+                    </p>
+  
+                    <p
+                      class="shopping-cart-card__price-text shopping-cart-card__price-text--red"
+                    >
+                      46 000
+                    </p>
+                  </div>
+  
+     
+                </div>
+              </div>
+            </div>
+            <div class="shopping-cart-result">
+              <p class="shopping-cart-result__property-name">Итого</p>
+              <p
+                class="shopping-cart-card__price-text shopping-cart-result__text"
+              >
+                777 000
+              </p>
+            </div>
+  
+  
+          </div>
+  
+          <!-- Конец состава заказа -->
+  
+          <div class="order-accepted__btn-wrapper">
+            <a
+              href="#"
+              class="order-accepted__btn-link order-accepted__btn button button__gray-red"
+              >Продолжить покупки</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+{% endblock %}

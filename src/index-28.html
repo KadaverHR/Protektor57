@@ -1,0 +1,282 @@
+{% set title = "Акции" %} {% set bodyClass = "is-stocks-catalog" %} {% extends
+"html/layouts/default.html" %} {% block content %}
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+        <img
+          width="61"
+          height="297"
+          src="../../assets/img/img-53.png"
+          alt="Новый магазин">
+      </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/stocks-banner-mobile.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/stocks-banner-table.jpg"
+      />
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/stocks-banner-middle.jpg"
+      />
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/stocks-banner.jpg"
+        alt="Сервис"
+      />
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img
+              src="../../assets/img/img-46.svg"
+              width="257"
+              height="30"
+              alt="Протектор57"
+            />
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input
+                  type="text"
+                  class="search__input"
+                  value=""
+                  placeholder="Поиск"
+                />
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            />
+            <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+            <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок" />
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">Акции</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/other-banner-stocks-mobile.png"
+        />
+        <img
+          class="banner-tyres banner-tyres__stocks"
+          src="../../assets/img/other-banner-stocks.png"
+          alt="Сервис"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<section class="stocks-catalog">
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %} {% include
+      "html/includes/pagination-top.html" %}
+
+      <div class="stocks-catalog__block">
+        <div class="stocks-catalog__content-wrapper">
+          <ul class="stocks-catalog__card-wrapper">
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_akb.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Меняем старое на новое!</span
+                  >
+                  <p class="swiper-stocks__text">
+                    Подробности по телефону или у продавцов консультантов
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Сезонное хранение шин бесплатно
+                  </span>
+                  <p class="swiper-stocks__text">
+                    Подробности по телефону или у продавцов консультантов
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Качественный ремонт дисков</span
+                  >
+                  <p class="swiper-stocks__text">
+                    Подробности у продавцов-консультантов
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Открылся новый магазин!</span
+                  >
+                  <p class="swiper-stocks__text">
+                    г.Орел, ул.Комсомольская, 270
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Подбор запчастей по артикулу</span
+                  >
+                  <p class="swiper-stocks__text">
+                    Подробности по телефону или у продавцов-консультантов
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock5.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Скидка на шиномонтаж 20%</span
+                  >
+                  <p class="swiper-stocks__text">При покупке шин или дисков.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock6.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Скидка 10% на запасные части
+                  </span>
+                  <p class="swiper-stocks__text">При покупке шин или дисков.</p>
+                </div>
+              </a>
+            </li>
+
+
+            <li class="stocks-catalog__card-product">
+              <a href="/" class="swiper-slide">
+                <div class="swiper-stocks__image-block">
+                  <img
+                    class="swiper-stocks__image"
+                    src="../../assets/img/banner_stock7.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-stocks__body">
+                  <span class="swiper-stocks__title"
+                    >Шины Cordiant</span
+                  >
+                  <p class="swiper-stocks__text">
+                    Подробности по телефону или у продавцов-консультантов
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      {% include "html/includes/pagination.html" %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+
+.selection-by-car
+  &__area
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    gap: 20px
+    padding: 20px 0
+    margin-bottom: 80px
+    @media all and ($table)
+      grid-template-columns: repeat(1,1fr)
+    @media all and ($mobile)
+      margin-bottom: 40px
+  &__title-wrapper
+    width: 100%
+    background: #747685
+    padding: 12px 0
+    border-radius: 5px
+  &__title
+    font: 700 21px/29px 'Open Sans', sans-serif
+    color:  #FFFFFF
+    text-align: center
+  &__img-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+  &__subtitle-wrapper
+    width: 100%
+    background: #D6DCE9
+    padding: 18px 0
+  &__subtitle
+    font: 600 16px/22px 'Open Sans', sans-serif
+    color:  #222
+    text-align: center
+  &__content
+    border: 1px solid #D6DCE9
+    border-radius: 5px
+  &__axis-block
+    padding: 10px 30px
+  &__axis-wrapper
+    padding: 20px 0
+    display: grid
+    grid-template-columns: 120px auto
+    gap: 10px
+    @media all and ($mobile)
+      grid-template-columns: repeat(1,1fr)
+      padding: 10px 0
+  &__axis
+    padding-top: 15px
+    font: 600 15px/23px 'Open Sans', sans-serif
+    color: #2C5367
+  &__axis-list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  &__axis-item
+    padding-right: 10px
+    padding-top: 10px
+    &:last-child
+      padding-right: 0
+  &__axis-btn
+    border: 1px solid #60656E
+    border-radius: 5px
+    background: transparent
+    padding: 6px 15px
+  &__axis-link
+    font: 400 15px/15px 'Open Sans', sans-serif
+    color: #222222
+    text-decoration-line: underline
+    text-transform: uppercase
+    white-space: nowrap
+
+
+  &__grid1
+    @media all and ($table)
+      order: 1
+  &__grid2
+    @media all and ($table)
+      order: 4
+  &__grid3
+    @media all and ($table)
+      order: 2
+  &__grid4
+    @media all and ($table)
+      order: 5
+  &__grid5
+    @media all and ($table)
+      order: 3
+  &__grid6
+    @media all and ($table)
+      order: 6

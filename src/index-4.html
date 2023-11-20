@@ -1,0 +1,218 @@
+{% set title = "Гарантия" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/garantiya-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/garantiya-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/garantiya-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/garantiya-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Гарантия
+        </h1>
+      </div>
+
+    </div> 
+  </div>
+</section>
+
+<section class="breadcrumbs__container">
+  <div class="container-fluid">
+      <div class="container">
+        {% include "html/includes/breadcrumbs.html" %}
+      </div>
+  </div>
+</section>
+
+<section class="warranty">
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="warranty__container">
+        <!-- <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"> <a href="#" class="breadcrumbs__link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item"> <span class="breadcrumbs__span">Гарантия</span> </li>
+        </ul> -->
+        <div class="warranty__box">
+          <p class="warranty__text"> <strong>Гарантийный срок</strong>
+            &nbsp;— это срок, во время которого покупатель, обнаружив недостаток товара,
+            имеет право потребовать от продавца или изготовителя принять меры по устранению дефекта. Продавец должен
+            устранить недостатки, если не будет доказано, что они возникли вследствие нарушений покупателем правил
+            эксплуатации.
+          </p>
+
+          <h3 class="warranty__title">
+            Кто устанавливает гарантийный срок
+          </h3>
+          <p class="warranty__text">
+            Гарантийный срок устанавливается на каждый товар производителем и указывается в документах или гарантийных
+            документах, выдаваемых продавцом.
+          </p>
+          <h3 class="warranty__title">
+            Обмен и возврат товара
+          </h3>
+
+          <ul>
+            <li class="warranty__text">
+              Покупатель вправе отказаться от покупки до момента передачи товара в любое время без объяснения причин;
+              после передачи товара - в течение 7 дней.
+
+            </li>
+
+
+            <li class="warranty__text">
+              Обмен и возврат товара надлежащего качества происходит в точке приобретения по адресам: г. Орел, ул.
+              Михалицына, 10 или ул. Ломоносова, 6Б ТЦ "Утёс", ул.Комсомольская,270, ежедневно с 10:00 до 16:00, кроме
+              субботы и воскресенья.
+
+            </li>
+            <li class="warranty__text">
+              При возврате или обмене товара покупатель при себе должен иметь товарную накладную, кассовый чек или любой
+              иной документ, подтверждающий факт приобретения товара.
+            </li>
+            <li class="warranty__text">
+              Товар должен сохранять свой товарный вид, оригинальную упаковку и потребительские свойства.
+
+            </li>
+            <li class="warranty__text">
+              Покупатель, при намерении вернуть или обменять приобретенный товар, обязан по телефону или электронной
+              почте уведомить об этом продавца. К возврату не принимаются шины использованные или бортированные.
+
+            </li>
+            <li class="warranty__text">
+              Не принимаются к возврату диски без оригинальной упаковки, без крепежа (болты или гайки, центровочные
+              кольца), если он был в комплекте, без декоративной заглушки или колпака, в зависимости от комплектации,
+              бортированные или с испорченным лакокрасочным покрытием.
+
+            </li>
+
+            <li class="warranty__text">
+              Возврат денежных средств осуществляется в течение 30 дней (в зависимости от способа оплаты) с момента
+              предъявления покупателем соответствующего требования в офисе продавца по адресу: ул. Михалицына, 10 или
+              ул. Ломоносова, 6Б ТЦ "Утёс", ул.Комсомольская,270, ежедневно с 10:00 до 16:00, кроме субботы и
+              воскресенья.
+            </li>
+          </ul>
+
+          <h3 class="warranty__title">
+            Обслуживание по гарантии включает в себя
+          </h3>
+
+          <ul class="warranty__icon-list">
+            <li class="warranty__icon-item">
+              <div class="warranty__icon-box">
+                <img src="./assets/img/warranty1.svg" alt="">
+              </div>
+              <p class="warranty__icon-text">Устранение
+                недостатков товара</p>
+            </li>
+            <li class="warranty__icon-item">
+              <div class="warranty__icon-box">
+                <img src="./assets/img/warranty2.svg" alt="">
+              </div>
+              <p class="warranty__icon-text">Обмен
+                на аналогичный товар</p>
+            </li>
+            <li class="warranty__icon-item">
+              <div class="warranty__icon-box">
+                <img src="./assets/img/warranty3.svg" alt="">
+              </div>
+              <p class="warranty__icon-text">Возврат товара
+                и денежных средств
+              </p>
+            </li>
+          </ul>
+          <div class="warranty__note">
+            <p class="warranty__text">
+              По всем вопросам, связанным с выполнением гарантийных обязательств, а также по вопросам взаимодействия с
+              покупателями по возврату товара и денежных средств, мы руководствуемся&nbsp;<span>действующим законодательством РФ.</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+
+</section>
+
+
+{% endblock %}

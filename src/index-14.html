@@ -1,0 +1,395 @@
+{% set title = "Автомойка" %}
+{% set bodyClass = "is-car-wash" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/car-wash-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/car-wash-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/car-wash-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/car-wash-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Сервис
+        </h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+      </div>
+
+    </div> 
+  </div>
+
+  <!-- <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/truck-service-banner-mobile-tyres.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__truck-service banner-tyres__img"
+            src="../../assets/img/truck-service-banner-tyres.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div> -->
+</section>
+
+<section class="collapse-service">
+
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+
+      <div class="title-block service-title">
+
+        <div class="service-title__wrapper">
+          <h2 class="title-block__title">
+            Автомойка
+          </h2>
+
+          <a href="#" class="service-title__link">записаться</a>
+        </div>
+
+        <div class="service-title__info-wrapper">
+          <p class="service-title__info">
+            Постоянным клиентам <strong class="service-title__info service-title__info--red">
+            скидка 5-15%
+          </strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="service-nav__wrapper">
+        {% include "html/includes/service-nav.html" %}
+      </div>
+
+
+      <div class="service-contacts">
+
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle title-block__subtitle--red">
+            Контакты
+          </h3>
+        </div>
+
+        <div class="service-contacts__block">
+          <ul class="service-contacts__list">
+            <li class="service-contacts__item">
+              <ul class="service-contacts__list-internal">
+
+
+                <!--                1 адрес-->
+                <li class="service-contacts__item-internal service-contacts__item-internal--row">
+                  <div class="service-contacts__address-wrapper">
+                    <p class="service-contacts__address">г. Орел, Московское шоссе, 173</p>
+                    <div class="service-contacts__link-wrapper">
+                      <a href="#" class="service-contacts__link service-contacts__link--map">На карте</a>
+                      <a href="#" class="service-contacts__link service-contacts__link--print">Распечатать</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--tel">
+                  <div class="service-contacts__tel-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont2.svg" class="service-contacts__img">
+                    </div>
+                    <a type="tel" href="tel:74862631163" class="service-contacts__link service-contacts__link--tel">+7
+                      (4862)
+                      <strong>631-163</strong></a>
+                  </div>
+
+                </li>
+
+                <li class="service-contacts__item-internal service-contacts__item-internal--mail">
+                  <div class="service-contacts__mail-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont3.svg" class="service-contacts__img">
+                    </div>
+                    <a type="mail" href="mailto:74862490625"
+                       class="service-contacts__link service-contacts__link--mail">info<strong>@proauto57.ru</strong></a>
+                  </div>
+
+                </li>
+                <li class="service-contacts__item-internal service-contacts__item-internal--working">
+                  <div class="service-contacts__working-wrapper">
+                    <div class="service-contacts__img-wrapper">
+                      <img src="../assets/img/service-cont4.svg" class="service-contacts__img">
+                    </div>
+                    <p class="service-contacts__working-text">пн-сб<strong> с 9.00 до 18.00</strong>
+                    </p>
+                  </div>
+
+
+                </li>
+              </ul>
+            </li>
+
+
+            <!--            2 адрес-->
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="car-wash__info-area">
+        <div class="car-wash__info-block">
+
+
+          <div class="title-block service-title__subtitle-wrapper">
+            <h3 class="service-title__subtitle title-block__subtitle">
+              О сервисе
+            </h3>
+          </div>
+
+          <ul class="car-wash__info-list">
+            <li class="car-wash__info-item">
+              <div class="car-wash__img-wrapper">
+                <img src="./assets/img/car-wash1.svg" class="car-wash__img">
+              </div>
+              <div class="car-wash__text-wrapper">
+                <p class="car-wash__info-text">Мойка кузова </p>
+              </div>
+
+            </li>
+            <li class="car-wash__info-item">
+              <div class="car-wash__img-wrapper">
+                <img src="./assets/img/car-wash2.svg" class="car-wash__img">
+              </div>
+              <div class="car-wash__text-wrapper">
+                <p class="car-wash__info-text"> Мойка ковриков </p>
+              </div>
+
+            </li>
+            <li class="car-wash__info-item">
+              <div class="car-wash__img-wrapper">
+                <img src="./assets/img/car-wash3.svg" class="car-wash__img">
+              </div>
+              <div class="car-wash__text-wrapper">
+                <p class="car-wash__info-text">Чистка и мойка порогов</p>
+              </div>
+
+            </li>
+            <li class="car-wash__info-item">
+              <div class="car-wash__img-wrapper">
+                <img src="./assets/img/car-wash4.svg" class="car-wash__img">
+              </div>
+              <div class="car-wash__text-wrapper">
+                <p class="car-wash__info-text">Чистка и мойка арок </p>
+              </div>
+
+            </li>
+            <li class="car-wash__info-item">
+              <div class="car-wash__img-wrapper">
+                <img src="./assets/img/car-wash5.svg" class="car-wash__img">
+              </div>
+              <div class="car-wash__text-wrapper">
+                <p class="car-wash__info-text">Протирка салона</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <p class="collapse-service__info-text collapse-service__info-text--blue">Наши мастера качественно, внимательно
+            и профессионально помоют кузов автомобиля, используя современное оборудование, только качественные
+            автошампуни и косметику.</p>
+          <p class="collapse-service__info-text">Стоимость мойки автомобиля на каждой точке оказания услуг имеет
+            диапазон: от и до. Это обусловлено тем, что к нам приезжают самые разные автомобили.
+
+          </p>
+
+
+        </div>
+
+
+      </div>
+
+      <div class="car-wash__price">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Стоимость услуг
+          </h3>
+          <!--          <p class="fixing-disks__price-comment">-->
+          <!--            1 колесо-->
+          <!--          </p>-->
+        </div>
+        <div class="service-table__wrapper collapse-service__table">
+
+
+          <table class="service-table">
+            <tr class="service-table__cell">
+              <td class="service-table__heading">
+                Устранение неисправности
+              </td>
+              <td class="service-table__heading">
+                Отеч. легковые<span>, руб </span>
+              </td>
+              <td class="service-table__heading">
+                Отеч. внедорожники<span>, руб </span>
+              </td>
+              <td class="service-table__heading">
+                Иномарки<span>, руб </span>
+              </td>
+            </tr>
+            <tr class="service-table__cell">
+              <td class=" service-table__text">
+                Капитальный ремонт
+              </td>
+              <td class="service-table__text">
+                от 700
+              </td>
+              <td class="service-table__text">
+                от 700
+              </td>
+              <td class="service-table__text">
+                от 700
+              </td>
+            </tr>
+            <tr class="service-table__cell">
+              <td class="service-table__text">
+                Замена маслосъемных колпачков
+              </td>
+              <td colspan="3" class="service-table__text service-table__text--center">
+                от 700
+              </td>
+
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="car-wash__download-wrapper">
+         
+            <a href="#" class="car-wash__btn-link car-wash__reception-btn button button__red">Записаться</a>
+          
+          
+            <a href="#" class="car-wash__btn-link car-wash__download-btn button button__gray">посмотреть прайс</a>
+        
+        </div>
+
+      </div>
+
+      <div class="car-wash__map service-map">
+        <div class="title-block service-title__subtitle-wrapper">
+          <h3 class="service-title__subtitle title-block__subtitle">
+            Схема проезда на автомойку
+          </h3>
+        </div>
+        <div class="service-map__block">
+          <div class="service-map__scroll">
+            <ul class="service-map__address-list">
+              <li class="service-map__address-item">
+                <p class="service-map__address-text"><strong>Орел</strong> ш. Московское, 173</p>
+                <a type="mail" href="mailto:gruz@protektor57.ru"
+                   class="service-map__address-mail">info@proauto57.ru</a>
+                <div class="service-map__address-block">
+                  <a type="tel" href="tel:84862631163" class="service-map__address-tel">+7 (4862) <strong>
+                    631-163</strong></a>
+                  <div>
+                    <p class="service-map__address-working">пн-сб с 9.00 до 18.00</p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <div class="service-map__map-wrapper">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a09683a1bf059da01aa9f06da1720916d38a2abad1a082c6f8e345794e43ed0&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,207 @@
+.swiper-company-section
+  user-select: none
+  background-color: #fff
+  .title-block
+    margin-bottom: 15px
+
+.swiper-company-body
+  padding: 50px 0 40px
+  &__title
+    color: #364352
+    font: 700 15px/18px 'Open Sans', sans-serif
+    margin-bottom: 20px
+  &__text
+    color: #364352
+    font: 400 15px/18px 'Open Sans', sans-serif
+    padding-top: 15px
+    strong
+      color: #E30613
+      font-weight: 600
+      font-style: italic 
+  &__sub-title
+    text-transform: uppercase
+    font: 700 15px/18px 'Open Sans', sans-serif
+    margin-bottom: 18px
+
+.swiper-company-area
+  position: relative
+  margin: 40px 0 20px 0
+
+.swiper-company
+  cursor: pointer
+  user-select: none
+  border-radius: 5px
+  position: relative
+  &__swiper-pagination
+    display: none
+
+  .swiper-wrapper
+    display: flex
+    left: -2%
+    width: 105%
+  .swiper-slide:nth-child(1)
+    .swiper-company__location
+      left: 36px
+  .swiper-slide:nth-child(2)
+    border-left: 3px solid #fff
+    border-right: 3px solid #fff
+  .swiper-slide:nth-child(3)
+    .swiper-company__location
+      right: 15px
+  .swiper-slide
+    overflow: hidden
+    display: flex
+    align-items: flex-end
+    position: relative
+    transform: skewX(-7deg)
+    flex: 1 1 33.33%
+    height: 320px
+    img
+      object-position: top
+      position: relative
+      //transform: skewX(0deg) scale(1.1)
+      width: 100%
+      object-fit: cover
+      height: 100%
+    &__image
+      height: 100%
+      width: 114%
+      transform: skewX(7deg)
+      top: 0
+      left: -26px
+      z-index: 0
+      position: absolute
+  &__location
+    position: absolute
+    z-index: 1
+    bottom: 0
+    left: -2px
+    right: -2px
+    width: auto
+    padding: 14px 5px
+    background: rgba(0, 0, 0, 0.3)
+    transform: skewX(7deg)
+  //mix-blend-mode: multiply
+  &__location-text
+    text-align: center
+    font: 700 15px/20px 'Open Sans', sans-serif
+    color: #fff
+  .swiper-wrapper.disabled
+    transform: translate3d(0px, 0, 0)!important
+
+
+.swiper-company-sale
+  cursor: pointer
+  user-select: none
+  position: relative
+  &__swiper-pagination
+    display: none
+  .swiper-wrapper
+    display: flex
+    left: 0
+    width: 103%
+  .swiper-slide
+    overflow: hidden
+    display: flex
+    align-items: flex-end
+    position: relative
+    flex: 1 1 33.33%
+    height: 320px
+    border-radius: 5px
+    img
+      object-position: top
+      position: relative
+      width: 100%
+      object-fit: cover
+      height: 100%
+    &__image
+      top: 0
+      z-index: 0
+      position: absolute
+  &__location
+    position: absolute
+    z-index: 1
+    bottom: 0
+    left: -2px
+    right: -2px
+    width: auto
+    padding: 14px 5px
+    background: rgba(0, 0, 0, 0.3)
+  &__location-text
+    text-align: center
+    font: 700 15px/20px 'Open Sans', sans-serif
+    color: #fff
+  .swiper-wrapper.disabled
+    transform: translate3d(0px, 0, 0)!important
+
+@media all and ($middle)
+  .swiper-company-body
+    padding: 30px 0
+  .swiper-company
+    .swiper-slide
+      height: 276px
+    .swiper-slide:nth-child(1) .swiper-company__location,
+    .swiper-slide:nth-child(3) .swiper-company__location
+      left: -2px
+      right: -2px
+    .swiper-slide__image
+      width: 130%
+
+  .swiper-company-sale
+    .swiper-slide
+      height: 276px
+      margin-left: 20px
+      &:first-child
+        margin-left: 0
+    .swiper-slide__image
+      width: 130%
+
+@media all and ($table)
+  .swiper-company__location-text
+    font: 700 14px/18px "Open Sans", sans-serif
+  .swiper-company
+    .swiper-slide
+      height: 205px
+  .swiper-company-sale
+    .swiper-slide
+      height: 205px
+
+@media all and ($mobile)
+  .swiper-company-area
+    margin-bottom: 40px
+  .swiper-company
+    &__swiper-pagination
+      display: inline-block
+    .swiper-slide:nth-child(2)
+      border: none
+    .swiper-wrapper
+      left: 0
+      width: 100%
+    .swiper-slide
+      height: 320px
+      transform: skewX(0deg)
+      flex: 1 0 auto
+    .swiper-company__location
+      transform: skewX(0deg)
+    .swiper-slide__image
+      width: 100%
+      left: 0
+      transform: skewX(0deg)
+  .swiper-company-sale
+    &__swiper-pagination
+      display: inline-block
+    .swiper-slide:nth-child(2)
+      border: none
+    .swiper-wrapper
+      left: 0
+      width: 100%
+    .swiper-slide
+      height: 320px
+      flex: 1 0 auto
+      margin-left: 20px
+      &:first-child
+        margin-left: 0
+    .swiper-slide__image
+      width: 100%
+      left: 0
+   

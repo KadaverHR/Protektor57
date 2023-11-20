@@ -1,0 +1,101 @@
+
+
+.breadcrumbs
+  position: relative
+
+.breadcrumbs__item
+  &:after
+    content: "/"
+    padding: 0 2px
+.breadcrumbs__item
+  &:last-child::after
+    content: ""
+
+.warranty__box
+  padding-top: 8px
+  padding-bottom: 100px
+
+.warranty__text
+  font-family: 'Open Sans', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 15px
+  line-height: 18px
+  color: #000
+  padding: 10px 0
+
+.warranty__text strong
+  font-family: 'Open Sans', sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 18px
+  color: #E30613
+
+.warranty__text span
+  font-family: 'Open Sans', sans-serif
+  font-style: italic
+  font-weight: 600
+  font-size: 15px
+  line-height: 18px
+  color: #2C5367
+
+.warranty__text--inline
+  display: inline
+
+.warranty__title
+  font-family: 'Open Sans', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 21px
+  line-height: 22px
+  color: #222222
+  padding-top: 25px
+  padding-bottom: 10px
+
+.warranty__icon-list
+  display: flex
+  gap: 30px
+  justify-content: space-between
+  padding-top: 57px
+  padding-bottom: 80px
+
+.warranty__icon-item
+  width: 20%
+  display: flex
+  flex-direction: column
+  gap: 16px
+
+.warranty__icon-box
+  width: 100%
+  min-height: 100px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.warranty__icon-text
+  font-family: 'Open Sans', sans-serif
+  font-style: normal
+  font-weight: 700
+  font-size: 18px
+  line-height: 130%
+  color: #222222
+  text-align: center
+
+@media all and ($mobile)
+  .warranty__icon-list
+    flex-direction: column
+    align-items: center
+    padding-bottom: 20px
+    padding-top: 20px
+    gap: 20px
+  .warranty__icon-item
+    width: 80%
+    gap: 0
+  .warranty__box
+    padding-bottom: 40px
+  .warranty__icon-text
+    font: 700 14px/18px 'Open Sans', sans-serif
+  .warranty__icon-box img
+    max-width: 80px
+ 

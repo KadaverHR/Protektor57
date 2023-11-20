@@ -1,0 +1,451 @@
+{% set title = "Сервис" %}
+{% set bodyClass = "is-service-page" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+<section class="main-banner-section main-banner-section--small">
+  <!-- <a href="/" class="new-store">
+    <img
+      width="61"
+      height="297"
+      src="../../assets/img/img-53.png"
+      alt="Новый магазин">
+  </a> -->
+  <div class="container-fluid">
+    <picture>
+      <source
+        type="image/webp"
+        media="(max-width: 767.9px)"
+        srcset="../../assets/img/service-page-banner-mobile.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1023.9px)"
+        srcset="../../assets/img/service-page-banner-table.jpg"
+      >
+      <source
+        type="image/webp"
+        media="(max-width: 1139.9px)"
+        srcset="../../assets/img/service-page-banner-middle.jpg"
+      >
+      <img
+        class="main-banner-section__bg"
+        src="../../assets/img/service-page-banner.jpg"
+        alt="Сервис">
+    </picture>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="main-banner-navigation">
+          <a href="/" class="main-banner-navigation__logo">
+            <img src="../../assets/img/img-46.svg"  width="257" height="30" alt="Протектор57">
+          </a>
+
+          <div class="main-banner-navigation__search">
+            <div class="search-area">
+              <form class="search">
+                <input type="text" class="search__input" value="" placeholder="Поиск">
+                <button class="button search__button" type="submit">
+                  <img src="../../assets/img/img-40.svg" alt="Найти">
+                </button>
+
+              </form>
+            </div>
+          </div>
+          <div class="main-banner-navigation__cart main-banner-cart">
+            <img
+              class="main-banner-cart__image"
+              src="../../assets/img/img-47.svg"
+              alt="Корзина"
+              width="42"
+              height="42"
+            >
+            <div class="main-banner-cart__count">
+              <strong>2 </strong>товара
+            </div>
+            <div class="main-banner-cart__price">
+              <strong>12 345 </strong>₽
+            </div>
+          </div>
+          <div class="main-banner-cart-mobile">
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-50.svg" alt="Поиск">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-51.svg" alt="Звонок">
+            </a>
+            <a href="/" class="main-banner-cart-mobile__link">
+              <img src="../../assets/img/img-52.svg" alt="Корзина">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="container">
+      <div class="main-banner-info main-banner-info--small">
+        <h1 class="main-banner-info__title-small">
+          Сервис
+        </h1>
+        <!-- <h3  class="main-banner-info__sub-title">
+          Шины, акб, масла, диски и камеры,
+          шиномонтаж, бесплатное хранение
+        </h3>
+        <a href="/" class="button main-banner-info__button">
+          подобрать
+        </a> -->
+      </div>
+
+    </div> 
+  </div>
+
+  <!-- <div class="container-fluid">
+      <div class="container">
+     
+      <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/truck-service-banner-mobile-tyres.png"
+          >
+          <img
+            class="banner-tyres banner-tyres__truck-service banner-tyres__img"
+            src="../../assets/img/truck-service-banner-tyres.png"
+            alt="Сервис">
+        </picture>
+      </div>
+  </div> -->
+</section>
+
+<section class="service-page">
+
+  <div class="container-fluid">
+    <div class="container">
+      {% include "html/includes/breadcrumbs.html" %}
+
+      <div class="title-block service-title">
+
+        <div class="service-title__wrapper">
+          <h2 class="title-block__title">
+            Весь каталог
+          </h2>
+
+          <!--          <a href="#" class="service-title__link">записаться</a>-->
+        </div>
+
+        <div class="service-title__info-wrapper">
+          <p class="service-title__info">
+            Постоянным клиентам <strong class="service-title__info service-title__info--red">
+            скидка 5-15%
+          </strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="service-page__info-area">
+        <ul class="service-page__info-list">
+          <li class="service-page__info-item">
+            <a href="../index-17.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page1.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Легковой шиномонтаж
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-9.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page2.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Грузовой шиномонтаж
+
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-10.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page3.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Правка дисков
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-11.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page4.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Сварка дисков аргоном
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-15.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page5.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Сезонное хранение шин
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-14.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page6.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Автомойка
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-13.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page7.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Автосервис
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="service-page__info-item">
+            <a href="../index-12.html" class="service-page__info-card">
+              <div class="service-page__img-wrapper">
+                <img src="../assets/img/service-page8.png" alt="" class="service-page__img">
+              </div>
+              <div class="service-page__text-wrapper">
+                <p class="service-page__text">
+                  Сход-развал
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-service__button-wrapper">
+          <a data-fancybox href="#recordAll" class="swiper-service__button button button__red">
+            Записаться</a>
+  
+  
+            <div style="display: none;" class="record models-container" id="recordAll">
+              <p class="record__title models-container__title">
+                <span>записаться</span>
+                на обслуживание ТС
+              </p>
+          
+          
+              <form action="" class="record__form" name="form-record">
+          
+                <ul class="record__service-list">
+          
+                  <li class="record__service-item">
+                    <label class="record__radio">
+                      <input class="radio__input" type="radio" name="form-cheaper">
+                      <span class="radio__custom"></span>
+                      <span class="radio__text">
+                        Легковой шиномонтаж
+                        </a>
+                      </span>
+                    </label>
+                  </li>
+          
+                  <li class="record__service-item">
+                    <label class="record__radio">
+                      <input class="radio__input" type="radio" name="form-cheaper">
+                      <span class="radio__custom"></span>
+                      <span class="radio__text">
+                        Правка/прокатка дисков
+                      </span>
+                    </label>
+                  </li>
+          
+                  <li class="record__service-item ">
+                    <label class="record__radio">
+                      <input class="radio__input" type="radio" name="form-cheaper">
+                      <span class="radio__custom"></span>
+                      <span class="radio__text">
+                        Сварка/ремонт дисков
+                      </span>
+                    </label>
+                  </li>
+          
+          
+          
+                  <li class="record__service-item ">
+                    <label class="record__radio">
+                      <input class="radio__input" type="radio" name="form-cheaper">
+                      <span class="radio__custom"></span>
+                      <span class="radio__text">
+                        Автосервис
+                        </a>
+                      </span>
+                    </label>
+                  </li>
+          
+          
+                  <li class="record__service-item ">
+                    <label class="record__radio">
+                      <input class="radio__input" type="radio" name="form-cheaper">
+                      <span class="radio__custom"></span>
+                      <span class="radio__text">
+                        Сход-развал
+                      </span>
+                    </label>
+                  </li>
+          
+             
+          
+          
+          
+                  <li class="record__service-item">
+                    <label class="record__radio">
+                      <input class="radio__input" type="radio" name="form-cheaper">
+                      <span class="radio__custom"></span>
+                      <span class="radio__text">
+                        Автомойка
+                        </a>
+                      </span>
+                    </label>
+                  </li>
+          
+                </ul>
+          
+          
+          
+          
+                <ul class="record__contact-list">
+                  <li class="record__contact-item">
+                    <label class="form-order__label" for='fio'>ФИО*</label>
+                    <input type="text" required id="fio" placeholder="Введите ФИО" class="form-order__input">
+                  </li>
+          
+                  <li class="record__contact-item record__contact-item--min-width">
+                    <label class="form-order__label" for='tel'>Номер телефона*</label>
+                    <input type="tel" required id="tel" placeholder="Введите номер телефона" class="form-order__input">
+                  </li>
+          
+                  <li class="record__contact-item record__contact-item--min-width">
+                    <label class="form-order__label" for='email'>Email</label>
+                    <input type="email" id="email" placeholder="Введите Email" class="form-order__input">
+                  </li>
+                  <li class="record__contact-item">
+                    <label class="form-order__label" for='car'>Автомобиль</label>
+                    <input type="text" id="car" placeholder="Укажите марку и модель авто" class="form-order__input">
+                  </li>
+          
+          
+          
+                  <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+                    <label class="form-order__label" for='diameter'>Диаметр колес</label>
+                    <input type="text" id="diameter" placeholder="Введите диаметр колес" class="form-order__input">
+                  </li>
+          
+                  <li class="record__contact-item record__contact-item--min-width record__contact-item--hide">
+                    <label class="form-order__label" for='count'>Количество колес</label>
+                    <input type="text" id="count" placeholder="Введите количество колес" class="form-order__input">
+                  </li>
+          
+                  <li class="record__contact-item">
+                    <lebel class="form-order__label" for='select'>Адрес сервисного центра*</lebel>
+                    <select value id="select"
+                      class="record__input form-order__input select-filter select-type tire-selection-item__select"
+                      style="width:100%">
+                      <option></option>
+                      <option value="1">ул.Михалицына, 10</option>
+                      <option value="2">ул.Ломоносова, 6Б</option>
+                      <option value="3">ул.Комсомольская, 270</option>
+                    </select>
+                  </li>
+          
+                  <li class="record__contact-item record__contact-item--min-width">
+                    <label class="form-order__label" for='date'>Дата</label>
+                    <input type="text" id="date" placeholder="" class="form-order__input">
+                  </li>
+                  <li class="record__contact-item record__contact-item--min-width">
+                    <label class="form-order__label" for='time'>Время</label>
+                    <input type="time" id="time" placeholder="" class="form-order__input">
+                  </li>
+          
+                  <li class="record__contact-item">
+                    <label class="form-order__label" for='comment'>Комментарий</label>
+                    <textarea type="email" id="comment" rows="1" class="form-order__input"> </textarea>
+          
+                  </li>
+          
+          
+                  <li class="record__contact-item">
+                    <div class="form-order__item">
+                      <p class="form-order__required-text">
+                        * Поля являются обязательными для заполнения
+                      </p>
+                    </div>
+          
+                    <div class="form-order__item">
+                      <label class="form-order__checkbox" for="checkbox">
+                        <input class="checkbox__input" type="checkbox" name="data" id="checkbox">
+                        <div class="checkbox__block">
+                          <span class="checkbox__custom"></span>
+                          <p class="checkbox__text">
+                            Я согласен с
+                            <a href="#" class="checkbox__text checkbox__text--link">условиями передачи данных
+                            </a>
+          
+                          </p>
+                        </div>
+          
+                      </label>
+          
+          
+                    </div>
+                  </li>
+          
+                </ul>
+          
+                <div class="record__btn-wrapper">
+          
+          
+                <a href="" class="button button__transparent record__btn-back">
+                  Отменить
+                </a>
+                <button class="button button__red record__btn-order" type="submit">
+                  Записаться
+                </button>
+          
+                </div>
+          
+              </form>
+            </div>
+  
+  
+  
+        </div>
+      
+      </div>
+      
+    
+
+    </div>
+  </div>
+</section>
+      {% endblock %}

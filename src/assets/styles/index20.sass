@@ -1,0 +1,41 @@
+.models-brands .pagination-top__sorting-wrapper
+  display: none
+
+.models-brands .breadcrumb__nds
+  @media all and ($mobile)
+    display: none
+.models-brands
+  &__list
+    display: grid
+    grid-template-columns: repeat(4,1fr)
+    gap: 20px 30px
+    justify-items: stretch
+    margin-bottom: 30px
+    @media all and ($table)
+      grid-template-columns: repeat(3,1fr)
+      gap: 20px
+    @media all and ($mobile)
+      grid-template-columns: repeat(2,1fr)
+      gap: 20px
+    @media all and (max-width: 576px)
+      grid-template-columns: repeat(1,1fr)
+  &__item
+    cursor: pointer
+    border: 1px solid #60656E
+    border-radius: 5px
+    padding: 4px 32px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &:hover .models-brands__title
+      text-decoration-line: underline
+  &__img-wrapper
+    max-height: 91px
+    max-width: 198px
+  &__title-wrapper
+    padding-bottom: 10px
+    position: relative
+    top: -5px
+  &__title
+    font: 400 18px/25px 'Open Sans', sans-serif
+    color: #222222

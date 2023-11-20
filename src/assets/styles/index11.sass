@@ -1,0 +1,49 @@
+.argon-welding
+  &__info-area
+    border-bottom: 1px solid #D6DFE6
+  &__info-block
+    margin-top: 30px
+    margin-bottom: 30px
+  &__info-list
+    display: flex
+    justify-content: space-between
+    @media all and ($mobile)
+      flex-direction: column
+  &__info-item
+    display: flex
+    flex-direction: column
+    width: calc((100% - 60px) / 3)
+    @media all and ($mobile)
+      width: 100%
+      align-items: center
+      margin-bottom: 30px
+  &__item-text
+    font: 600 16px/24px 'Open Sans', sans-serif
+    color: #174F76
+    text-align: center
+    text-transform: uppercase
+    @media all and ($table)
+      font: 600 14px/20px 'Open Sans', sans-serif
+
+  &__img-wrapper
+    width: 100%
+    text-align: center
+    max-width: 359px
+    padding-bottom: 15px
+  &__info-text
+    width: 90%
+    font: 400 15px/150% 'Open Sans', sans-serif
+    color: #000
+    @media all and ($mobile)
+      width: 100%
+  &__price
+    padding-top: 30px
+    margin-bottom: 30px
+  &__table
+    margin-bottom: 0
+    overflow-x: auto
+  &__comment-wrapper
+    margin-bottom: 50px
+  &__comment
+    font: 400 14px/19px 'Open Sans', sans-serif
+    color: #222

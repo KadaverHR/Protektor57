@@ -1,0 +1,76 @@
+.car-form
+  &__submit-wrapper
+    display: flex
+    align-items: center
+   
+  &__wrapper
+    padding: 20px
+    width: 100%
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.15)
+    border-radius: 5px
+    margin: 0 0 30px 0
+    @media all and ($mobile)
+      margin-top: 0
+      margin-bottom: 10px
+      width: 100%
+      padding: 10px
+  &__title
+    font: 600 14px/18px 'Open Sans', sans-serif
+    color: #60656E
+    text-transform: uppercase
+    padding-right: 15px
+    &--mobile 
+      display: flex
+      align-items: center
+      justify-content: center
+      display: none
+      @media all and ($mobile)  
+        display: block
+  &__submit-wrapper
+    @media all and ($mobile)  
+      display: none
+    &--mobile 
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      margin-top: 10px
+      display: none
+      @media all and ($mobile)  
+        display: flex
+  &__submit
+    font: 600 13px/17px 'Open Sans', sans-serif
+    color: #222222
+    background-color: #EFF3F6
+    border: 1px solid #EFF3F6
+    border-radius: 50px
+    padding: 5px 15px
+    margin-right: 10px
+    @media all and ($mobile)
+      margin-right: 0
+
+
+
+  &__reset
+    font: 400 15px/17px 'Open Sans', sans-serif
+    color: #6B6F7B
+    border-bottom: 1px dashed #60656E
+    background-color: transparent
+    border-top: none
+    border-left: none
+    border-right: none
+    padding: 0
+
+  &__input-list
+    display: flex
+    justify-content: space-between
+    padding-top: 10px
+    @media all and ($mobile)
+     flex-direction: column
+  &__input-item
+    width: calc((100% - 10px * 3) /4)
+    @media all and ($mobile)
+      width: 100%
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+

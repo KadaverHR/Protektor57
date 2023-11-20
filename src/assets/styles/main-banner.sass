@@ -1,0 +1,487 @@
+.banner-container
+  max-width: 1320px
+  width: 100%
+  // padding: 0 91px
+  // @media all and ($middle)
+  //   padding-left: 20px
+  //   padding-right: 20px
+  // @media all and ($table)
+  //   padding-bottom: 0
+  // @media all and ($mobile)
+  //   padding-left: 15px
+  //   padding-right: 15px
+.main-banner-section
+  min-height: 595px
+  position: relative
+  &--small
+    min-height: 323px
+    position: relative
+  &__bg
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    object-fit: cover
+    object-position: 30% 100%
+.new-store
+  position: absolute
+  right: 0
+  bottom: 111px
+  z-index: 10
+  img
+    width: 61px
+    height: 297px
+.main-banner-navigation,
+.main-banner-info
+  z-index: 1
+  position: relative
+
+.main-banner-navigation
+  padding-top: 40px
+  display: flex
+  align-items: center
+  &__logo
+    flex: 0 0 257px
+    width: 257px
+    margin-right: 25px
+  &__search
+    max-width: 695px
+    width: 100%
+  &__cart
+    margin-left: 44px
+
+.main-banner-cart
+  position: relative
+  &__image
+    width: 42px
+    height: 42px
+    position: absolute
+    left: 0
+    top: 0
+  &__count, &__price
+    white-space: nowrap
+    padding-left: 60px
+    font: 400 15px/20px 'Open Sans', sans-serif
+    strong
+      font: 700 15px/20px 'Open Sans', sans-serif
+
+.search
+  position: relative
+  border-radius: 5px
+  border: 1px solid #AAB2C2
+  padding: 2px 40px 2px 0px
+  background-color: #fff
+  display: grid
+  grid-auto-flow: column
+  justify-content: start
+  &__input
+    width: 100%
+  &__button
+    height: 100%
+    right: 0
+    top: 0
+    position: absolute
+    padding-right: 10px
+    padding-left: 10px
+    img
+      width: 21px
+      height: 21px
+  .select2-container
+    display: grid
+    align-items: center
+    padding: 4px
+    max-width: fit-content
+    min-width: 100px
+  .select-search__selection
+    background: rgba(106, 115, 125, 0.15)
+    border: none
+  // .select-search__drop
+  //   max-height: 100%
+.search-area
+  .select2-search--dropdown
+    display: none
+  .select2-container--open .select2-dropdown--below
+    min-width: fit-content
+  .select-filter__drop
+    max-height: none
+
+.main-banner-info
+  padding-top: 84px
+  @media all and ($middle)
+    padding-top: 40px
+    display: flex
+    flex-direction: column
+    align-items: center
+  @media all and ($mobile)
+    padding-top: 55px
+    align-items: flex-start
+  &__swipper
+    padding-top: 178px
+    @media all and ($middle)
+      padding-top: 94px
+    @media all and ($table)
+      padding-top: 100px
+    @media all and ($mobile)
+      padding-top: 127px
+  &--small
+    padding-top: 40px
+    // padding-bottom: 72px
+  &__title
+    text-transform: uppercase
+    color: #2E3541
+    font: 800 44px/60px 'Open Sans', sans-serif
+    margin-bottom: 40px
+  &__title-small
+    margin-top: 65px
+    position: relative
+    font: 800 40px/54px 'Open Sans', sans-serif
+    color: #fff
+    width: 100%
+    text-align: left
+    @media all and ($table)
+      margin-top: 20px
+      font: 800 36px/49px 'Open Sans', sans-serif
+    @media all and ($mobile)
+      margin-top: 20px
+      font: 800 21px/29px 'Open Sans', sans-serif
+    &::before
+      content: ""
+      position: absolute
+      top: -16px
+      right: calc((100vw - 1320px) / 2 + 91px)
+      height: 92px
+      width: 100%
+      z-index: -1
+      transform: rotate(180deg)
+      background: linear-gradient(270.2deg, #364352 -17.09%, rgba(54, 67, 82, 0.26) 62.68%, rgba(54, 67, 82, 0) 75.7%)
+      @media all and ('max-width:1319.9px')
+        right: 91px
+      @media all and ($mobile)
+        height: 64px
+        right: 15px
+
+  &__sub-title
+    font: 400 21px/150% 'Open Sans', sans-serif
+    margin-bottom: 33px
+    max-width: 375px
+  &__button
+    padding: 12px 44px
+    border-radius: 50px
+    text-transform: uppercase
+    background-color: #3D7795
+    color: #FFFFFF
+    font: 700 15px/19px 'Open Sans', sans-serif
+    &:hover,&:focus,&:active
+      color: #FFFFFF
+
+.main-banner-cart-mobile
+  display: none
+  //gap: 10px
+  margin-left: auto
+  position: relative
+  right: -5px
+  &__link
+    padding: 5px
+
+.banner-tyres
+  position: absolute
+  z-index: 22
+  bottom: 0
+  right: calc((100vw - 1168px) / 2)
+  @media all and ($middle)
+    right: 15px
+  @media all and ($mobile)
+    right: 0
+  &__img
+    width: 351px
+    @media all and ($table)
+      width: 255px
+    @media all and ($mobile)
+      width: 89px
+  &__truck-service
+    width: 498px
+    @media all and ($table)
+      width: 416px
+    @media all and ($mobile)
+      width: 127px
+  &__tire-service
+    width: 531px
+    @media all and ($middle)
+      width: 456px
+    @media all and ($table)
+      width: 327px
+    @media all and ($mobile)
+      width: 168px
+  &__found
+    width: 744px
+    @media all and ($middle)
+      width: 532px
+    @media all and ($table)
+      width: 342px
+    @media all and ($mobile)
+      width: 220px
+  &__disk
+    width: 537px
+    @media all and ($middle)
+      width: 479px
+    @media all and ($table)
+      width: 331px
+    @media all and ($mobile)
+      width: 178px
+  &__tool
+    width: 559px
+    @media all and ($middle)
+      width: 401px
+    @media all and ($table)
+      width: 246px
+    @media all and ($mobile)
+      width: 152px
+  &__nuts
+    width: 403px
+    @media all and ($middle)
+      width: 277px
+    @media all and ($table)
+      width: 203px
+    @media all and ($mobile)
+      width: 125px
+  &__stocks
+    width: 610px
+    @media all and ($middle)
+      width: 454px
+    @media all and ($table)
+      width: 300px
+    @media all and ($mobile)
+      width: 217px
+  &__truck
+    width: 510px
+    @media all and ($middle)
+      width: 350px
+    @media all and ($table)
+      width: 255px
+    @media all and ($mobile)
+      width: 93px
+  &__agro
+    width: 528px
+    @media all and ($middle)
+      width: 316px
+    @media all and ($table)
+      width: 235px
+    @media all and ($mobile)
+      width: 77px
+  &__special-tyre
+    width: 583px
+    @media all and ($middle)
+      width: 350px
+    @media all and ($table)
+      width: 286px
+    @media all and ($mobile)
+      width: 77px
+  &__moto
+    width: 424px
+    @media all and ($middle)
+      width: 331px
+    @media all and ($table)
+      width: 231px
+    @media all and ($mobile)
+      width: 76px
+  &__accumulator
+    width: 452px
+    @media all and ($middle)
+      width: 344px
+    @media all and ($table)
+      width: 300px
+    @media all and ($mobile)
+      width: 170px
+  &__oil
+    width: 369px
+    @media all and ($middle)
+      width: 302px
+    @media all and ($table)
+      width: 210px
+    @media all and ($mobile)
+      width: 124px
+  &__electronics
+    width: 444px
+    @media all and ($middle)
+      width: 302px
+    @media all and ($table)
+      width: 210px
+    @media all and ($mobile)
+      width: 124px
+  &__accessories
+    width: 486px
+    @media all and ($middle)
+      width: 302px
+    @media all and ($table)
+      width: 210px
+    @media all and ($mobile)
+      width: 124px
+  &__lamp
+    width: 350px
+    @media all and ($middle)
+      width: 249px
+    @media all and ($table)
+      width: 199px
+    @media all and ($mobile)
+      width: 147px
+  &__info
+    max-width: 100%
+    right: 50%
+    transform: translateX(50%)
+    // top: 60px
+    @media all and ($middle)
+      max-width: 654px
+    @media all and ($mobile)
+      max-width: 768px
+      object-fit: cover
+      width: 60%
+    @media all and ('max-width:640px')
+      width: 70%
+    @media all and ('max-width:540px')
+      width: 80%
+    @media all and ('max-width:456px')
+      width: 100%
+
+.shopping-cart-banner
+  width: 840px
+  height: 201px
+  @media all and ($middle)
+    width: 644px
+    height: 169px
+  @media all and ($table)
+    width: 445px
+    height: 117px
+
+  @media all and ($mobile)
+    height: 86px
+    width: 213px
+
+@media all and ($middle)
+  .main-banner-info
+    &--small
+      padding-top: 15px
+      padding-bottom: 0px
+      @media all and ($mobile)
+        padding-top: 25px
+    // &__title
+    //   margin-bottom: 15px
+    // &__title-small
+
+    &__sub-title
+      max-width: inherit
+      margin-bottom: 30px
+    &__button
+      min-width: 230px
+      padding: 17px 44px
+      margin-bottom: 40px
+  .main-banner-section
+    min-height: 350px
+    &--small
+      min-height: 284px
+  .new-store
+    bottom: 40px
+    img
+      width: 49px
+      height: 196px
+@media all and ($table)
+  .main-banner-section
+    &--small
+      min-height: 214px
+  .main-banner-navigation
+    &__logo
+      flex: 0 0 213px
+    &__cart
+      margin-left: 25px
+
+@media all and ($mobile)
+  .main-banner-section
+    min-height: 250px
+    @media all and ('max-width: 575.9')
+      min-height: 184px
+    &--small
+      min-height: 184px
+  .main-banner-cart-mobile
+    display: flex
+  .main-banner-navigation
+    justify-content: space-between
+    padding-top: 15px
+    z-index: 20
+    display: grid
+    grid-auto-flow: column
+    align-items: center
+    position: relative
+    &__logo
+      flex: 0 0 175px
+    &__search
+      display: none
+    &__search.active
+      display: grid
+      position: absolute
+      max-width: 86%
+      right: 55px
+      top: 15px
+      .search
+        max-height: 33px
+      .search__input
+        font-size: 15px
+        line-height: 15px
+        padding: 0 10px
+        height: 100%
+      .select-filter__selection
+        min-height: 22px !important
+      .search .select2-container
+        padding: 1px
+      .search__button
+        img
+          width: 20px
+          height: 20px
+
+    .d-n
+      display: none
+    .main-banner-cart
+      display: none
+
+  .main-banner-info
+    &--small
+      padding-top: 25px
+    &__title
+      font: 800 18px/24px 'Open Sans', sans-serif
+      margin-bottom: 24px
+    &__title-small
+
+    &__sub-title
+      display: none
+    &__button
+      padding: 9px 27px
+      min-width: 135px
+      font: 700 13px/18px "Open Sans", sans-serif
+  .new-store
+    display: none
+
+.swiper-banner
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  object-fit: cover
+  object-position: 30% 100%
+  z-index: 0
+  @media all and ($mobile)
+    padding-bottom: 25px
+
+.swiper-banner
+  &__pagination
+    position: absolute
+    bottom: 10px !important
+    @media all and ($mobile)
+      bottom: 5px !important
+    & .swiper-pagination-bullet
+      width: 43px
+      height: 6px
+      background: #fff
+      @media all and ($mobile)
+        background: #656777
+        width: 25px
+        height: 5px

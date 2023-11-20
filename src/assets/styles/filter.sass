@@ -1,0 +1,168 @@
+.filters
+  width: 100%
+  position: relative
+  &__types-block
+    padding-bottom: 20px
+    margin-bottom: 20px
+    border-bottom: 1px solid #D6DFE6
+  &__types
+    display: flex
+    border: 1px solid #D6DFE6
+    border-radius: 5px
+    overflow: hidden
+  &__type
+    position: relative
+    .label
+      user-select: none
+      white-space: nowrap
+      position: relative
+      background-color: #fff
+      color: #60656E
+      font: 600 14px/19px 'Open Sans', sans-serif
+      text-transform: uppercase
+      padding: 0 9px
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 35px
+      span
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          background-color: #E30613
+          bottom: -8px
+          width: 100%
+          height: 2px
+          display: none
+    .radio
+      display: none
+    .radio:checked + .label
+      background-color: #F6F6F8
+      color: #E30613
+      span:after
+        display: block
+  &__type-filter
+    position: relative
+  &__param-block
+    display: none
+    padding-bottom: 25px 
+    border-bottom: 1px solid #D6DFE6
+    margin-bottom: 15px
+    &--active 
+      display: block
+  &__param-item
+    display: grid
+    grid-template-columns: 1fr 2fr
+    gap: 20px
+    align-items: center
+    padding-bottom: 20px
+    &:last-child
+      padding-bottom: 0
+  &__param-text
+    font: 400 18px/25px 'Open Sans', sans-serif
+    color: #222
+
+.filter
+  position: relative
+  padding-bottom: 20px
+  border-bottom: 1px solid #D6DFE6
+  margin-bottom: 15px
+  ::-webkit-scrollbar
+    width: 5px
+  ::-webkit-scrollbar-track
+    background-color: #fff
+  ::-webkit-scrollbar-thumb
+    background-color: #C4C5C9
+    border-radius: 3px
+  &__header
+    display: flex
+
+  &__header-title
+    color: #222222
+    font: 700 18px/25px 'Open Sans', sans-serif
+    margin-right: 8px
+  &__body
+    margin-top: 10px
+    position: relative
+  &--hidden
+    .filter__button-toggle
+      transform: rotate(180deg)
+    .filter__body
+      margin-top: 0
+      height: 0
+      overflow: hidden
+  &__button-reset
+    padding: 0
+    border-radius: 0
+    color: #6B6F7B
+    font: 400 15px/20px 'Open Sans', sans-serif
+    border-bottom: 1px dashed #6B6F7B
+  &__button-toggle
+    padding: 5px 0 5px 10px
+    margin-left: auto
+  &__search-area
+    margin-bottom: 9px
+    .search
+      border-color: #D6DFE6
+  &__checks
+    max-height: 200px
+    overflow-y: auto
+    padding-right: 10px
+  &__check
+    position: relative
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    .checkbox__custom
+      margin-left: 0
+      margin-right: 15px
+    .checkbox__text
+      padding: 0
+      font: 400 15px/20px 'Open Sans', sans-serif
+      span
+        padding-left: 3px
+        color: #6B6F7B
+  &__button-select
+    width: 100%
+    border-radius: 50px
+    background-color: #ECEEF2
+    text-transform: uppercase
+    color: #222222
+    font: 600 13px/18px 'Open Sans', sans-serif
+
+
+.filter-result-area
+  position: absolute
+  top: 10%
+  right: -30%
+  z-index: 10
+  
+.filter-result
+  background: #929AA8
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+  padding: 10px 15px
+  &__text
+    position: relative
+    span, a
+      color: #fff
+      font: 700 13px/17px 'Open Sans', sans-serif
+    a
+      text-decoration-line: underline
+   
+.swiper-filter-area
+  position: relative
+  .swiper-slide
+    height: auto
+  .swiper-filter__swiper-pagination
+    bottom: -10px!important
+    .swiper-pagination-bullet
+      width: 16px
+  
+.filter-banner-slide
+  width: 250px
+  margin: 0 auto
+  height: 370px
+  overflow: hidden
+  border-radius: 10px

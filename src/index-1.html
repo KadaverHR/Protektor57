@@ -1,0 +1,48 @@
+{% set title = "Ссылки" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="catalog-cards">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="title-block">
+        <h2 class="title-block__title">Каталог</h2>
+      </div>
+      <div class="catalog-cards__list swiper" id="catalogCardsSwiper">
+        <div class="catalog-cards__wrapper swiper-wrapper">
+
+          <div class="catalog-cards__slide swiper-slide">
+            <div class="catalog-card">
+              <div class="catalog-card__content">
+                <div class="catalog-card__image-block">
+                  <picture>
+                    <source
+                      srcset="assets/img/img-1.webp"
+                      type="image/webp"
+                    >
+                    <img src="assets/img/img-1.png" alt="">
+                  </picture>
+                </div>
+                <span class="catalog-card__name">
+              шины
+            </span>
+              </div>
+              <div class="catalog-card__select">
+                <div class="catalog-card__select-change">
+                  выбрать
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "html/includes/swiper-brand.html" %}
+{% include "html/includes/stocks-form.html" %}
+{% endblock %}

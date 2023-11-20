@@ -1,0 +1,159 @@
+{% set title = "Поск по модели. Выбор бренда." %}
+{% set bodyClass = "is-models-brands" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+<section class="main-banner-section main-banner-section--small">
+    <!-- <a href="/" class="new-store">
+        <img
+          width="61"
+          height="297"
+          src="../../assets/img/img-53.png"
+          alt="Новый магазин">
+      </a> -->
+    <div class="container-fluid">
+      <picture>
+        <source
+          type="image/webp"
+          media="(max-width: 767.9px)"
+          srcset="../../assets/img/model-tyre-banner-mobile.jpg"
+        />
+        <source
+          type="image/webp"
+          media="(max-width: 1023.9px)"
+          srcset="../../assets/img/model-tyre-banner-table.jpg"
+        />
+        <source
+          type="image/webp"
+          media="(max-width: 1139.9px)"
+          srcset="../../assets/img/model-tyre-banner-middle.jpg"
+        />
+        <img
+          class="main-banner-section__bg"
+          src="../../assets/img/model-tyre-banner.jpg"
+          alt="Сервис"
+        />
+      </picture>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="main-banner-navigation">
+            <a href="/" class="main-banner-navigation__logo">
+              <img
+                src="../../assets/img/img-46.svg"
+                width="257"
+                height="30"
+                alt="Протектор57"
+              />
+            </a>
+  
+            <div class="main-banner-navigation__search">
+              <div class="search-area">
+                <form class="search">
+                  <input
+                    type="text"
+                    class="search__input"
+                    value=""
+                    placeholder="Поиск"
+                  />
+                  <button class="button search__button" type="submit">
+                    <img src="../../assets/img/img-40.svg" alt="Найти" />
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="main-banner-navigation__cart main-banner-cart">
+              <img
+                class="main-banner-cart__image"
+                src="../../assets/img/img-47.svg"
+                alt="Корзина"
+                width="42"
+                height="42"
+              />
+              <div class="main-banner-cart__count"><strong>2 </strong>товара</div>
+              <div class="main-banner-cart__price"><strong>12 345 </strong>₽</div>
+            </div>
+            <div class="main-banner-cart-mobile">
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-50.svg" alt="Поиск" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-51.svg" alt="Звонок" />
+              </a>
+              <a href="/" class="main-banner-cart-mobile__link">
+                <img src="../../assets/img/img-52.svg" alt="Корзина" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-banner-info main-banner-info--small">
+          <h1 class="main-banner-info__title-small">Легковые шины</h1>
+          <!-- <h3  class="main-banner-info__sub-title">
+              Шины, акб, масла, диски и камеры,
+              шиномонтаж, бесплатное хранение
+            </h3>
+            <a href="/" class="button main-banner-info__button">
+              подобрать
+            </a> -->
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-fluid">
+      <div class="container">
+        <picture>
+          <source
+            type="image/webp"
+            media="(max-width: 767.9px)"
+            srcset="../../assets/img/model-tyre-banner-mobile-tyres.png"
+          />
+          <img
+            class="banner-tyres banner-tyres__img"
+            src="../../assets/img/model-tyre-banner-tyres.png"
+            alt="Сервис"
+          />
+        </picture>
+      </div>
+    </div>
+  </section>
+<section class="models-brands">
+
+    <div class="container-fluid">
+        <div class="container">
+            {% include "html/includes/breadcrumbs.html" %}
+            {% include "html/includes/pagination-top.html" %}
+
+            <ul class="models-brands__list">
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+                {% include "html/includes/model-card.html" %}
+
+            </ul>
+
+            {% include "html/includes/pagination.html" %}
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
